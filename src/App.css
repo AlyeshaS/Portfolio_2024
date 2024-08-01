@@ -1,0 +1,36 @@
+.App {
+  text-align: center;
+  background-color: #E5E8ED;
+  font-weight: lighter;
+  padding:20px;
+}
+.Navbar{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 10px;
+}
+
+.Intro_Page{
+  display:flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.Portfolio_IMG{
+  flex:3;
+}
+.Intro_Text{
+ flex: 7;
+}
+
+.accent{
+  color: #799DCE;
+  font-weight: bold;
+}
+
+.lighter{
+  font-weight: lighter;
+}
