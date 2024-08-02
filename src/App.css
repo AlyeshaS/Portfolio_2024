@@ -1,22 +1,68 @@
 .App {
   text-align: center;
-  background-color: #E5E8ED;
   font-weight: lighter;
   padding:20px;
+ 
+}
+html{
+  background-color: #E5E8ED;
 }
 .Navbar{
   display:flex;
   flex-direction: row;
+  height: 100%;
+  width: 100%;
+  gap:60px;
+  font-size: 20px;
+}
+
+.button_pages{
+  display: flex;
+  gap: 50px;
+  margin-left:30%;
   align-items: center;
-  justify-content: center;
-  padding: 20px;
-  gap: 10px;
+  flex:8;
+}
+
+.Social_Media{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: right;
+  gap: 30px;
+  padding-right:20px;
+  flex:1;
+}
+
+.button_pages :hover{
+  font-size: 22px;
+  text-decoration: underline;
+}
+
+
+.logo{
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  width: 100px;
+  height: 100px;
+  flex:1;
 }
 
 .Intro_Page{
   display:flex;
   flex-direction: row;
-  width: 100%;
+  padding:20px;
+}
+
+.portrait{
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  padding-left: 30px;
 }
 
 .Portfolio_IMG{

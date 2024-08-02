@@ -1,17 +1,26 @@
 import "./App.css";
+import logo from "./Images/Logo.png";
+import portrait from "./Images/portrait.jpg";
 
 function App() {
   return (
     <div className="App">
       <div className="Navbar">
-        <button>Logo</button>
-        <button>Intro</button>
-        <button>Experience</button>
-        <button>Contract</button>
+        <img src={logo} alt="logo" class="logo"></img>
+        <div className="button_pages">
+          <p>Intro</p>
+          <p>Experience</p>
+          <p>Contract</p>
+        </div>
+        <div className="Social_Media">
+          <p>Instagram</p>
+          <p>Linkedin</p>
+          <p>Twitter</p>
+        </div>
       </div>
       <div className="Intro_Page">
         <div className="Portfolio_IMG">
-          <p>Insert Image</p>
+          <img src={portrait} alt="portrait" class="portrait"></img>
         </div>
         <div className="Intro_Text">
           <h2 class="lighter">
