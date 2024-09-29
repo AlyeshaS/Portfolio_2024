@@ -1,0 +1,78 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  transition: all 200ms ease-in;
+}
+
+.navbar .container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1500px;
+  width: 100%;
+}
+
+.navbar .container .logo {
+  position: absolute;
+  left: 20px;
+  height: 100%;
+}
+
+.navbar .container .links {
+  display: flex;
+  gap: 10px;
+}
+
+.navbar .container .links a {
+  color: var(--text-color);
+  font-size: 25px;
+  padding: 0px 10px;
+  transition: all 100ms ease-in;
+  cursor: pointer;
+}
+
+.navbar .container .links a:hover {
+  border-bottom: 4px solid var(--accent);
+}
+
+.navbar .container .links .active {
+  border-bottom: 4px solid var(--accent);
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.navbar .container .socials {
+  position: absolute;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.navbar .container .socials .link {
+  background-color: #f5f5f5;
+  color: var(--accent);
+  height: 65px;
+  width: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: all 100ms ease-in;
+}
+
+.navbar .container .socials .link:hover {
+  color: #f5f5f5;
+  background-color: var(--accent);
+}
+
+.navbar .container .socials .link svg {
+  width: 50px;
+  height: 50px;
+  transition: all 50ms ease-in;
+}
