@@ -1,0 +1,66 @@
+.projects {
+  display: flex;
+  justify-content: center;
+}
+
+.projects .container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.projects .container .section-header {
+  color: var(--accent);
+  text-orientation: mixed;
+  writing-mode: vertical-rl;
+  font-size: 50px;
+  opacity: 0.5;
+}
+
+.projects .container .swiper {
+  width: 100%;
+  height: 400px;
+}
+
+.projects .container .swiper .slide {
+  display: grid;
+  grid-template-columns: 5fr 4fr;
+}
+
+.projects .container .swiper .slide .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.projects .container .swiper .slide .text .name {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 40px;
+}
+
+.projects .container .swiper .slide .text .position {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.projects .container .swiper .slide .text p {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.projects .container .swiper .slide .text button {
+  background-color: transparent;
+  border: none;
+  width: fit-content;
+  font-size: 22px;
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.projects .container .swiper .slide .img {
+  width: 100%;
+}

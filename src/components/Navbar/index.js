@@ -6,25 +6,29 @@ import "./styles.css";
 function Navbar() {
   const navbar = useRef();
   useEffect(() => {
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 200 && navbar.current) {
-        navbar.current.style.backgroundColor = "rgba(129, 163, 209, 0.2)";
+    const root = document.getElementById("root");
+    root.addEventListener("scroll", () => {
+      if (root.scrollTop > 200 && navbar.current) {
+        navbar.current.style.backgroundColor = "rgba(129, 163, 209, 0.3)";
         navbar.current.style.boxShadow = "0px 0px 10px rgba(0,0,0,0.2)";
+        root.style.backgroundColor = "rgba(229, 232, 237, 1)";
       } else {
         navbar.current.style.backgroundColor = "transparent";
         navbar.current.style.boxShadow = "unset";
+        root.style.backgroundColor = "rgba(229, 232, 237, 0.3)";
       }
-      console.log(navbar.current);
     });
 
     return () => {
-      window.removeEventListener("scroll", () => {
-        if (window.scrollY > 200 && navbar.current) {
-          navbar.current.style.backgroundColor = "rgba(129, 163, 209, 0.2)";
+      root.removeEventListener("scroll", () => {
+        if (root.scrollTop > 200 && navbar.current) {
+          navbar.current.style.backgroundColor = "rgba(129, 163, 209, 0.3)";
           navbar.current.style.boxShadow = "0px 0px 10px rgba(0,0,0,0.2)";
+          root.style.backgroundColor = "rgba(229, 232, 237, 1)";
         } else {
           navbar.current.style.backgroundColor = "transparent";
           navbar.current.style.boxShadow = "unset";
+          root.style.backgroundColor = "rgba(229, 232, 237, 0.3)";
         }
       });
     };
@@ -37,6 +41,7 @@ function Navbar() {
         <div className="links">
           <Link
             activeClass="active"
+            containerId="root"
             to="about"
             spy={true}
             smooth={true}
@@ -46,6 +51,7 @@ function Navbar() {
           </Link>
           <Link
             activeClass="active"
+            containerId="root"
             to="projects"
             spy={true}
             smooth={true}
@@ -55,6 +61,7 @@ function Navbar() {
           </Link>
           <Link
             activeClass="active"
+            containerId="root"
             to="experience"
             spy={true}
             smooth={true}
@@ -64,6 +71,7 @@ function Navbar() {
           </Link>
           <Link
             activeClass="active"
+            containerId="root"
             to="contact"
             spy={true}
             smooth={true}
