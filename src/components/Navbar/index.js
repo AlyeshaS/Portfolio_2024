@@ -9,26 +9,26 @@ function Navbar() {
     const root = document.getElementById("root");
     root.addEventListener("scroll", () => {
       if (root.scrollTop > 200 && navbar.current) {
-        navbar.current.style.backgroundColor = "rgba(129, 163, 209, 0.3)";
+        navbar.current.style.backgroundColor = "rgba(230, 232, 237, 1)";
         navbar.current.style.boxShadow = "0px 0px 10px rgba(0,0,0,0.2)";
         root.style.backgroundColor = "rgba(229, 232, 237, 1)";
       } else {
         navbar.current.style.backgroundColor = "transparent";
         navbar.current.style.boxShadow = "unset";
-        root.style.backgroundColor = "rgba(229, 232, 237, 0.3)";
+        root.style.backgroundColor = "rgba(229, 232, 237, 0.5)";
       }
     });
 
     return () => {
       root.removeEventListener("scroll", () => {
         if (root.scrollTop > 200 && navbar.current) {
-          navbar.current.style.backgroundColor = "rgba(129, 163, 209, 0.3)";
+          navbar.current.style.backgroundColor = "rgba(230, 232, 237, 1)";
           navbar.current.style.boxShadow = "0px 0px 10px rgba(0,0,0,0.2)";
           root.style.backgroundColor = "rgba(229, 232, 237, 1)";
         } else {
           navbar.current.style.backgroundColor = "transparent";
           navbar.current.style.boxShadow = "unset";
-          root.style.backgroundColor = "rgba(229, 232, 237, 0.3)";
+          root.style.backgroundColor = "rgba(229, 232, 237, 0.5)";
         }
       });
     };

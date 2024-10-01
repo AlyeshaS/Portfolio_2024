@@ -5,7 +5,7 @@
 }
 
 :root {
-  --background: #e5e8ed;
+  --background: #e6e8ed;
   --text-color: #3d5a80;
   --accent: #81a3d1;
 }
@@ -20,11 +20,20 @@ body {
 
 #root {
   overflow-y: auto;
-  background-color: rgba(229, 232, 237, 0.3);
+  background-color: rgba(229, 232, 237, 0.5);
   height: 100%;
   transition: all 500ms ease-in;
+  backdrop-filter: blur(5px);
 }
 
 .section {
   height: 100dvh;
+}
+
+.section .section-header {
+  color: var(--accent);
+  text-orientation: mixed;
+  writing-mode: vertical-rl;
+  font-size: 50px;
+  opacity: 0.5;
 }

@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 
 import "swiper/css";
+import Contact from "./components/Contact";
 
 function App() {
   const [vantaEffect, setVantaEffect] = useState(null);
@@ -40,6 +41,7 @@ function App() {
       <About />
       <Projects />
       <Experience />
+      <Contact />
     </>
   );
 }
