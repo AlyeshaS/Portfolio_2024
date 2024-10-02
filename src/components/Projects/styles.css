@@ -64,7 +64,7 @@
   }
 
   .projects .container .swiper {
-    height: 80dvh;
+    height: 100dvh;
   }
 
   .projects .container .swiper .slide {
@@ -72,6 +72,9 @@
     flex-direction: column-reverse;
     height: fit-content;
     gap: 30px;
+    max-height: 90dvh;
+    overflow-y: auto;
+    margin: auto 0;
   }
 
   .projects .container .swiper .slide .text {
