@@ -57,3 +57,29 @@
   border-radius: 5px;
   margin-top: 40px;
 }
+
+@media (max-width: 600px) {
+  .about {
+    height: fit-content;
+  }
+  .about .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about .container .text {
+    padding: 0px 15px;
+  }
+
+  .about .container .text h1 {
+    font-size: 35px;
+  }
+
+  .about .container .text p {
+    font-size: 25px;
+  }
+
+  .about .container .text .buttons button {
+    font-size: 25px;
+  }
+}

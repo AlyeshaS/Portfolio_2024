@@ -114,3 +114,47 @@
   width: 60px;
   border-radius: 50%;
 }
+
+@media (max-width: 800px) {
+  .experience .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .experience .container .section-header {
+    position: relative;
+    top: 0;
+    margin-top: 0;
+  }
+
+  .experience .container .more-info {
+    display: none;
+  }
+
+  .experience .container .timeline {
+    padding: 0px 15px;
+  }
+
+  .experience .container .timeline::before {
+    height: calc(100% - 50px);
+    left: 40px;
+    transition: unset;
+  }
+
+  .experience .container .timeline .experience-card {
+    margin-left: 70px !important;
+    width: calc(100% - 80px);
+  }
+
+  .experience .container .timeline .experience-card .icon {
+    left: 40px;
+  }
+
+  .experience .container .timeline .experience-card h1 {
+    font-size: 22px;
+  }
+
+  .experience .container .timeline .experience-card .time {
+    font-size: 14px;
+  }
+}

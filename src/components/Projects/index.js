@@ -18,7 +18,7 @@ function Projects() {
         <Swiper
           className="swiper"
           grabCursor={true}
-          direction="vertical"
+          direction={window.innerWidth > 800 ? "vertical" : "horizontal"}
           effect="flip"
           pagination
           autoplay={{

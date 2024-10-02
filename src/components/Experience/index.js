@@ -54,7 +54,12 @@ const experience = [
     position: "Marketting Intern",
     time: "February 2024 - March 2024",
     icon: require("../../Images/experience/MyHomeworkRewards.png"),
-    moreInfo: [],
+    moreInfo: [
+      "Designed and produced engaging social media content using Canva, aligning with the brand to effectively engage the target audience.",
+      "Conducted in-depth research to ensure content was informative and relevant to the marketing strategy.",
+      "Consistently delivered two new content pieces weekly, showcasing self-motivation, organization, and the ability to meet deadlines.",
+      "Enhanced design, research skills, and ability to work autonomously in a fast-paced environment.",
+    ],
   },
   {
     name: "Liftow Limited",
