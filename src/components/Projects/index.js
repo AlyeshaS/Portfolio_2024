@@ -3,9 +3,9 @@ import { Element } from "react-scroll";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFlip, Autoplay, Pagination } from "swiper/modules";
 
-import AOFigma from "../../Images/AOFigma.png";
-import CJSFigma from "../../Images/CJSFigma.png";
-import ChefferyFigma from "../../Images/ChefferyFigma.png";
+import AOFigma from "../../assets/AOFigma.png";
+import CJSFigma from "../../assets/CJSFigma.png";
+import ChefferyFigma from "../../assets/ChefferyFigma.png";
 import "swiper/css/effect-flip";
 import "swiper/css/pagination";
 import "./styles.css";

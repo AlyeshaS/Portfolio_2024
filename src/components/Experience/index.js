@@ -8,7 +8,7 @@ const experience = [
     name: "GDG on Campus",
     position: "President",
     time: "Sept 2024 - Present",
-    icon: require("../../Images/experience/gdg.png"),
+    icon: require("../../assets/experience/gdg.png"),
     moreInfo: [
       "Guiding a team of 10 to build an engaging community through events that enrich the student experience.",
       "Regularly organizing meetings, workshops, and future events to drive participation and learning opportunities.",
@@ -19,7 +19,7 @@ const experience = [
     name: "Cheffery",
     position: "Ui/UX Designer",
     time: "June 2024 - Present",
-    icon: require("../../Images/experience/cheffery.png"),
+    icon: require("../../assets/experience/cheffery.png"),
     moreInfo: [
       "Redesigning the company website using Figma, focusing on creating a visually appealing and user-friendly experience.",
       "Gather inspiration and incorporate innovative design elements into the new layout.",
@@ -30,7 +30,7 @@ const experience = [
     name: "Academic Oasis",
     position: "Chief Design And Marketting Officer",
     time: "March 2024 - Present",
-    icon: require("../../Images/experience/ao.png"),
+    icon: require("../../assets/experience/ao.png"),
     moreInfo: [
       "Constantly evolving the UI to deliver a seamless, user-centric experience, adapting to user preferences and continuously enhancing functionality.",
       "Continuously improved product quality, driving higher user satisfaction.",
@@ -41,7 +41,7 @@ const experience = [
     name: "GDG on Campus",
     position: "Marketting Director",
     time: "October 2023 - April 2024",
-    icon: require("../../Images/experience/gdg.png"),
+    icon: require("../../assets/experience/gdg.png"),
     moreInfo: [
       "Curated visually compelling content using Canva to elevate user engagement and enhance event experiences.",
       "Crafted engaging social media posts and stories designed to optimize user interaction and strengthen brand awareness.",
@@ -53,7 +53,7 @@ const experience = [
     name: "MyHomeworkRewards",
     position: "Marketting Intern",
     time: "February 2024 - March 2024",
-    icon: require("../../Images/experience/MyHomeworkRewards.png"),
+    icon: require("../../assets/experience/MyHomeworkRewards.png"),
     moreInfo: [
       "Designed and produced engaging social media content using Canva, aligning with the brand to effectively engage the target audience.",
       "Conducted in-depth research to ensure content was informative and relevant to the marketing strategy.",
@@ -65,7 +65,7 @@ const experience = [
     name: "Liftow Limited",
     position: "Marketing Intern",
     time: "June 2023 - August 2023",
-    icon: require("../../Images/experience/liftow.png"),
+    icon: require("../../assets/experience/liftow.png"),
     moreInfo: [
       "Oversaw day-to-day activities and inventory management of the company store at the head office in Mississauga.",
       "Crafted a comprehensive presentation for the HR department, suggesting a thoughtful and impactful gift package",

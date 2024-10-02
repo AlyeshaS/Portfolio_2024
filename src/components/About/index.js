@@ -1,8 +1,9 @@
 import React from "react";
-import { Element } from "react-scroll";
+import { Element, Link } from "react-scroll";
 
 import "./styles.css";
-import portraitPNG from "../../Images/portrait.png";
+import portraitPNG from "../../assets/portrait.png";
+import resume from "../../assets/resume.pdf";
 
 function About() {
   return (
@@ -21,8 +22,19 @@ function About() {
             art pieces, one pixel at a time
           </p>
           <div className="buttons">
-            <button>Resume</button>
-            <button>Contact Me</button>
+            <a className="button" download="resume.pdf" href={resume}>
+              Resume
+            </a>
+            <Link
+              className="button"
+              containerId="root"
+              to="contact"
+              smooth={true}
+              duration={500}
+              offset={-100}
+            >
+              Contact Me
+            </Link>
           </div>
         </div>
       </div>
