@@ -84,32 +84,6 @@ function Projects() {
           <SwiperSlide className="slide">
             <div className="text">
               <div className="header">
-                <h1 className="name">Cheffery</h1>
-                <span className="position">UI/UX Designer</span>
-              </div>
-              <div className="text-scroll">
-                <p>
-                  Cheffery is a growing platform designed to support aspiring
-                  chefs and build a vibrant culinary community. Currently under
-                  development, the website allows users to sign up as chefs or
-                  hire chefs for various events. As the brand continues to
-                  expand, Cheffery has already hosted numerous successful
-                  events, fostering connections and opportunities within the
-                  local food scene.
-                </p>
-              </div>
-              <div className="footer">
-                <button>Read More</button>
-              </div>
-            </div>
-            <div className="content">
-              <img src={ChefferyFigma} alt="Cheffery Design" />
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide className="slide">
-            <div className="text">
-              <div className="header">
                 <h1 className="name">CJS Performance</h1>
                 <span className="position">Freelance UI/UX Designer</span>
               </div>
