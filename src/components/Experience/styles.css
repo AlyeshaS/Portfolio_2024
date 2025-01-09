@@ -32,17 +32,18 @@
 .experience .container .more-info {
   position: sticky;
   top: 100px;
-  height: calc(100vh - 150px);
+  height: calc(100vh - 150px); /* Ensures it fits the viewport */
   background-color: var(--accent);
   width: 450px;
   flex-shrink: 0;
   padding: 40px 35px;
   color: white;
-  overflow: auto;
+  overflow-y: auto; /* Enables scrolling when content exceeds the container height */
   word-wrap: break-word;
   word-break: break-word;
   overflow-wrap: break-word;
   font-size: clamp(10px, 2vw, 13px);
+  max-height: 100vh; /* Limits the height to the viewport size */
 }
 
 .experience .container .more-info .grid {
@@ -144,6 +145,19 @@
   height: 60px;
   width: 60px;
   border-radius: 50%;
+}
+
+.experience .container .more-info::-webkit-scrollbar {
+  width: 8px;
+}
+
+.experience .container .more-info::-webkit-scrollbar-thumb {
+  background-color: #3d5a80;
+  border-radius: 4px;
+}
+
+.experience .container .more-info::-webkit-scrollbar-thumb:hover {
+  background-color: #3d5a80;
 }
 
 @media (max-width: 800px) {

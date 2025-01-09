@@ -43,9 +43,9 @@ const experience = [
       "Gather inspiration and incorporate innovative design elements into the new layout.",
       "Strived to achieve an optimal balance between a professional appearance and a fun, engaging user interface,",
     ],
-    contributions: (
+    impact: (
       <p>
-        <span class="description-word">Contributions:</span>
+        <span class="description-word">Impact:</span>
         <br />
         <br />I currently revamping the website with a fresh, modern design,
         positioning it to attract new clients in the future.
@@ -62,7 +62,7 @@ const experience = [
         <br />
         <br />
         UI/UX optimization, User-centric design, Product quality improvement,
-        Team management, Attention to detail
+        Team management, Attention to detail, Figma proficiency
       </p>
     ),
     icon: require("../../assets/experience/ao.png"),
@@ -71,9 +71,9 @@ const experience = [
       "Continuously improved product quality, driving higher user satisfaction.",
       "Managed a team of 3 content creators, overseeing social media content production for Academic Oasis, which led to increased online engagement and brand visibility.",
     ],
-    contributions: (
+    impact: (
       <p>
-        <span class="description-word">Contributions:</span>
+        <span class="description-word">Impact:</span>
         <br />
         <br />
         The platform is designed to be intuitive and user-friendly, seamlessly
@@ -193,7 +193,7 @@ function Experience() {
                 ))}
               </ul>
             </div>
-            <ul>{selected.contributions}</ul>
+            <ul>{selected.impact}</ul>
           </div>
         </div>
       </div>

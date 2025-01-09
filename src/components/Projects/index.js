@@ -2,6 +2,7 @@ import React from "react";
 import { Element } from "react-scroll";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFlip, Autoplay, Pagination } from "swiper/modules";
+import { useState } from "react";
 
 import AOFigma from "../../assets/AOFigma.png";
 import CJSFigma from "../../assets/CJSFigma.png";
@@ -11,6 +12,11 @@ import "swiper/css/pagination";
 import "./styles.css";
 
 function Projects() {
+  const [isExpanded, setIsExpanded] = useState(false);
+  const toggleCard = () => {
+    setIsExpanded((prev) => !prev);
+  };
+
   return (
     <Element name="projects" className="section projects">
       <div className="container">
@@ -52,42 +58,112 @@ function Projects() {
           </SwiperSlide>
           <SwiperSlide className="slide">
             <div className="text">
-              <div>
+              <div className="header">
                 <h1 className="name">Cheffery</h1>
                 <span className="position">UI/UX Designer</span>
               </div>
-              <p>
-                Cheffery is a growing platform designed to support aspiring
-                chefs and build a vibrant culinary community. Currently under
-                development, the website allows users to sign up as chefs or
-                hire chefs for various events. As the brand continues to expand,
-                Cheffery has already hosted numerous successful events,
-                fostering connections and opportunities within the local food
-                scene
-              </p>
-              <button>Read More</button>
+              <div className="text-scroll">
+                <p>
+                  Cheffery is a growing platform designed to support aspiring
+                  chefs and build a vibrant culinary community. Currently under
+                  development, the website allows users to sign up as chefs or
+                  hire chefs for various events. As the brand continues to
+                  expand, Cheffery has already hosted numerous successful
+                  events, fostering connections and opportunities within the
+                  local food scene.
+                </p>
+              </div>
+              <div className="footer">
+                <button>Read More</button>
+              </div>
             </div>
             <div className="content">
-              <img src={ChefferyFigma} alt="" />
+              <img src={ChefferyFigma} alt="Cheffery Design" />
             </div>
           </SwiperSlide>
           <SwiperSlide className="slide">
             <div className="text">
-              <div>
+              <div className="header">
+                <h1 className="name">Cheffery</h1>
+                <span className="position">UI/UX Designer</span>
+              </div>
+              <div className="text-scroll">
+                <p>
+                  Cheffery is a growing platform designed to support aspiring
+                  chefs and build a vibrant culinary community. Currently under
+                  development, the website allows users to sign up as chefs or
+                  hire chefs for various events. As the brand continues to
+                  expand, Cheffery has already hosted numerous successful
+                  events, fostering connections and opportunities within the
+                  local food scene.
+                </p>
+              </div>
+              <div className="footer">
+                <button>Read More</button>
+              </div>
+            </div>
+            <div className="content">
+              <img src={ChefferyFigma} alt="Cheffery Design" />
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide className="slide">
+            <div className="text">
+              <div className="header">
                 <h1 className="name">CJS Performance</h1>
                 <span className="position">Freelance UI/UX Designer</span>
               </div>
-              <p>
-                CJS is a website designed for a soccer coach looking to connect
-                with players of all ages seeking professional training. The
-                platform serves as a tool to attract and generate leads for new
-                students, helping them improve their skills through tailored
-                coaching sessions.
-              </p>
-              <button>Read More</button>
+              <div className="text-scroll">
+                {isExpanded ? (
+                  <>
+                    <span className="section-title">Impact:</span>
+                    <p>
+                      This website was designed to help my client attract new
+                      customers by showcasing his services and professional
+                      experience. With a clean, modern, and user-friendly
+                      design, it ensures an intuitive browsing experience. The
+                      fully responsive layout allows customers to access the
+                      site seamlessly on any device, from desktops to
+                      smartphones.
+                    </p>
+                    <br />
+                    <span className="section-title">The Journey:</span>
+                    <p>
+                      During this process, I had the creative freedom to design
+                      a solution that best suited their purpose. While they
+                      provided initial inspiration, I conducted research on
+                      color psychology related to sports and explored elements
+                      from other websites that resonated with me. The result is
+                      a clean, visually appealing design that effectively
+                      highlights his skills and services.
+                    </p>
+                  </>
+                ) : (
+                  <p>
+                    CJS is a website designed for a soccer coach looking to
+                    connect with players of all ages seeking professional
+                    training. The platform serves as a tool to attract and
+                    generate leads for new students, helping them improve their
+                    skills through tailored coaching sessions.
+                  </p>
+                )}
+              </div>
+              <div className="footer">
+                <button onClick={toggleCard}>
+                  {isExpanded ? "Back" : "Read More"}
+                </button>
+              </div>
             </div>
             <div className="content">
-              <img src={CJSFigma} alt="" />
+              <a
+                href="https://cjsperformance.online/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="view-website-link"
+              >
+                <img src={CJSFigma} alt="CJS Performance Design" />
+                <p>View Offical Website</p>
+              </a>
             </div>
           </SwiperSlide>
         </Swiper>
