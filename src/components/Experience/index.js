@@ -8,6 +8,15 @@ const experience = [
     name: "GDG on Campus",
     position: "President",
     time: "Sept 2024 - Present",
+    skills: (
+      <p class="description-font">
+        <span class="description-word">Skills:</span>
+        <br />
+        <br />
+        Team leadership, Event planning and execution, Public speaking,
+        Community building, Communication
+      </p>
+    ),
     icon: require("../../assets/experience/gdg.png"),
     moreInfo: [
       "Guiding a team of 10 to build an engaging community through events that enrich the student experience.",
@@ -17,42 +26,96 @@ const experience = [
   },
   {
     name: "Cheffery",
-    position: "Ui/UX Designer",
+    position: "UI/UX Designer",
     time: "June 2024 - Present",
+    skills: (
+      <p class="description-font">
+        <span class="description-word">Skills:</span>
+        <br />
+        <br />
+        Website redesign, Figma proficiency, Visual and user experience design,
+        Creativity and innovative design thinking, Problem-solving
+      </p>
+    ),
     icon: require("../../assets/experience/cheffery.png"),
     moreInfo: [
       "Redesigning the company website using Figma, focusing on creating a visually appealing and user-friendly experience.",
       "Gather inspiration and incorporate innovative design elements into the new layout.",
       "Strived to achieve an optimal balance between a professional appearance and a fun, engaging user interface,",
     ],
+    contributions: (
+      <p>
+        <span class="description-word">Contributions:</span>
+        <br />
+        <br />I currently revamping the website with a fresh, modern design,
+        positioning it to attract new clients in the future.
+      </p>
+    ),
   },
   {
     name: "Academic Oasis",
-    position: "Chief Design And Marketting Officer",
-    time: "March 2024 - Present",
+    position: "Chief Design And Marketing Officer",
+    time: "March 2024 - January 2025",
+    skills: (
+      <p class="description-font">
+        <span class="description-word">Skills:</span>
+        <br />
+        <br />
+        UI/UX optimization, User-centric design, Product quality improvement,
+        Team management, Attention to detail
+      </p>
+    ),
     icon: require("../../assets/experience/ao.png"),
     moreInfo: [
       "Constantly evolving the UI to deliver a seamless, user-centric experience, adapting to user preferences and continuously enhancing functionality.",
       "Continuously improved product quality, driving higher user satisfaction.",
       "Managed a team of 3 content creators, overseeing social media content production for Academic Oasis, which led to increased online engagement and brand visibility.",
     ],
+    contributions: (
+      <p>
+        <span class="description-word">Contributions:</span>
+        <br />
+        <br />
+        The platform is designed to be intuitive and user-friendly, seamlessly
+        integrating all the features offered by the startup. It provides
+        students with a comprehensive, all-in-one solution to easily access
+        their courses and stay updated on potential events happening on campus.
+      </p>
+    ),
   },
   {
     name: "GDG on Campus",
-    position: "Marketting Director",
+    position: "Marketing Director",
     time: "October 2023 - April 2024",
+    skills: (
+      <p class="description-font">
+        <span class="description-word">Skills:</span>
+        <br />
+        <br />
+        Canva and visual content creation, Social media marketing, User-centered
+        event design, Collaboration, Organization
+      </p>
+    ),
     icon: require("../../assets/experience/gdg.png"),
     moreInfo: [
       "Curated visually compelling content using Canva to elevate user engagement and enhance event experiences.",
       "Crafted engaging social media posts and stories designed to optimize user interaction and strengthen brand awareness.",
-      "Designed  and executing user-centered experiences for the club’s main event, Devfest.",
+      "Designed and executed user-centered experiences for the club’s main event, Devfest.",
       "Collaborated with team members to develop intuitive user journeys and interfaces for upcoming club activities, ensuring a seamless and enjoyable user experience.",
     ],
   },
   {
     name: "MyHomeworkRewards",
-    position: "Marketting Intern",
+    position: "Marketing Intern",
     time: "February 2024 - March 2024",
+    skills: (
+      <p class="description-font">
+        <span class="description-word">Skills:</span>
+        <br />
+        <br />
+        Content research, Canva, Attention to detail, Social media, Adaptive
+      </p>
+    ),
     icon: require("../../assets/experience/MyHomeworkRewards.png"),
     moreInfo: [
       "Designed and produced engaging social media content using Canva, aligning with the brand to effectively engage the target audience.",
@@ -65,6 +128,14 @@ const experience = [
     name: "Liftow Limited",
     position: "Marketing Intern",
     time: "June 2023 - August 2023",
+    skills: (
+      <p class="description-font">
+        <span class="description-word">Skills:</span>
+        <br />
+        <br />
+        Social media, Teamwork, Organization, Responsibility, Communication,
+      </p>
+    ),
     icon: require("../../assets/experience/liftow.png"),
     moreInfo: [
       "Oversaw day-to-day activities and inventory management of the company store at the head office in Mississauga.",
@@ -93,7 +164,7 @@ function Experience() {
                 <div className="icon">
                   <img src={card.icon} alt="" />
                 </div>
-                <h1 className="name">{card.name}</h1>
+                <h2 className="name">{card.name}</h2>
                 <span className="position">{card.position}</span>
                 <span className="time">{card.time}</span>
               </div>
@@ -112,12 +183,18 @@ function Experience() {
               </span>
             </div>
           </div>
-
-          <ul>
-            {selected.moreInfo.map((info) => {
-              return <li>{info}</li>;
-            })}
-          </ul>
+          <ul className="skills">{selected.skills}</ul>
+          <div className="job-container">
+            <span class="description-word">Job Description:</span>
+            <div className="content-container">
+              <ul>
+                {selected.moreInfo.map((info, index) => (
+                  <li key={index}>{info}</li>
+                ))}
+              </ul>
+            </div>
+            <ul>{selected.contributions}</ul>
+          </div>
         </div>
       </div>
     </Element>
