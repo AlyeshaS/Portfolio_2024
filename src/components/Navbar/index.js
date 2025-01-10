@@ -68,7 +68,7 @@ function Navbar() {
               spy={true}
               smooth={true}
               duration={500}
-              offset={-100}
+              offset={-25}
             >
               Projects
             </Link>
@@ -79,7 +79,7 @@ function Navbar() {
               spy={true}
               smooth={true}
               duration={500}
-              offset={-100}
+              offset={-80}
             >
               Experience
             </Link>
@@ -90,7 +90,7 @@ function Navbar() {
               spy={true}
               smooth={true}
               duration={500}
-              offset={-100}
+              offset={-25}
             >
               Contact
             </Link>
@@ -174,7 +174,7 @@ function Navbar() {
               spy={true}
               smooth={true}
               duration={500}
-              offset={-100}
+              offset={-25}
             >
               Projects
             </Link>
@@ -188,7 +188,7 @@ function Navbar() {
               spy={true}
               smooth={true}
               duration={500}
-              offset={-100}
+              offset={-80}
             >
               Experience
             </Link>
@@ -202,7 +202,7 @@ function Navbar() {
               spy={true}
               smooth={true}
               duration={500}
-              offset={-100}
+              offset={-25}
             >
               Contact
             </Link>

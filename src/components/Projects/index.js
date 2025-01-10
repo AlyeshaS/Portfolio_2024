@@ -12,9 +12,13 @@ import "swiper/css/pagination";
 import "./styles.css";
 
 function Projects() {
-  const [isExpanded, setIsExpanded] = useState(false);
-  const toggleCard = () => {
-    setIsExpanded((prev) => !prev);
+  const [expandedIndexes, setExpandedIndexes] = useState({});
+
+  const toggleCard = (index) => {
+    setExpandedIndexes((prevState) => ({
+      ...prevState,
+      [index]: !prevState[index],
+    }));
   };
 
   return (
@@ -33,6 +37,7 @@ function Projects() {
           }}
           modules={[EffectFlip, Autoplay, Pagination]}
         >
+          {/* Academic Oasis */}
           <SwiperSlide className="slide">
             <div className="text">
               <div>
@@ -41,21 +46,56 @@ function Projects() {
                   Chief Marketing & Design Officer
                 </span>
               </div>
-              <p>
-                Academic Oasis is a startup in progress at Ontario Tech, aiming
-                to enhance the student experience through an improved campus
-                platform. It offers club and society presidents tools to create
-                events, boost student engagement, and more. Students can easily
-                browse all campus events and join those that interest them. A
-                dedicated page will showcase clubs, events, jobs, and workshops
-                on campus, with input from club executives and other resources.
-              </p>
-              <button>Read More</button>
+              <div className="text-scroll">
+                {expandedIndexes[0] ? (
+                  <>
+                    <span className="section-title">Impact:</span>
+                    <p>
+                      Designed a platform to serve as a one-stop shop for
+                      university students, integrating course management,
+                      calendars, and event information. The platform aims to
+                      address low club engagement by fostering student
+                      involvement through a centralized, user-friendly
+                      interface. Once launched, it will transform how students
+                      interact with campus resources and organizations.
+                    </p>
+                    <br />
+                    <span className="section-title">The Journey:</span>
+                    <p>
+                      Joined the startup in March as a UI/UX designer for my
+                      first official project. Faced early challenges due to the
+                      CEO’s unclear vision, but once clarified, quickly
+                      developed designs aligned with the startup’s goals. The
+                      final design features a modern, glassy aesthetic,
+                      delivering a sleek and tech-forward user experience that
+                      resonates with its audience.
+                    </p>
+                  </>
+                ) : (
+                  <p>
+                    Academic Oasis is a startup in progress at Ontario Tech,
+                    aiming to enhance the student experience through an improved
+                    campus platform. It offers club and society presidents tools
+                    to create events, boost student engagement, and more.
+                    Students can easily browse all campus events and join those
+                    that interest them. A dedicated page will showcase clubs,
+                    events, jobs, and workshops on campus, with input from club
+                    executives and other resources.
+                  </p>
+                )}
+              </div>
+              <div className="footer">
+                <button onClick={() => toggleCard(0)}>
+                  {expandedIndexes[0] ? "Back" : "Read More"}
+                </button>
+              </div>
             </div>
             <div className="content">
               <img src={AOFigma} alt="" />
             </div>
           </SwiperSlide>
+
+          {/* Cheffery */}
           <SwiperSlide className="slide">
             <div className="text">
               <div className="header">
@@ -63,24 +103,54 @@ function Projects() {
                 <span className="position">UI/UX Designer</span>
               </div>
               <div className="text-scroll">
-                <p>
-                  Cheffery is a growing platform designed to support aspiring
-                  chefs and build a vibrant culinary community. Currently under
-                  development, the website allows users to sign up as chefs or
-                  hire chefs for various events. As the brand continues to
-                  expand, Cheffery has already hosted numerous successful
-                  events, fostering connections and opportunities within the
-                  local food scene.
-                </p>
+                {expandedIndexes[1] ? (
+                  <>
+                    <span className="section-title">Impact:</span>
+                    <p>
+                      Redesigned the website to attract new clients and
+                      potential employees for Cheffery. The goal was to achieve
+                      a professional yet playful aesthetic, addressing concerns
+                      about the original website’s oversized elements and lack
+                      of professionalism. This redesign aims to enhance
+                      Cheffery’s online presence and better reflect its brand
+                    </p>
+                    <br />
+                    <span className="section-title">The Journey:</span>
+                    <p>
+                      Reworked the website to better appeal to clients,
+                      addressing shortcomings in the original design. The
+                      process involved multiple iterations as the team clarified
+                      their vision. Researched and incorporated a professional
+                      yet playful style, using orange as the primary color, a
+                      challenging but successful choice. The final design
+                      balances professionalism and approachability, aligning
+                      with Cheffery’s goals.
+                    </p>
+                  </>
+                ) : (
+                  <p>
+                    Cheffery is a growing platform designed to support aspiring
+                    chefs and build a vibrant culinary community. Currently
+                    under development, the website allows users to sign up as
+                    chefs or hire chefs for various events. As the brand
+                    continues to expand, Cheffery has already hosted numerous
+                    successful events, fostering connections and opportunities
+                    within the local food scene.
+                  </p>
+                )}
               </div>
               <div className="footer">
-                <button>Read More</button>
+                <button onClick={() => toggleCard(1)}>
+                  {expandedIndexes[1] ? "Back" : "Read More"}
+                </button>
               </div>
             </div>
             <div className="content">
               <img src={ChefferyFigma} alt="Cheffery Design" />
             </div>
           </SwiperSlide>
+
+          {/* CJS Performance */}
           <SwiperSlide className="slide">
             <div className="text">
               <div className="header">
@@ -88,7 +158,7 @@ function Projects() {
                 <span className="position">Freelance UI/UX Designer</span>
               </div>
               <div className="text-scroll">
-                {isExpanded ? (
+                {expandedIndexes[2] ? (
                   <>
                     <span className="section-title">Impact:</span>
                     <p>
@@ -123,8 +193,8 @@ function Projects() {
                 )}
               </div>
               <div className="footer">
-                <button onClick={toggleCard}>
-                  {isExpanded ? "Back" : "Read More"}
+                <button onClick={() => toggleCard(2)}>
+                  {expandedIndexes[2] ? "Back" : "Read More"}
                 </button>
               </div>
             </div>
@@ -136,7 +206,7 @@ function Projects() {
                 className="view-website-link"
               >
                 <img src={CJSFigma} alt="CJS Performance Design" />
-                <p>View Offical Website</p>
+                <p>View Official Website</p>
               </a>
             </div>
           </SwiperSlide>

@@ -31,7 +31,7 @@ function About() {
               to="contact"
               smooth={true}
               duration={500}
-              offset={-100}
+              offset={-25}
             >
               Contact Me
             </Link>

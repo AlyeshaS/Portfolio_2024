@@ -104,7 +104,7 @@
 }
 
 .projects .container .swiper .slide .text button:hover {
-  color: #81a3d1;
+  color: var(--accent);
 }
 
 .projects .container .swiper .slide img {

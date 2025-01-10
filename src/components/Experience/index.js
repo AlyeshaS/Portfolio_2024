@@ -43,14 +43,6 @@ const experience = [
       "Gather inspiration and incorporate innovative design elements into the new layout.",
       "Strived to achieve an optimal balance between a professional appearance and a fun, engaging user interface,",
     ],
-    impact: (
-      <p>
-        <span class="description-word">Impact:</span>
-        <br />
-        <br />I currently revamping the website with a fresh, modern design,
-        positioning it to attract new clients in the future.
-      </p>
-    ),
   },
   {
     name: "Academic Oasis",
@@ -71,17 +63,6 @@ const experience = [
       "Continuously improved product quality, driving higher user satisfaction.",
       "Managed a team of 3 content creators, overseeing social media content production for Academic Oasis, which led to increased online engagement and brand visibility.",
     ],
-    impact: (
-      <p>
-        <span class="description-word">Impact:</span>
-        <br />
-        <br />
-        The platform is designed to be intuitive and user-friendly, seamlessly
-        integrating all the features offered by the startup. It provides
-        students with a comprehensive, all-in-one solution to easily access
-        their courses and stay updated on potential events happening on campus.
-      </p>
-    ),
   },
   {
     name: "GDG on Campus",
@@ -193,7 +174,6 @@ function Experience() {
                 ))}
               </ul>
             </div>
-            <ul>{selected.impact}</ul>
           </div>
         </div>
       </div>

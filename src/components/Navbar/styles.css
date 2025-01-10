@@ -44,9 +44,10 @@
 }
 
 .navbar .container .links .active {
-  border-bottom: 4px solid var(--accent);
-  font-size: 28px;
+  /* border-bottom: 4px solid var(--accent); */
+  font-size: 25px;
   font-weight: 600;
+  color: var(--accent);
 }
 
 .navbar .container .socials {
