@@ -7,6 +7,7 @@ import { useState } from "react";
 import AOFigma from "../../assets/AOFigma.png";
 import CJSFigma from "../../assets/CJSFigma.png";
 import ChefferyFigma from "../../assets/ChefferyFigma.png";
+import FitCheckFigma from "../../assets/FitCheckFigma.png";
 import "swiper/css/effect-flip";
 import "swiper/css/pagination";
 import "./styles.css";
@@ -208,6 +209,60 @@ function Projects() {
                 <img src={CJSFigma} alt="CJS Performance Design" />
                 <p>View Official Website</p>
               </a>
+            </div>
+          </SwiperSlide>
+
+          {/* FitCheck */}
+          <SwiperSlide className="slide">
+            <div className="text">
+              <div className="header">
+                <h1 className="name">FitCheck</h1>
+                <span className="position">UI/UX Designer</span>
+              </div>
+              <div className="text-scroll">
+                {expandedIndexes[3] ? (
+                  <>
+                    <span className="section-title">Impact:</span>
+                    <p>
+                      Created a design that provides a user-friendly and social
+                      media-inspired experience. The app allows users to post
+                      outfits, receive ratings, and discover where specific
+                      clothing items were purchased. The intuitive interface
+                      ensures users can easily navigate the app while
+                      maintaining a visually appealing design. The mobile app is
+                      currently under development.
+                    </p>
+                    <br />
+                    <span className="section-title">The Journey:</span>
+                    <p>
+                      Collaborated with a friend who needed assistance designing
+                      their mobile app, including the logo. Gained a deep
+                      understanding of the app’s purpose and researched existing
+                      social media platforms to analyze how they display
+                      information. Elements such as profiles, feeds, tags, and
+                      followers informed my design approach, ensuring the app’s
+                      layout is engaging and easy to use.
+                    </p>
+                  </>
+                ) : (
+                  <p>
+                    FitCheck is a fashion app that allows users to showcase
+                    their outfits, receive ratings, and engage with the
+                    community by liking and sharing looks. It offers a dynamic
+                    platform to display personal style, discover new trends, and
+                    explore the origins of others' outfits for added
+                    inspiration.
+                  </p>
+                )}
+              </div>
+              <div className="footer">
+                <button onClick={() => toggleCard(3)}>
+                  {expandedIndexes[3] ? "Back" : "Read More"}
+                </button>
+              </div>
+            </div>
+            <div className="content">
+              <img src={FitCheckFigma} alt="FitCheck Design" />
             </div>
           </SwiperSlide>
         </Swiper>
