@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import BIRDS from "vanta/dist/vanta.birds.min";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import About from "./components/About";
 import Experience from "./components/Experience";
@@ -8,6 +9,11 @@ import Projects from "./components/Projects";
 
 import "swiper/css";
 import Contact from "./components/Contact";
+
+import AO from "./components/AO";
+import Cheffery from "./components/Cheffery";
+import CJS from "./components/CJS";
+import FitCheck from "./components/FitCheck";
 
 function App() {
   const [vantaEffect, setVantaEffect] = useState(null);
@@ -36,13 +42,26 @@ function App() {
   }, [vantaEffect]);
 
   return (
-    <>
+    <Router>
       <Navbar />
-      <About />
-      <Projects />
-      <Experience />
-      <Contact />
-    </>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <About />
+              <Projects />
+              <Experience />
+              <Contact />
+            </>
+          }
+        />
+        <Route path="/case-studies/ao" element={<AO />} />
+        <Route path="/case-studies/cheffery" element={<Cheffery />} />
+        <Route path="/case-studies/cjs" element={<CJS />} />
+        <Route path="/case-studies/fitcheck" element={<FitCheck />} />
+      </Routes>
+    </Router>
   );
 }
 

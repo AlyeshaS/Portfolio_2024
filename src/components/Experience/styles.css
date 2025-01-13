@@ -32,7 +32,7 @@
 .experience .container .more-info {
   position: sticky;
   top: 100px;
-  height: calc(100vh - 150px); /* Ensures it fits the viewport */
+  height: calc(100vh - 100px); /* Ensures it fits the viewport */
   background-color: var(--accent);
   width: 450px;
   flex-shrink: 0;

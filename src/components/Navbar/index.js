@@ -2,10 +2,23 @@ import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-scroll";
 import logo from "../../assets/Logo.png";
 import "./styles.css";
+import { useNavigate } from "react-router-dom";
+import { scroller } from "react-scroll";
 
 function Navbar() {
   const navbar = useRef();
   const [menu, setMenu] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const navigate = useNavigate();
+
+  const toggleDropdown = () => {
+    setDropdownOpen(!dropdownOpen);
+  };
+
+  // See if there is a way to have it automatically scroll
+  const mainPage = () => {
+    navigate("/");
+  };
 
   useEffect(() => {
     if (menu) {
@@ -58,6 +71,7 @@ function Navbar() {
               smooth={true}
               duration={500}
               offset={-100}
+              onClick={mainPage}
             >
               About
             </Link>
@@ -69,6 +83,7 @@ function Navbar() {
               smooth={true}
               duration={500}
               offset={-25}
+              onClick={mainPage}
             >
               Projects
             </Link>
@@ -80,10 +95,12 @@ function Navbar() {
               smooth={true}
               duration={500}
               offset={-80}
+              onClick={mainPage}
             >
               Experience
             </Link>
             <Link
+              onClick={mainPage}
               activeClass="active"
               containerId="root"
               to="contact"
@@ -94,6 +111,41 @@ function Navbar() {
             >
               Contact
             </Link>
+            <div className="vertical-line"></div>
+            <div className="dropdown">
+              <a
+                className="dropdown-toggle"
+                onClick={toggleDropdown}
+                onBlur={() => setDropdownOpen(false)} // Close dropdown when losing focus
+              >
+                Case Studies
+                <span className={`arrow ${dropdownOpen ? "open" : ""}`}>
+                  <svg
+                    width="50"
+                    height="15"
+                    viewBox="0 0 14 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 1L7 7L13 1"
+                      stroke="#81A3D1"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </span>
+              </a>
+              {dropdownOpen && (
+                <div className="dropdown-menu">
+                  <a href="/case-studies/ao">Academic Oasis</a>
+                  <a href="/case-studies/cheffery">Cheffery</a>
+                  <a href="/case-studies/cjs">CJS</a>
+                  <a href="/case-studies/fitcheck">FitCheck</a>
+                </div>
+              )}
+            </div>
           </div>
           <div className="socials">
             <a
@@ -205,6 +257,17 @@ function Navbar() {
               offset={-25}
             >
               Contact
+            </Link>
+            <Link
+              activeClass="active"
+              containerId="root"
+              to="case-studies"
+              spy={true}
+              smooth={true}
+              duration={500}
+              offset={-25}
+            >
+              Case Studies
             </Link>
             <div className="socials">
               <a
