@@ -8,6 +8,8 @@ import "swiper/css/effect-flip";
 import "swiper/css/pagination";
 
 import AOFigma from "../../assets/AOFigma.png";
+import Dashboard_Stats from "../../assets/DashboardStats.png";
+import Mobile_Events from "../../assets/MobileEvents.png";
 
 function AO() {
   const [expandedIndexes, setExpandedIndexes] = useState({});
@@ -184,28 +186,35 @@ function AO() {
         </div>
 
         <div className="ao-analysis">
-          <img src={AOFigma} alt="" />
+          <img src={Dashboard_Stats} alt="" />
           <div className="analysis-div">
             <p className="analysis-header">Design Process</p>
             <p className="analysis-text">
-              The design process started with clean, modern sketches featuring a
-              “glassy” aesthetic for a tech-inspired feel. Using Figma,
-              individual pages were crafted with clarity, incorporating widgets
-              for key features like profiles and events.
+              The design process began with initial sketches inspired by clean
+              and modern aesthetics, incorporating a “glassy” design to convey a
+              technological feel. Each page was carefully designed individually
+              to ensure clarity and purpose. The application design was brought
+              to life using Figma, where separate sections were developed for
+              widgets representing key features, such as the user’s profile and
+              events.
             </p>
             <br />
             <p className="analysis-text">
-              To reflect the Academic Oasis brand, slightly modified blue tones
-              from the logo symbolized water. The layout emphasized important
-              details like the user’s name at the top, with intuitive widgets
-              for navigation. Later, the design shifted to meet club executives'
-              needs, adjusting content accordingly.{" "}
+              To align with the Academic Oasis brand, the visual design employed
+              slightly altered shades of blue from the company’s logo to
+              symbolize water. The layout prioritized displaying important
+              information at the top, such as the user’s name, while utilizing
+              widgets for intuitive navigation. Over time, the design’s focus
+              shifted to prioritize the needs of club executives rather than
+              general students, resulting in adjustments to the content.
             </p>
             <br />
             <p className="analysis-text">
-              Team feedback introduced new features, seamlessly integrated while
-              maintaining positive responses to the overall structure and user
-              experience.
+              Throughout the process, team feedback highlighted additional
+              features to incorporate, which were seamlessly integrated into the
+              design. Despite these changes, the overall content placement and
+              structure received positive responses, ensuring a cohesive and
+              effective user experience.
             </p>
           </div>
         </div>
@@ -226,7 +235,7 @@ function AO() {
               advanced functionalities, including connecting elements across
               frames and creating functional prototypes. These skills proved
               invaluable in refining the design and ensuring a seamless user
-              experience. .
+              experience.
             </p>
             <br />
             <p className="analysis-text">
@@ -236,6 +245,8 @@ function AO() {
               and further enhance the platform's usability.
             </p>
           </div>
+          {/* Fix the size of the mobile version */}
+          <img src={Mobile_Events} alt="" />
         </div>
       </div>
     </div>
