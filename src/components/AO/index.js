@@ -163,7 +163,7 @@ function AO() {
           </Swiper>
         </div>
         <div className="ao-analysis">
-          <div>
+          <div className="analysis-div">
             <p className="analysis-header">Problem</p>
             <p className="analysis-text">
               Academic Oasis required an easy-to-use platform tailored for
@@ -185,7 +185,7 @@ function AO() {
 
         <div className="ao-analysis">
           <img src={AOFigma} alt="" />
-          <div>
+          <div className="analysis-div">
             <p className="analysis-header">Design Process</p>
             <p className="analysis-text">
               The design process started with clean, modern sketches featuring a
@@ -210,29 +210,32 @@ function AO() {
           </div>
         </div>
         <div className="ao-analysis">
-          <p className="analysis-header">Reflection</p>
-          <p className="analysis-text">
-            The design process presented several challenges, primarily due to
-            multiple iterations caused by shifts in the company’s focus.
-            Adapting to these changes while maintaining a cohesive vision was
-            particularly demanding. Additionally, incorporating advanced Figma
-            features such as constraints required a steep learning curve and
-            adaptability.
-          </p>
-          <br />
-          <p className="analysis-text">
-            This project significantly enhanced my knowledge of Figma’s advanced
-            functionalities, including connecting elements across frames and
-            creating functional prototypes. These skills proved invaluable in
-            refining the design and ensuring a seamless user experience. .
-          </p>
-          <br />
-          <p className="analysis-text">
-            Looking ahead, a key recommendation is to develop an admin panel for
-            Academic Oasis members. This addition would enable them to
-            effectively manage all platform elements, streamline operations, and
-            further enhance the platform's usability.
-          </p>
+          <div className="analysis-div">
+            <p className="analysis-header">Reflection</p>
+            <p className="analysis-text">
+              The design process presented several challenges, primarily due to
+              multiple iterations caused by shifts in the company’s focus.
+              Adapting to these changes while maintaining a cohesive vision was
+              particularly demanding. Additionally, incorporating advanced Figma
+              features such as constraints required a steep learning curve and
+              adaptability.
+            </p>
+            <br />
+            <p className="analysis-text">
+              This project significantly enhanced my knowledge of Figma’s
+              advanced functionalities, including connecting elements across
+              frames and creating functional prototypes. These skills proved
+              invaluable in refining the design and ensuring a seamless user
+              experience. .
+            </p>
+            <br />
+            <p className="analysis-text">
+              Looking ahead, a key recommendation is to develop an admin panel
+              for Academic Oasis members. This addition would enable them to
+              effectively manage all platform elements, streamline operations,
+              and further enhance the platform's usability.
+            </p>
+          </div>
         </div>
       </div>
     </div>
