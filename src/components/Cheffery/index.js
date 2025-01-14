@@ -29,7 +29,7 @@ function Cheffery() {
       <div className="Cheffery-container">
         <div className="title">
           <p className="Cheffery-header">Cheffery</p>
-          <p>Chief UI/UX Designer</p>
+          <p>UI/UX Designer</p>
           <p>June 2024 - Present</p>
         </div>
         <div className="swipper-container">
