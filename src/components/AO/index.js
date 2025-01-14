@@ -11,8 +11,8 @@ import AOFigma from "../../assets/AOFigma.png";
 import Dashboard_Stats from "../../assets/DashboardStats.png";
 import Mobile_Events from "../../assets/MobileEvents.png";
 
+// Fix the mobile image and then also check the side align for the second image
 function AO() {
-  const [expandedIndexes, setExpandedIndexes] = useState({});
   const [isVertical, setIsVertical] = useState(window.innerWidth > 800);
 
   // Handle screen resizing
@@ -25,13 +25,6 @@ function AO() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-
-  const toggleCard = (index) => {
-    setExpandedIndexes((prevState) => ({
-      ...prevState,
-      [index]: !prevState[index],
-    }));
-  };
 
   return (
     <div className="ao-page">
@@ -60,48 +53,16 @@ function AO() {
                   <h1 className="ao-page-titles">Dashboard (Old) </h1>
                 </div>
                 <div className="text-scroll">
-                  {expandedIndexes[0] ? (
-                    <>
-                      <span className="section-title">Impact:</span>
-                      <p>
-                        Designed a platform to serve as a one-stop shop for
-                        university students, integrating course management,
-                        calendars, and event information. The platform aims to
-                        address low club engagement by fostering student
-                        involvement through a centralized, user-friendly
-                        interface. Once launched, it will transform how students
-                        interact with campus resources and organizations.
-                      </p>
-                      <br />
-                      <span className="section-title">The Journey:</span>
-                      <p>
-                        Joined the startup in March as a UI/UX designer for my
-                        first official project. Faced early challenges due to
-                        the CEO’s unclear vision, but once clarified, quickly
-                        developed designs aligned with the startup’s goals. The
-                        final design features a modern, glassy aesthetic,
-                        delivering a sleek and tech-forward user experience that
-                        resonates with its audience.
-                      </p>
-                    </>
-                  ) : (
-                    <p>
-                      Academic Oasis is a startup in progress at Ontario Tech,
-                      aiming to enhance the student experience through an
-                      improved campus platform. It offers club and society
-                      presidents tools to create events, boost student
-                      engagement, and more. Students can easily browse all
-                      campus events and join those that interest them. A
-                      dedicated page will showcase clubs, events, jobs, and
-                      workshops on campus, with input from club executives and
-                      other resources.
-                    </p>
-                  )}
-                </div>
-                <div className="footer">
-                  {/* <button onClick={() => toggleCard(0)}>
-                    {expandedIndexes[0] ? "Back" : "Read More"}
-                  </button> */}
+                  <p>
+                    Academic Oasis is a startup in progress at Ontario Tech,
+                    aiming to enhance the student experience through an improved
+                    campus platform. It offers club and society presidents tools
+                    to create events, boost student engagement, and more.
+                    Students can easily browse all campus events and join those
+                    that interest them. A dedicated page will showcase clubs,
+                    events, jobs, and workshops on campus, with input from club
+                    executives and other resources.
+                  </p>
                 </div>
               </div>
               <div className="content">
@@ -114,51 +75,19 @@ function AO() {
                   <h1 className="ao-page-titles">Dashboard (Old) </h1>
                 </div>
                 <div className="text-scroll">
-                  {expandedIndexes[0] ? (
-                    <>
-                      <span className="section-title">Impact:</span>
-                      <p>
-                        Designed a platform to serve as a one-stop shop for
-                        university students, integrating course management,
-                        calendars, and event information. The platform aims to
-                        address low club engagement by fostering student
-                        involvement through a centralized, user-friendly
-                        interface. Once launched, it will transform how students
-                        interact with campus resources and organizations.
-                      </p>
-                      <br />
-                      <span className="section-title">The Journey:</span>
-                      <p>
-                        Joined the startup in March as a UI/UX designer for my
-                        first official project. Faced early challenges due to
-                        the CEO’s unclear vision, but once clarified, quickly
-                        developed designs aligned with the startup’s goals. The
-                        final design features a modern, glassy aesthetic,
-                        delivering a sleek and tech-forward user experience that
-                        resonates with its audience.
-                      </p>
-                    </>
-                  ) : (
-                    <p>
-                      Academic Oasis is a startup in progress at Ontario Tech,
-                      aiming to enhance the student experience through an
-                      improved campus platform. It offers club and society
-                      presidents tools to create events, boost student
-                      engagement, and more. Students can easily browse all
-                      campus events and join those that interest them. A
-                      dedicated page will showcase clubs, events, jobs, and
-                      workshops on campus, with input from club executives and
-                      other resources.
-                    </p>
-                  )}
-                </div>
-                <div className="footer">
-                  {/* <button onClick={() => toggleCard(0)}>
-                    {expandedIndexes[0] ? "Back" : "Read More"}
-                  </button> */}
+                  <p>
+                    Academic Oasis is a startup in progress at Ontario Tech,
+                    aiming to enhance the student experience through an improved
+                    campus platform. It offers club and society presidents tools
+                    to create events, boost student engagement, and more.
+                    Students can easily browse all campus events and join those
+                    that interest them. A dedicated page will showcase clubs,
+                    events, jobs, and workshops on campus, with input from club
+                    executives and other resources.
+                  </p>
                 </div>
               </div>
-              <div className="content">
+              <div className="ao-image">
                 <img src={AOFigma} alt="" />
               </div>
             </SwiperSlide>
@@ -182,7 +111,9 @@ function AO() {
               resources.
             </p>
           </div>
-          <img src={AOFigma} alt="" />
+          <div className="ao-image">
+            <img src={AOFigma} alt="" />
+          </div>
         </div>
 
         <div className="ao-analysis">
@@ -246,7 +177,9 @@ function AO() {
             </p>
           </div>
           {/* Fix the size of the mobile version */}
-          <img src={Mobile_Events} alt="" />
+          <div className="ao-image">
+            <img src={Mobile_Events} alt="" />
+          </div>
         </div>
       </div>
     </div>
