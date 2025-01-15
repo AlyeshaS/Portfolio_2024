@@ -13,6 +13,7 @@ import AOFigma from "../../assets/AOFigma.png";
 import DashboardStats from "../../assets/DashboardStats.png";
 import Mobile_Events from "../../assets/MobileEvents.png";
 import DashboardEvent from "../../assets/DashboardEvent.png";
+import NewEvent from "../../assets/NewEvent.png";
 import DashboardBudget from "../../assets/DashboardBudget.png";
 import Calendar from "../../assets/Calendar.png";
 import Clubs from "../../assets/Clubs.png";
@@ -32,6 +33,14 @@ function AO() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+  const [expandedIndexes, setExpandedIndexes] = useState({});
+
+  const toggleCard = (index) => {
+    setExpandedIndexes((prevState) => ({
+      ...prevState,
+      [index]: !prevState[index],
+    }));
+  };
 
   return (
     <div className="ao-page">
@@ -121,41 +130,60 @@ function AO() {
                   </h1>
                 </div>
                 <div className="text-scroll">
-                  <p>
-                    Academic Oasis vision changed to be club executive based.
-                    With that being said, the dashboard needs to be changed to
-                    accommodate. Now the dashboard no longer has courses but
-                    rather information such as events, a budget sheet and
-                    statistics which would be collected from the events.
-                  </p>
-                  <br />
-                  <p>
-                    The header welcomes the user and has a description of the
-                    club. Sometimes, students are participants of numerous
-                    clubs, so the downwards arrow allows the user to toggle
-                    between the different clubs. The top right of this widget,
-                    has their social media and notifications. Social media links
-                    can be added in the user's profile. Additional button at the
-                    bottom right allows the user to contact the Academic Oasis
-                    team if needed as well sponsor the startup if they choose.
-                  </p>
-                  <br />
-                  <p>
-                    In the events tab, the user can see all the events they have
-                    created, as well as their allocated budget and an expected
-                    number of attendees. They have the ability to filter as well
-                    as create a new event.
-                  </p>
-                  <br />
-                  <p>
-                    The right side bar has the number of executive team member,
-                    general members, balance and average attendance. It allows
-                    those information to be seen easily bu the user.
-                  </p>
+                  {expandedIndexes[0] ? (
+                    <>
+                      <p>boop</p>
+                    </>
+                  ) : (
+                    <>
+                      <p>
+                        Academic Oasis vision changed to be club executive
+                        based. With that being said, the dashboard needs to be
+                        changed to accommodate. Now the dashboard no longer has
+                        courses but rather information such as events, a budget
+                        sheet and statistics which would be collected from the
+                        events.
+                      </p>
+                      <br />
+                      <p>
+                        The header welcomes the user and has a description of
+                        the club. Sometimes, students are participants of
+                        numerous clubs, so the downwards arrow allows the user
+                        to toggle between the different clubs. The top right of
+                        this widget, has their social media and notifications.
+                        Social media links can be added in the user's profile.
+                        Additional button at the bottom right allows the user to
+                        contact the Academic Oasis team if needed as well
+                        sponsor the startup if they choose.
+                      </p>
+                      <br />
+                      <p>
+                        In the events tab, the user can see all the events they
+                        have created, as well as their allocated budget and an
+                        expected number of attendees. They have the ability to
+                        filter as well as create a new event.
+                      </p>
+                      <br />
+                      <p>
+                        The right side bar has the number of executive team
+                        member, general members, balance and average attendance.
+                        It allows those information to be seen easily bu the
+                        user.
+                      </p>
+                    </>
+                  )}
+                </div>
+                <div className="footer">
+                  <button onClick={() => toggleCard(0)}>
+                    {expandedIndexes[0] ? "Back" : "Read More"}
+                  </button>
                 </div>
               </div>
               <div className="ao-image">
-                <img src={DashboardEvent} alt="" />
+                <img
+                  src={expandedIndexes[0] ? NewEvent : DashboardEvent}
+                  alt=""
+                />
               </div>
             </SwiperSlide>
             <SwiperSlide className="slide">
