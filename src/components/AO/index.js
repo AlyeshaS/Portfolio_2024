@@ -1,3 +1,5 @@
+// IDEA, add the "read more" button and will show the, new event (ex) page with a description of that design
+
 import React, { useState, useEffect } from "react";
 import "./styles.css";
 
@@ -8,8 +10,13 @@ import "swiper/css/effect-flip";
 import "swiper/css/pagination";
 
 import AOFigma from "../../assets/AOFigma.png";
-import Dashboard_Stats from "../../assets/DashboardStats.png";
+import DashboardStats from "../../assets/DashboardStats.png";
 import Mobile_Events from "../../assets/MobileEvents.png";
+import DashboardEvent from "../../assets/DashboardEvent.png";
+import DashboardBudget from "../../assets/DashboardBudget.png";
+import Calendar from "../../assets/Calendar.png";
+import Clubs from "../../assets/Clubs.png";
+import Profile from "../../assets/Profile.png";
 
 // Fix the mobile image and then also check the side align for the second image
 function AO() {
@@ -50,18 +57,55 @@ function AO() {
             <SwiperSlide className="slide">
               <div className="text">
                 <div>
-                  <h1 className="ao-page-titles">Dashboard (Old) </h1>
+                  <h1 className="ao-page-titles">Student Dashboard</h1>
                 </div>
                 <div className="text-scroll">
                   <p>
-                    Academic Oasis is a startup in progress at Ontario Tech,
-                    aiming to enhance the student experience through an improved
-                    campus platform. It offers club and society presidents tools
-                    to create events, boost student engagement, and more.
-                    Students can easily browse all campus events and join those
-                    that interest them. A dedicated page will showcase clubs,
-                    events, jobs, and workshops on campus, with input from club
-                    executives and other resources.
+                    During the orignial vision of Academic Oasis, this was my
+                    design for the dashboard. Their visison was to make an
+                    application for students to engage with school activities
+                    while being able to have access to other features like a
+                    calendar, clubs/events/jobs on campus/ workshop area and
+                    messaging system. The messaging system was removed for the
+                    time being.
+                  </p>
+                  <br />
+                  <p>
+                    Breaking down this design, at the top are cards to represent
+                    the students classes, which would be taken from Canvas, the
+                    application used at the university for the courses.
+                  </p>
+                  <br />
+                  <p>
+                    Underneath the course cards, there is a different style
+                    calendar widget. This section is used to show upcoming
+                    classes for the day. There is inclusion of the course name,
+                    location as well as time. It will change based on the day of
+                    the week.
+                  </p>
+                  <br />
+                  <p>
+                    Next to that widget, there is an extra widget area, which in
+                    this case is used as a pomodoro timer. Since Academic Oasis
+                    aims to be an all in one application, having a timer
+                    included was an extra touch to the idea. This widget would
+                    have been customized to a few different option which were
+                    not created at the time.
+                  </p>
+                  <br />
+                  <p>
+                    The job section are cards with information of different
+                    opportunites found from the universites database. Going
+                    throught the universities website and countless other
+                    following links, adding this aspect would make it easier for
+                    students to apply.
+                  </p>
+                  <br />
+                  <p>
+                    Additionally, on the right hand side, you can see which week
+                    we are on as well as sememster and cGPA. Underneath is a
+                    daily version of the calendar which displays courses and
+                    other events in their calendar.
                   </p>
                 </div>
               </div>
@@ -72,23 +116,142 @@ function AO() {
             <SwiperSlide className="slide">
               <div className="text">
                 <div>
-                  <h1 className="ao-page-titles">Dashboard (Old) </h1>
+                  <h1 className="ao-page-titles">
+                    Club Executive Dashboard (Events)
+                  </h1>
                 </div>
                 <div className="text-scroll">
                   <p>
-                    Academic Oasis is a startup in progress at Ontario Tech,
-                    aiming to enhance the student experience through an improved
-                    campus platform. It offers club and society presidents tools
-                    to create events, boost student engagement, and more.
-                    Students can easily browse all campus events and join those
-                    that interest them. A dedicated page will showcase clubs,
-                    events, jobs, and workshops on campus, with input from club
-                    executives and other resources.
+                    Academic Oasis vision changed to be club executive based.
+                    With that being said, the dashboard needs to be changed to
+                    accommodate. Now the dashboard no longer has courses but
+                    rather information such as events, a budget sheet and
+                    statistics which would be collected from the events.
+                  </p>
+                  <br />
+                  <p>
+                    The header welcomes the user and has a description of the
+                    club. Sometimes, students are participants of numerous
+                    clubs, so the downwards arrow allows the user to toggle
+                    between the different clubs. The top right of this widget,
+                    has their social media and notifications. Social media links
+                    can be added in the user's profile. Additional button at the
+                    bottom right allows the user to contact the Academic Oasis
+                    team if needed as well sponsor the startup if they choose.
+                  </p>
+                  <br />
+                  <p>
+                    In the events tab, the user can see all the events they have
+                    created, as well as their allocated budget and an expected
+                    number of attendees. They have the ability to filter as well
+                    as create a new event.
+                  </p>
+                  <br />
+                  <p>
+                    The right side bar has the number of executive team member,
+                    general members, balance and average attendance. It allows
+                    those information to be seen easily bu the user.
                   </p>
                 </div>
               </div>
               <div className="ao-image">
-                <img src={AOFigma} alt="" />
+                <img src={DashboardEvent} alt="" />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className="slide">
+              <div className="text">
+                <div>
+                  <h1 className="ao-page-titles">
+                    Club Executive Dashboard (Budget Sheet)
+                  </h1>
+                </div>
+                <div className="text-scroll">
+                  <p>
+                    Switching to the budget sheet tab on the dashboard, there is
+                    a spreadsheet to help the executive track their spendings.
+                    Each club is allocated a certain amount of money, and this
+                    sheet shows incomes and expenses. There are certain
+                    categories that must be met for the university, and that is
+                    accommodated for using the columns. They have the ability to
+                    edit, add as well as download the budget sheet. The budget
+                    sheet is two pages due to the column requirement.
+                  </p>
+                  <br />
+                </div>
+              </div>
+              <div className="ao-image">
+                <img src={DashboardBudget} alt="" />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className="slide">
+              <div className="text">
+                <div>
+                  <h1 className="ao-page-titles">
+                    Club Executive Dashboard (Statistics)
+                  </h1>
+                </div>
+                <div className="text-scroll">
+                  <p>
+                    The statistics tab displays their budget, attendance and
+                    most avaliable day of the week in different graphs. A main
+                    concern at the university is event attendance. Academic
+                    Oasis hopes to change that by finding the best time to host
+                    an event. The statistics page easily displays the different
+                    information in the three different widgets.
+                  </p>
+                  <br />
+                </div>
+              </div>
+              <div className="ao-image">
+                <img src={DashboardStats} alt="" />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className="slide">
+              <div className="text">
+                <div>
+                  <h1 className="ao-page-titles">Calendar</h1>
+                </div>
+                <div className="text-scroll">
+                  <p>
+                    The calendar page will display the students courses,
+                    registered events, and other events they added. On this
+                    page, users have the ability to download their calender, add
+                    an event and switch the week using the arrows at the top
+                    right.
+                  </p>
+                  <br />
+                </div>
+              </div>
+              <div className="ao-image">
+                <img src={Calendar} alt="" />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className="slide">
+              <div className="text">
+                <div>
+                  <h1 className="ao-page-titles">Clubs Page</h1>
+                </div>
+                <div className="text-scroll">
+                  <p>COME BACK</p>
+                  <br />
+                </div>
+              </div>
+              <div className="ao-image">
+                <img src={Clubs} alt="" />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className="slide">
+              <div className="text">
+                <div>
+                  <h1 className="ao-page-titles">Profile</h1>
+                </div>
+                <div className="text-scroll">
+                  <p>COME BACK</p>
+                  <br />
+                </div>
+              </div>
+              <div className="ao-image">
+                <img src={Profile} alt="" />
               </div>
             </SwiperSlide>
           </Swiper>
@@ -117,7 +280,7 @@ function AO() {
         </div>
 
         <div className="ao-analysis">
-          <img src={Dashboard_Stats} alt="" />
+          <img src={DashboardStats} alt="" />
           <div className="analysis-div">
             <p className="analysis-header">Design Process</p>
             <p className="analysis-text">
