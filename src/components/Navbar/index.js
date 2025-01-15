@@ -31,7 +31,7 @@ function Navbar() {
   useEffect(() => {
     const root = document.getElementById("root");
     root.addEventListener("scroll", () => {
-      if (root.scrollTop > 200 && navbar.current) {
+      if (root.scrollTop > 50 && navbar.current) {
         navbar.current.style.backgroundColor = "rgba(230, 232, 237, 1)";
         navbar.current.style.boxShadow = "0px 0px 10px rgba(0,0,0,0.2)";
         root.style.backgroundColor = "rgba(229, 232, 237, 1)";
@@ -44,7 +44,7 @@ function Navbar() {
 
     return () => {
       root.removeEventListener("scroll", () => {
-        if (root.scrollTop > 200 && navbar.current) {
+        if (root.scrollTop > 50 && navbar.current) {
           navbar.current.style.backgroundColor = "rgba(230, 232, 237, 1)";
           navbar.current.style.boxShadow = "0px 0px 10px rgba(0,0,0,0.2)";
           root.style.backgroundColor = "rgba(229, 232, 237, 1)";

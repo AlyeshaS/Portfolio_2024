@@ -15,9 +15,12 @@ import Mobile_Events from "../../assets/MobileEvents.png";
 import DashboardEvent from "../../assets/DashboardEvent.png";
 import NewEvent from "../../assets/NewEvent.png";
 import DashboardBudget from "../../assets/DashboardBudget.png";
+import EditBudgetSheet from "../../assets/EditBudgetSheet.png";
 import Calendar from "../../assets/Calendar.png";
+import EditCalendar from "../../assets/EditCalendar.png";
 import Clubs from "../../assets/Clubs.png";
 import Profile from "../../assets/Profile.png";
+import EditProfile from "../../assets/EditProfile.png";
 
 // Fix the mobile image and then also check the side align for the second image
 function AO() {
@@ -132,7 +135,14 @@ function AO() {
                 <div className="text-scroll">
                   {expandedIndexes[0] ? (
                     <>
-                      <p>boop</p>
+                      <p>
+                        The club executives can create a new event using the new
+                        event button. They will need to fill in the required
+                        areas such as, event name, date, time, location,
+                        descriptionm registration link and spots avaliable. Some
+                        slots are mandatory but not all. Once filled, they can
+                        post the event for all to see.
+                      </p>
                     </>
                   ) : (
                     <>
@@ -151,7 +161,6 @@ function AO() {
                         numerous clubs, so the downwards arrow allows the user
                         to toggle between the different clubs. The top right of
                         this widget, has their social media and notifications.
-                        Social media links can be added in the user's profile.
                         Additional button at the bottom right allows the user to
                         contact the Academic Oasis team if needed as well
                         sponsor the startup if they choose.
@@ -167,7 +176,7 @@ function AO() {
                       <p>
                         The right side bar has the number of executive team
                         member, general members, balance and average attendance.
-                        It allows those information to be seen easily bu the
+                        It allows those information to be seen easily by the
                         user.
                       </p>
                     </>
@@ -194,21 +203,43 @@ function AO() {
                   </h1>
                 </div>
                 <div className="text-scroll">
-                  <p>
-                    Switching to the budget sheet tab on the dashboard, there is
-                    a spreadsheet to help the executive track their spendings.
-                    Each club is allocated a certain amount of money, and this
-                    sheet shows incomes and expenses. There are certain
-                    categories that must be met for the university, and that is
-                    accommodated for using the columns. They have the ability to
-                    edit, add as well as download the budget sheet. The budget
-                    sheet is two pages due to the column requirement.
-                  </p>
-                  <br />
+                  {expandedIndexes[1] ? (
+                    <>
+                      The club executive can add a new row in their budget sheet
+                      using the new button. In order to add, they must fill out
+                      all the information required. This includes the date,
+                      category (revenue or deposit), status, description, 2
+                      approvals, recipient and amount. Then they can save the
+                      information and the new information would be added into
+                      the budget sheet.
+                    </>
+                  ) : (
+                    <>
+                      <p>
+                        Switching to the budget sheet tab on the dashboard,
+                        there is a spreadsheet to help the executive track their
+                        spendings. Each club is allocated a certain amount of
+                        money, and this sheet shows incomes and expenses. There
+                        are certain categories that must be met for the
+                        university, and that is accommodated for using the
+                        columns. They have the ability to edit, add as well as
+                        download the budget sheet. The budget sheet is two pages
+                        due to the column requirement.
+                      </p>
+                    </>
+                  )}
+                </div>
+                <div className="footer">
+                  <button onClick={() => toggleCard(1)}>
+                    {expandedIndexes[1] ? "Back" : "Read More"}
+                  </button>
                 </div>
               </div>
               <div className="ao-image">
-                <img src={DashboardBudget} alt="" />
+                <img
+                  src={expandedIndexes[1] ? EditBudgetSheet : DashboardBudget}
+                  alt=""
+                />
               </div>
             </SwiperSlide>
             <SwiperSlide className="slide">
@@ -227,7 +258,6 @@ function AO() {
                     an event. The statistics page easily displays the different
                     information in the three different widgets.
                   </p>
-                  <br />
                 </div>
               </div>
               <div className="ao-image">
@@ -240,18 +270,31 @@ function AO() {
                   <h1 className="ao-page-titles">Calendar</h1>
                 </div>
                 <div className="text-scroll">
-                  <p>
-                    The calendar page will display the students courses,
-                    registered events, and other events they added. On this
-                    page, users have the ability to download their calender, add
-                    an event and switch the week using the arrows at the top
-                    right.
-                  </p>
-                  <br />
+                  {expandedIndexes[2] ? (
+                    <>edit</>
+                  ) : (
+                    <>
+                      <p>
+                        The calendar page will display the students courses,
+                        registered events, and other events they added. On this
+                        page, users have the ability to download their calender,
+                        add an event and switch the week using the arrows at the
+                        top right.
+                      </p>
+                    </>
+                  )}
+                </div>
+                <div className="footer">
+                  <button onClick={() => toggleCard(2)}>
+                    {expandedIndexes[2] ? "Back" : "Read More"}
+                  </button>
                 </div>
               </div>
               <div className="ao-image">
-                <img src={Calendar} alt="" />
+                <img
+                  src={expandedIndexes[2] ? EditCalendar : Calendar}
+                  alt=""
+                />
               </div>
             </SwiperSlide>
             <SwiperSlide className="slide">
@@ -260,8 +303,26 @@ function AO() {
                   <h1 className="ao-page-titles">Clubs Page</h1>
                 </div>
                 <div className="text-scroll">
-                  <p>COME BACK</p>
-                  <br />
+                  <>
+                    <p>
+                      Students will be able see avaliable clubs, events and
+                      workshops at the school. The layout is the same for each
+                      section, although provide different information. On this
+                      page in particular, the card includes the club name and
+                      profile image, description and a button if you are
+                      interested. In order to join the club, there that is a
+                      process from the club itself. This page is to showcase the
+                      different clubs at the school.
+                    </p>
+                    <br />
+                    <p>
+                      On the right hand side, there is a filter by faculty, club
+                      name and location. The user also has the ability to search
+                      different keywords in the search bar. Underneath is the
+                      registered events the user has signed up for. This is
+                      consistent through the other tabs of this page.
+                    </p>
+                  </>
                 </div>
               </div>
               <div className="ao-image">
@@ -274,12 +335,36 @@ function AO() {
                   <h1 className="ao-page-titles">Profile</h1>
                 </div>
                 <div className="text-scroll">
-                  <p>COME BACK</p>
-                  <br />
+                  {expandedIndexes[3] ? (
+                    <>edit</>
+                  ) : (
+                    <>
+                      <p>
+                        Students have the ability to have a profile picture,
+                        have their full name, pronouns and their email.
+                        Additionally, their executive club roles, preferred
+                        language and connection to their Google calendar are
+                        included. They have the ability to log out if needed
+                        which is seen at the bottom of the page. The user has an
+                        edit button which will be looked at further under the
+                        edit version of this page.
+                      </p>
+                      <br />
+                      <p>
+                        To the right of the page, the user can change the theme
+                        based on what Academic Oasis has to offer.
+                      </p>
+                    </>
+                  )}
+                </div>
+                <div className="footer">
+                  <button onClick={() => toggleCard(3)}>
+                    {expandedIndexes[3] ? "Back" : "Read More"}
+                  </button>
                 </div>
               </div>
               <div className="ao-image">
-                <img src={Profile} alt="" />
+                <img src={expandedIndexes[3] ? EditProfile : Profile} alt="" />
               </div>
             </SwiperSlide>
           </Swiper>
