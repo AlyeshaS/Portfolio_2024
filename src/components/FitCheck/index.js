@@ -24,6 +24,15 @@ function FitCheck() {
     };
   }, []);
 
+  const [expandedIndexes, setExpandedIndexes] = useState({});
+
+  const toggleCard = (index) => {
+    setExpandedIndexes((prevState) => ({
+      ...prevState,
+      [index]: !prevState[index],
+    }));
+  };
+
   return (
     <div className="FitCheck-page">
       <div className="FitCheck-container">
@@ -48,15 +57,17 @@ function FitCheck() {
             <SwiperSlide className="slide">
               <div className="text">
                 <div>
-                  <h1 className="FitCheck-page-titles">Dashboard (Old) </h1>
+                  <h1 className="FitCheck-page-titles">Home </h1>
                 </div>
                 <div className="text-scroll">
                   <p>
-                    FitCheck is a website designed for a soccer coach looking to
-                    connect with players of all ages seeking professional
-                    training. The platform serves as a tool to attract and
-                    generate leads for new students, helping them improve their
-                    skills through tailored coaching sessions.
+                    When users open up the app, they are presented with the home
+                    page where they can scroll and see what their friends have
+                    posted. This page includes a messaging system at the top
+                    right, a navbar at the bottom, a rating system via stars and
+                    a caption, as well as a like, comment and share section.
+                    FitCheck is a social media platform to show off your
+                    outfits.
                   </p>
                 </div>
               </div>
@@ -67,16 +78,34 @@ function FitCheck() {
             <SwiperSlide className="slide">
               <div className="text">
                 <div>
-                  <h1 className="FitCheck-page-titles">Dashboard (Old) </h1>
+                  <h1 className="FitCheck-page-titles">FYP & Search</h1>
                 </div>
                 <div className="text-scroll">
-                  <p>
-                    FitCheck is a website designed for a soccer coach looking to
-                    connect with players of all ages seeking professional
-                    training. The platform serves as a tool to attract and
-                    generate leads for new students, helping them improve their
-                    skills through tailored coaching sessions.
-                  </p>
+                  {expandedIndexes[0] ? (
+                    <>
+                      When the user clicks the search bar, the UI changes to
+                      this. To keep it simple, the user can type what they are
+                      looking for, whether that be a user, category, etc, and a
+                      simple dropdown will appear. The user can either click the
+                      word or search icon. To return back to the FYP, they will
+                      click the back arrow at the top left.
+                    </>
+                  ) : (
+                    <>
+                      <p>
+                        This page will have any public account who posts their
+                        outfits. The user can scroll here and can search via the
+                        search bar at the top for their friends. The layout is
+                        similar to the home page, the difference being able to
+                        search.
+                      </p>
+                    </>
+                  )}
+                </div>
+                <div className="footer">
+                  <button onClick={() => toggleCard(0)}>
+                    {expandedIndexes[0] ? "Search Page" : "FYP Page"}
+                  </button>
                 </div>
               </div>
               <div className="FitCheck-image">

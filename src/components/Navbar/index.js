@@ -142,7 +142,7 @@ function Navbar() {
                   <a href="/case-studies/ao">Academic Oasis</a>
                   {/* <a href="/case-studies/cheffery">Cheffery</a> */}
                   <a href="/case-studies/cjs">CJS</a>
-                  {/* <a href="/case-studies/fitcheck">FitCheck</a> */}
+                  <a href="/case-studies/fitcheck">FitCheck</a>
                 </div>
               )}
             </div>
