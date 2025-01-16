@@ -61,13 +61,14 @@ function FitCheck() {
                 </div>
                 <div className="text-scroll">
                   <p>
-                    When users open up the app, they are presented with the home
-                    page where they can scroll and see what their friends have
-                    posted. This page includes a messaging system at the top
-                    right, a navbar at the bottom, a rating system via stars and
-                    a caption, as well as a like, comment and share section.
-                    FitCheck is a social media platform to show off your
-                    outfits.
+                    When users open the app, they are greeted with the home
+                    page, where they can scroll through posts shared by their
+                    friends. This page features a messaging system in the
+                    top-right corner, a navbar at the bottom, and interactive
+                    elements such as a star-based rating system, captions, and
+                    like, comment, and share options. FitCheck is a social media
+                    platform designed to showcase outfits and fashion
+                    inspiration.
                   </p>
                 </div>
               </div>
@@ -78,33 +79,181 @@ function FitCheck() {
             <SwiperSlide className="slide">
               <div className="text">
                 <div>
-                  <h1 className="FitCheck-page-titles">FYP & Search</h1>
+                  <h1 className="FitCheck-page-titles">Explore & Search</h1>
                 </div>
                 <div className="text-scroll">
                   {expandedIndexes[0] ? (
                     <>
-                      When the user clicks the search bar, the UI changes to
-                      this. To keep it simple, the user can type what they are
-                      looking for, whether that be a user, category, etc, and a
-                      simple dropdown will appear. The user can either click the
-                      word or search icon. To return back to the FYP, they will
-                      click the back arrow at the top left.
+                      Clicking the search bar transforms the UI. To keep the
+                      design straightforward, users can type in a search query,
+                      such as a username or category and a dropdown with
+                      suggestions will appear. Users can either click a
+                      suggested word or tap the search icon to proceed. To
+                      return to the explore page, they simply click the back
+                      arrow in the top-left corner.
                     </>
                   ) : (
                     <>
                       <p>
-                        This page will have any public account who posts their
-                        outfits. The user can scroll here and can search via the
-                        search bar at the top for their friends. The layout is
-                        similar to the home page, the difference being able to
-                        search.
+                        The explore page displays posts from any public account
+                        sharing their outfits. Users can scroll through these
+                        posts and use the search bar at the top to find friends
+                        or specific accounts. The layout mirrors the home page
+                        but includes the added functionality of a search
+                        feature.
                       </p>
                     </>
                   )}
                 </div>
                 <div className="footer">
                   <button onClick={() => toggleCard(0)}>
-                    {expandedIndexes[0] ? "Search Page" : "FYP Page"}
+                    {expandedIndexes[0] ? "Explore Page" : "Search Page"}
+                  </button>
+                </div>
+              </div>
+              <div className="FitCheck-image">
+                <img src={FitCheckFigma} alt="" />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className="slide">
+              <div className="text">
+                <div>
+                  <h1 className="FitCheck-page-titles">Add (Post)</h1>
+                </div>
+                <div className="text-scroll">
+                  {expandedIndexes[1] ? (
+                    <>
+                      <p>
+                        Upon selecting an image, users are shown a preview at
+                        the top of the screen. This preview ensures they can
+                        check if any part of their image is cropped or
+                        obstructed by stars, captions, or other UI elements.
+                      </p>
+                      <br />
+                      <p>
+                        Beneath the preview, users can add a caption with a
+                        limit of 45 characters. This concise length ensures
+                        captions fit neatly into a single line, maintaining
+                        visual consistency across the UI.
+                      </p>
+                      <br />
+                      <p>
+                        Users can choose up to three categories to describe
+                        their outfit. This feature makes it easier for others to
+                        discover specific styles or themes while browsing.
+                      </p>
+                      <br />
+                      <p>
+                        If users know where they purchased their clothing, they
+                        can tag the store. This feature helps others discover
+                        and purchase the same items if they find them appealing.
+                      </p>
+                      <br />
+                      <p>
+                        Once satisfied with their post, users can finalize it by
+                        clicking the upload button.
+                      </p>
+                    </>
+                  ) : (
+                    <>
+                      <p>
+                        To post an outfit, users tap the "Add" button in the
+                        navbar, allowing them to select photos from their
+                        gallery. The posting layout maintains a familiar design
+                        inspired by other platforms to ensure ease of use. If
+                        users decide not to post, they can navigate to another
+                        tab using the navbar.
+                      </p>
+                    </>
+                  )}
+                </div>
+                <div className="footer">
+                  <button onClick={() => toggleCard(1)}>
+                    {expandedIndexes[1] ? "Select Page" : "Post Page"}
+                  </button>
+                </div>
+              </div>
+              <div className="FitCheck-image">
+                <img src={FitCheckFigma} alt="" />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className="slide">
+              <div className="text">
+                <div>
+                  <h1 className="FitCheck-page-titles">Add (Category)</h1>
+                </div>
+                <div className="text-scroll">
+                  {expandedIndexes[2] ? (
+                    <>
+                      <p>
+                        When a category is selected, the category turns into the
+                        accent colour to make it known that is has been
+                        selected. To deselect, simply click the button again.
+                      </p>
+                    </>
+                  ) : (
+                    <>
+                      <p>
+                        Similar to the search menu, users can browse through a
+                        variety of clothing categories. Upon opening the
+                        category option, they are presented with a selection of
+                        popular categories to spark inspiration for describing
+                        their outfit. This helps users explore different options
+                        more easily.
+                      </p>
+                      <br />
+                      <p>
+                        If a desired category is not listed, users can add a new
+                        one by clicking the "Add" button located at the
+                        top-right corner of the screen near the search bar.
+                      </p>
+                    </>
+                  )}
+                </div>
+                <div className="footer">
+                  <button onClick={() => toggleCard(2)}>
+                    {expandedIndexes[2]
+                      ? "Selected Category"
+                      : "Search Category"}
+                  </button>
+                </div>
+              </div>
+              <div className="FitCheck-image">
+                <img src={FitCheckFigma} alt="" />
+              </div>
+            </SwiperSlide>{" "}
+            <SwiperSlide className="slide">
+              <div className="text">
+                <div>
+                  <h1 className="FitCheck-page-titles">Add (Tag Product)</h1>
+                </div>
+                <div className="text-scroll">
+                  {expandedIndexes[3] ? (
+                    <>
+                      <p>
+                        When a category is selected, the category turns into the
+                        accent colour to make it known that is has been
+                        selected. To deselect, simply click the button again.
+                      </p>
+                    </>
+                  ) : (
+                    <>
+                      <p>
+                        Similar to the search menu, users can browse through a
+                        variety of clothing categories. Upon opening the
+                        category option, they are presented with a selection of
+                        popular categories to spark inspiration for describing
+                        their outfit. This helps users explore different options
+                        more easily.
+                      </p>
+                    </>
+                  )}
+                </div>
+                <div className="footer">
+                  <button onClick={() => toggleCard(3)}>
+                    {expandedIndexes[3]
+                      ? "Selected Category"
+                      : "Search Category"}
                   </button>
                 </div>
               </div>

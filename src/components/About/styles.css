@@ -8,13 +8,13 @@
   width: 100%;
   display: grid;
   grid-template-columns: 4fr 5fr;
-  max-width: 1400px;
-  gap: 40px;
+  max-width: 1350px;
+  margin-top: 50px;
 }
 
-.about .container .image img {
-  width: 95%;
-  border-radius: 100%;
+.about .container img {
+  width: 85%;
+  /* border-radius: 100%; */
 }
 
 .about .container .text {
