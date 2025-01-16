@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.ce6b9f2e.css",
-    "main.js": "/static/js/main.b540e67d.js",
+    "main.css": "/static/css/main.ba8dd525.css",
+    "main.js": "/static/js/main.85e6c731.js",
     "static/media/portrait.png": "/static/media/portrait.6f2d9768160cc137ccb8.png",
     "static/media/ChefferyFigma.png": "/static/media/ChefferyFigma.79a89b5274bc4e813d49.png",
     "static/media/resume.pdf": "/static/media/resume.a8e9587fce91bb899083.pdf",
@@ -9,17 +9,28 @@
     "static/media/Logo.png": "/static/media/Logo.aa3e72cd9a375fbc5468.png",
     "static/media/CJSFigma.png": "/static/media/CJSFigma.5656cba5b981a1d725f5.png",
     "static/media/FitCheckFigma.png": "/static/media/FitCheckFigma.64ec9dc45d2c216b3d9e.png",
+    "static/media/DashboardStats.png": "/static/media/DashboardStats.6cce51904ac994e48ca2.png",
+    "static/media/DashboardEvent.png": "/static/media/DashboardEvent.68e9de4c0c19a0783b46.png",
+    "static/media/EditProfile.png": "/static/media/EditProfile.75efad4eb58536a83d87.png",
     "static/media/liftow.png": "/static/media/liftow.2066cf956afc8d8b36ee.png",
+    "static/media/EditBudgetSheet.png": "/static/media/EditBudgetSheet.6c4698464d94d0d0eba6.png",
+    "static/media/NewEvent.png": "/static/media/NewEvent.11af97782b9553799ef7.png",
+    "static/media/Profile.png": "/static/media/Profile.665cd6b83294975fb37e.png",
+    "static/media/DashboardBudget.png": "/static/media/DashboardBudget.5ae95162ea21ae561361.png",
+    "static/media/Calendar.png": "/static/media/Calendar.704f39370c582faceab3.png",
+    "static/media/EditCalendar.png": "/static/media/EditCalendar.1ce925d22a407571c612.png",
+    "static/media/Clubs.png": "/static/media/Clubs.81d2b714d9d5e3ebad9b.png",
+    "static/media/MobileEvents.png": "/static/media/MobileEvents.d8213b260fe9fad8a70a.png",
     "static/media/ao.png": "/static/media/ao.a48e82666233f9d7ac13.png",
     "static/media/MyHomeworkRewards.png": "/static/media/MyHomeworkRewards.a9ac3ce20000c8990700.png",
     "static/media/cheffery.png": "/static/media/cheffery.501a4e91dcc42b217c08.png",
     "static/media/gdg.png": "/static/media/gdg.417192aff9cf0bf9d916.png",
     "index.html": "/index.html",
-    "main.ce6b9f2e.css.map": "/static/css/main.ce6b9f2e.css.map",
-    "main.b540e67d.js.map": "/static/js/main.b540e67d.js.map"
+    "main.ba8dd525.css.map": "/static/css/main.ba8dd525.css.map",
+    "main.85e6c731.js.map": "/static/js/main.85e6c731.js.map"
   },
   "entrypoints": [
-    "static/css/main.ce6b9f2e.css",
-    "static/js/main.b540e67d.js"
+    "static/css/main.ba8dd525.css",
+    "static/js/main.85e6c731.js"
   ]
 }
