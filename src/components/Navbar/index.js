@@ -293,7 +293,7 @@ function Navbar() {
                   <div className="dropdown-menu">
                     <Link
                       onClick={() => {
-                        setMenu(true);
+                        setMenu(false);
                         navigate("/case-studies/ao");
                       }}
                       spy={true}
