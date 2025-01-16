@@ -40,7 +40,8 @@
 }
 
 .navbar .container .links a:hover {
-  border-bottom: 4px solid var(--accent);
+  /* border-bottom: 4px solid var(--accent); */
+  color: var(--accent);
 }
 
 .navbar .container .links .active {
