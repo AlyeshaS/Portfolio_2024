@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Ensure it's redirecting immediately -->
     <meta http-equiv="refresh" content="0; URL='/'" />
     <script>
-      // Adjust base path if needed
-      const basePath = "/<portfolio_2024>"; // Change this to your repository name if deployed on GitHub Pages
+      // GitHub Pages requires the base path (replace <your-repo-name> with your actual repository name)
+      const basePath = ""; // Replace with your GitHub repo name
       const redirectPath = window.location.pathname;
-      window.location.href = `${""}${redirectPath}`;
+      window.location.href = `${basePath}${redirectPath}`;
     </script>
   </head>
   <body></body>
