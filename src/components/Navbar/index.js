@@ -9,10 +9,15 @@ function Navbar() {
   const navbar = useRef();
   const [menu, setMenu] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [dropdownOpenMobile, setDropdownOpenMobile] = useState(false);
   const navigate = useNavigate();
 
   const toggleDropdown = () => {
     setDropdownOpen(!dropdownOpen);
+  };
+
+  const toggleDropdownMobile = () => {
+    setDropdownOpenMobile(!dropdownOpenMobile);
   };
 
   // See if there is a way to have it automatically scroll
@@ -142,7 +147,7 @@ function Navbar() {
                   <a href="/case-studies/ao">Academic Oasis</a>
                   {/* <a href="/case-studies/cheffery">Cheffery</a> */}
                   <a href="/case-studies/cjs">CJS</a>
-                  <a href="/case-studies/fitcheck">FitCheck</a>
+                  {/* <a href="/case-studies/fitcheck">FitCheck</a> */}
                 </div>
               )}
             </div>
@@ -258,17 +263,75 @@ function Navbar() {
             >
               Contact
             </Link>
-            <Link
-              activeClass="active"
-              containerId="root"
-              to="case-studies"
-              spy={true}
-              smooth={true}
-              duration={500}
-              offset={-25}
-            >
-              Case Studies
+            {/* Fix this dropdown */}
+            <Link>
+              <div className="dropdown">
+                <button
+                  className="dropdown-toggle"
+                  onClick={toggleDropdownMobile}
+                >
+                  Case Studies
+                  <span className={`arrow ${dropdownOpen ? "open" : ""}`}>
+                    <svg
+                      width="50"
+                      height="15"
+                      viewBox="0 0 14 8"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 1L7 7L13 1"
+                        stroke="#FFFFFF"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </button>
+                {menu && (
+                  <div className="dropdown-menu">
+                    <Link
+                      onClick={() => {
+                        setMenu(false);
+                        navigate("/case-studies/ao");
+                      }}
+                      spy={true}
+                      smooth={true}
+                      duration={500}
+                      offset={-25}
+                    >
+                      Academic Oasis
+                    </Link>
+                    <Link
+                      onClick={() => {
+                        setMenu(false);
+                        navigate("/case-studies/cjs");
+                      }}
+                      spy={true}
+                      smooth={true}
+                      duration={500}
+                      offset={-25}
+                    >
+                      CJS
+                    </Link>
+                    {/* <Link
+                      onClick={() => {
+                        setMenu(false);
+                        navigate("/case-studies/FitCheck");
+                      }}
+                      spy={true}
+                      smooth={true}
+                      duration={500}
+                      offset={-25}
+                    >
+                      FitCheck
+                    </Link> */}
+                  </div>
+                )}
+              </div>
             </Link>
+
             <div className="socials">
               <a
                 className="link"
