@@ -271,7 +271,7 @@ function Navbar() {
                   onClick={toggleDropdownMobile}
                 >
                   Case Studies
-                  <span className={`arrow ${dropdownOpen ? "open" : ""}`}>
+                  <span className={`arrow ${dropdownOpenMobile ? "open" : ""}`}>
                     <svg
                       width="50"
                       height="15"
@@ -289,11 +289,11 @@ function Navbar() {
                     </svg>
                   </span>
                 </button>
-                {menu && (
+                {dropdownOpenMobile && (
                   <div className="dropdown-menu">
                     <Link
                       onClick={() => {
-                        setMenu(false);
+                        setMenu(true);
                         navigate("/case-studies/ao");
                       }}
                       spy={true}

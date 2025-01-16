@@ -228,13 +228,14 @@
     transition: all 50ms ease-in;
   }
 
-  .arrow {
+  /* .arrow {
     margin-left: 10px;
     transition: transform 0.3s ease-in-out;
+    transform: rotate(-180deg);
   }
 
   .arrow.open {
-    transform: rotate(180deg); /* Rotates the arrow when the dropdown is open */
+    transform: rotate(180deg);
     color: white;
-  }
+  } */
 }
