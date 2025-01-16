@@ -1,4 +1,4 @@
-// IDEA, add the "read more" button and will show the, new event (ex) page with a description of that design
+// IDEA, add the "View More" button and will show the, new event (ex) page with a description of that design
 
 import React, { useState, useEffect } from "react";
 import "./styles.css";
@@ -184,7 +184,7 @@ function AO() {
                 </div>
                 <div className="footer">
                   <button onClick={() => toggleCard(0)}>
-                    {expandedIndexes[0] ? "Back" : "Read More"}
+                    {expandedIndexes[0] ? "Back" : "View More"}
                   </button>
                 </div>
               </div>
@@ -231,7 +231,7 @@ function AO() {
                 </div>
                 <div className="footer">
                   <button onClick={() => toggleCard(1)}>
-                    {expandedIndexes[1] ? "Back" : "Read More"}
+                    {expandedIndexes[1] ? "Back" : "View More"}
                   </button>
                 </div>
               </div>
@@ -286,7 +286,7 @@ function AO() {
                 </div>
                 <div className="footer">
                   <button onClick={() => toggleCard(2)}>
-                    {expandedIndexes[2] ? "Back" : "Read More"}
+                    {expandedIndexes[2] ? "Back" : "View More"}
                   </button>
                 </div>
               </div>
@@ -336,7 +336,11 @@ function AO() {
                 </div>
                 <div className="text-scroll">
                   {expandedIndexes[3] ? (
-                    <>edit</>
+                    <>
+                      There is very minimal change to the UI. In the edit
+                      version of this page, the user has the ability to change
+                      their pronouns as well as their preferred language.
+                    </>
                   ) : (
                     <>
                       <p>
@@ -359,7 +363,7 @@ function AO() {
                 </div>
                 <div className="footer">
                   <button onClick={() => toggleCard(3)}>
-                    {expandedIndexes[3] ? "Back" : "Read More"}
+                    {expandedIndexes[3] ? "Back" : "View More"}
                   </button>
                 </div>
               </div>
