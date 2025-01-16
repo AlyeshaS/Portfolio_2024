@@ -210,6 +210,7 @@ function Navbar() {
             <Link
               onClick={() => {
                 setMenu(false);
+                navigate("/");
               }}
               activeClass="active"
               containerId="root"
@@ -224,6 +225,7 @@ function Navbar() {
             <Link
               onClick={() => {
                 setMenu(false);
+                navigate("/");
               }}
               activeClass="active"
               containerId="root"
@@ -238,6 +240,7 @@ function Navbar() {
             <Link
               onClick={() => {
                 setMenu(false);
+                navigate("/");
               }}
               activeClass="active"
               containerId="root"
@@ -252,6 +255,7 @@ function Navbar() {
             <Link
               onClick={() => {
                 setMenu(false);
+                navigate("/");
               }}
               activeClass="active"
               containerId="root"
