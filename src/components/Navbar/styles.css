@@ -179,7 +179,7 @@
     backdrop-filter: blur(5px);
     display: flex;
     flex-direction: column;
-    padding-top: 20%;
+    padding-top: 10%;
     align-items: center;
     /* justify-content: center; */
     gap: 30px;

@@ -82,7 +82,7 @@ function FitCheck() {
                   </p>
                 </div>
               </div>
-              <div className="content">
+              <div className="FitCheck-image">
                 <img src={FitCheckFigma} alt="" />
               </div>
             </SwiperSlide>

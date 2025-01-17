@@ -213,9 +213,16 @@
   .title {
     margin-top: 100px;
   }
+  .FitCheck-image img {
+    width: 100%;
+  }
 
   .FitCheck-header {
     font-size: 32px;
+  }
+  .FitCheck-analysis .analysis-text {
+    font-size: 18px;
+    padding-bottom: 20px;
   }
 
   .FitCheck-analysis {
@@ -226,7 +233,6 @@
 
   .analysis-div {
     height: auto;
-    padding-right: 5px;
   }
 
   .FitCheck-swiper .slide {
