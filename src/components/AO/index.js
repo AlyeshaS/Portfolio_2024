@@ -271,7 +271,13 @@ function AO() {
                 </div>
                 <div className="text-scroll">
                   {expandedIndexes[2] ? (
-                    <>edit</>
+                    <>
+                      Upon adding a new event to the calendar, the user has the
+                      option to either add a new course or an event. They are
+                      promted with a few boxes to fill out and they have the
+                      ability to change the color and add a description. Once
+                      satisfied, they can save the event.
+                    </>
                   ) : (
                     <>
                       <p>
@@ -391,9 +397,10 @@ function AO() {
               resources.
             </p>
           </div>
-          <div className="ao-image">
+          {/* <div className="ao-image">
             <img src={AOFigma} alt="" />
-          </div>
+          </div> */}
+          <img src={AOFigma} alt="" />
         </div>
 
         <div className="ao-analysis">
@@ -457,9 +464,10 @@ function AO() {
             </p>
           </div>
           {/* Fix the size of the mobile version */}
-          <div className="ao-image">
+          {/* <div className="ao-image">
             <img src={Mobile_Events} alt="" />
-          </div>
+          </div> */}
+          <img src={Mobile_Events} alt="" />
         </div>
       </div>
     </div>
