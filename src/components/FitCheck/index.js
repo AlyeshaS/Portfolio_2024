@@ -8,6 +8,16 @@ import "swiper/css/effect-flip";
 import "swiper/css/pagination";
 
 import FitCheckFigma from "../../assets/FitCheckFigma.png";
+import FitCheckAdd from "../../assets/FCAdd.png";
+import FitCheckAdd2 from "../../assets/FCAdd2.png";
+import FitCheckExplore from "../../assets/FCExplore.png";
+import FitCheckSearch from "../../assets/FCSearch.png";
+import FitCheckCategory from "../../assets/FCCategory.png";
+import FitCheckCategory2 from "../../assets/FCCategory2.png";
+import FitCheckTag from "../../assets/FCTag.png";
+import FitCheckTag2 from "../../assets/FCTag2.png";
+import FitCheckProfile from "../../assets/FCProfile.png";
+import FitCheckEdit from "../../assets/FCProfileEdit.png";
 
 // Fix the mobile image and then also check the side align for the second image
 function FitCheck() {
@@ -112,7 +122,10 @@ function FitCheck() {
                 </div>
               </div>
               <div className="FitCheck-image">
-                <img src={FitCheckFigma} alt="" />
+                <img
+                  src={expandedIndexes[0] ? FitCheckSearch : FitCheckExplore}
+                  alt=""
+                />
               </div>
             </SwiperSlide>
             <SwiperSlide className="slide">
@@ -174,7 +187,10 @@ function FitCheck() {
                 </div>
               </div>
               <div className="FitCheck-image">
-                <img src={FitCheckFigma} alt="" />
+                <img
+                  src={expandedIndexes[1] ? FitCheckAdd2 : FitCheckAdd}
+                  alt=""
+                />
               </div>
             </SwiperSlide>
             <SwiperSlide className="slide">
@@ -213,15 +229,20 @@ function FitCheck() {
                 <div className="footer">
                   <button onClick={() => toggleCard(2)}>
                     {expandedIndexes[2]
-                      ? "Selected Category"
-                      : "Search Category"}
+                      ? "Search Category"
+                      : "Selected Category"}
                   </button>
                 </div>
               </div>
               <div className="FitCheck-image">
-                <img src={FitCheckFigma} alt="" />
+                <img
+                  src={
+                    expandedIndexes[2] ? FitCheckCategory2 : FitCheckCategory
+                  }
+                  alt=""
+                />
               </div>
-            </SwiperSlide>{" "}
+            </SwiperSlide>
             <SwiperSlide className="slide">
               <div className="text">
                 <div>
@@ -251,14 +272,60 @@ function FitCheck() {
                 </div>
                 <div className="footer">
                   <button onClick={() => toggleCard(3)}>
-                    {expandedIndexes[3]
-                      ? "Selected Category"
-                      : "Search Category"}
+                    {expandedIndexes[3] ? "Select Product" : "Tagging Image"}
                   </button>
                 </div>
               </div>
               <div className="FitCheck-image">
-                <img src={FitCheckFigma} alt="" />
+                <img
+                  src={expandedIndexes[3] ? FitCheckTag2 : FitCheckTag}
+                  alt=""
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className="slide">
+              <div className="text">
+                <div>
+                  <h1 className="FitCheck-page-titles">Profile</h1>
+                </div>
+                <div className="text-scroll">
+                  {expandedIndexes[4] ? (
+                    <>
+                      <p>
+                        The only editable section for the user is their bio. A
+                        character count is in place to ensure the bio remains a
+                        single line, maintaining consistency with the layout.
+                      </p>
+                    </>
+                  ) : (
+                    <>
+                      <p>
+                        The user's profile includes their name, handle, bio,
+                        posts, followers, and following. They can also access
+                        outfits they've posted, saved, or drafted by toggling
+                        between icons located beneath the "Edit Profile"
+                        section.
+                      </p>
+                      <br />
+                      <p>
+                        To share their profile easily, a shareable link is
+                        available next to their handle, which can be copied and
+                        shared with friends.
+                      </p>
+                    </>
+                  )}
+                </div>
+                <div className="footer">
+                  <button onClick={() => toggleCard(4)}>
+                    {expandedIndexes[4] ? "Profile" : "Edit Profile"}
+                  </button>
+                </div>
+              </div>
+              <div className="FitCheck-image">
+                <img
+                  src={expandedIndexes[4] ? FitCheckEdit : FitCheckProfile}
+                  alt=""
+                />
               </div>
             </SwiperSlide>
           </Swiper>
@@ -295,12 +362,12 @@ function FitCheck() {
             </p>
           </div>
           <div className="FitCheck-image">
-            <img src={FitCheckFigma} alt="" />
+            <img src={FitCheckAdd2} alt="" />
           </div>
         </div>
 
         <div className="FitCheck-analysis">
-          <img src={FitCheckFigma} alt="" />
+          <img src={FitCheckEdit} alt="" />
           <div className="analysis-div">
             <p className="analysis-header">Design Process</p>
             <p className="analysis-text">
@@ -360,7 +427,7 @@ function FitCheck() {
           </div>
           {/* Fix the size of the mobile version */}
           <div className="FitCheck-image">
-            <img src={FitCheckFigma} alt="" />
+            <img src={FitCheckTag} alt="" />
           </div>
         </div>
       </div>

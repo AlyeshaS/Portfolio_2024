@@ -173,6 +173,13 @@
   opacity: 1;
 }
 
+.CJS-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+}
+
 @media (max-width: 800px) {
   .CJS-swiper .slide {
     grid-template-columns: 1fr;

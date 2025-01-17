@@ -141,6 +141,10 @@
   color: #3d5a80;
 }
 
+.FitCheck-page-titles {
+  color: var(--accent);
+}
+
 .FitCheck-swiper .slide .text button {
   background-color: transparent;
   border: none;
@@ -154,6 +158,13 @@
 
 .FitCheck-swiper .slide .text button:hover {
   color: var(--accent);
+}
+
+.FitCheck-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .FitCheck-swiper .slide img {
