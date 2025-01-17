@@ -367,7 +367,9 @@ function FitCheck() {
         </div>
 
         <div className="FitCheck-analysis">
-          <img src={FitCheckEdit} alt="" />
+          <div className="FitCheck-image">
+            <img src={FitCheckEdit} alt="" />
+          </div>
           <div className="analysis-div">
             <p className="analysis-header">Design Process</p>
             <p className="analysis-text">
