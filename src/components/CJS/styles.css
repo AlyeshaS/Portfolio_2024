@@ -181,6 +181,30 @@
 }
 
 @media (max-width: 800px) {
+  .CJS-container {
+    padding: 0 20px;
+    padding-bottom: 100px;
+  }
+
+  .title {
+    margin-top: 100px;
+  }
+
+  .ao-header {
+    font-size: 32px;
+  }
+
+  .CJS-analysis {
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .analysis-div {
+    height: auto;
+    padding-right: 5px;
+  }
+
   .CJS-swiper .slide {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -196,6 +220,6 @@
   }
 
   .CJS-swiper {
-    height: 100vh;
+    height: auto;
   }
 }

@@ -222,9 +222,10 @@ function CJS() {
               credibility and trust with potential clients.
             </p>
           </div>
-          <div className="CJS-image">
+          {/* <div className="CJS-image">
             <img src={CJSFigma} alt="" />
-          </div>
+          </div> */}
+          <img src={CJSFigma} alt="" />
         </div>
 
         <div className="CJS-analysis">
@@ -289,9 +290,10 @@ function CJS() {
             </p>
           </div>
           {/* Fix the size of the mobile version */}
-          <div className="CJS-image">
+          {/* <div className="CJS-image">
             <img src={CJSAchievements2} alt="" />
-          </div>
+          </div> */}
+          <img src={CJSAchievements2} alt="" />
         </div>
       </div>
     </div>

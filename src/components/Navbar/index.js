@@ -319,7 +319,7 @@ function Navbar() {
                     >
                       CJS
                     </Link>
-                    {/* <Link
+                    <Link
                       onClick={() => {
                         setMenu(false);
                         navigate("/case-studies/FitCheck");
@@ -330,7 +330,7 @@ function Navbar() {
                       offset={-25}
                     >
                       FitCheck
-                    </Link> */}
+                    </Link>
                   </div>
                 )}
               </div>
