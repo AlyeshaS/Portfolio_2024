@@ -40,6 +40,25 @@
   margin-top: 50px;
 }
 
+.FitCheck-analysis-middle .analysis-header {
+  font-size: 25px;
+  font-weight: 700;
+  padding-bottom: 10px;
+  color: var(--accent);
+  font-style: italic;
+}
+
+.FitCheck-analysis-middle .analysis-text {
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+
+.FitCheck-analysis-middle {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 100px;
+  margin-top: 50px;
+}
 .analysis-div {
   width: 100%;
   height: 400px;
