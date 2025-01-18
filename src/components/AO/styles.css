@@ -47,20 +47,18 @@
   overflow-x: hidden;
   padding-right: 20px;
   box-sizing: content-box;
-  /* margin-right: 5px; */
-  /* justify-content: space-between; */
 }
 
-.analysis-div::-webkit-scrollbar {
+.analysis-div ::-webkit-scrollbar {
   width: 8px;
 }
 
-.analysis-div::-webkit-scrollbar-track {
+.analysis-div ::-webkit-scrollbar-track {
   border-radius: 4px;
 }
 
-.analysis-div::-webkit-scrollbar-thumb {
-  background-color: #3d5a80;
+.analysis-div ::-webkit-scrollbar-thumb {
+  background-color: var(--text-color);
   border-radius: 4px;
 }
 
@@ -219,11 +217,13 @@
     padding-bottom: 30px;
     display: flex;
     flex-direction: column;
+    height: 100%;
   }
 
   .analysis-div {
-    height: auto;
+    height: 200px;
     padding-right: 5px;
+    overflow: auto;
   }
 
   .ao-swiper .slide {
