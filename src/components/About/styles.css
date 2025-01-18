@@ -64,6 +64,7 @@
 @media (max-width: 600px) {
   .about {
     height: fit-content;
+    align-items: center;
   }
   .about .container {
     display: flex;
@@ -72,6 +73,9 @@
 
   .about .container .text {
     padding: 0px 15px;
+    display: flex;
+    align-content: center;
+    align-items: center;
   }
 
   .about .container .text h1 {
@@ -82,7 +86,19 @@
     font-size: 25px;
   }
 
+  .about .container .text .buttons {
+    display: flex;
+    justify-content: center;
+  }
   .about .container .text .buttons .button {
     font-size: 25px;
+    display: flex;
+    align-items: center;
+  }
+  .about .container .image img {
+    width: 85%;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 30px;
   }
 }
