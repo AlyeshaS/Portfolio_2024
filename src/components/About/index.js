@@ -3,7 +3,6 @@ import { Element, Link } from "react-scroll";
 
 import "./styles.css";
 import portraitPNG from "../../assets/portrait.png";
-import resume from "../../assets/UI_UX Resume 2025.pdf";
 
 function About() {
   return (
@@ -23,9 +22,9 @@ function About() {
           </p>
           <div className="buttons">
             <a
+              href="/UI_UX_Resume.pdf"
+              download="Alyeshas_Resume.pdf"
               className="button"
-              download="Alyesha_Singh_Resume_2025.pdf"
-              href={resume}
             >
               Resume
             </a>
