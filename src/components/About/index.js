@@ -22,7 +22,11 @@ function About() {
             art pieces, one pixel at a time
           </p>
           <div className="buttons">
-            <a className="button" download="resume.pdf" href={resume}>
+            <a
+              className="button"
+              download="Alyesha_Singh_Resume.pdf"
+              href={resume}
+            >
               Resume
             </a>
             <Link
