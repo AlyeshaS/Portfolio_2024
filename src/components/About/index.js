@@ -3,7 +3,7 @@ import { Element, Link } from "react-scroll";
 
 import "./styles.css";
 import portraitPNG from "../../assets/portrait.png";
-import resume from "../../assets/resume.pdf";
+import resume from "../../assets/UI_UX Resume 2025.pdf";
 
 function About() {
   return (
