@@ -24,7 +24,7 @@ function About() {
           <div className="buttons">
             <a
               className="button"
-              download="Alyesha_Singh_Resume.pdf"
+              download="Alyesha_Singh_Resume_2025.pdf"
               href={resume}
             >
               Resume
