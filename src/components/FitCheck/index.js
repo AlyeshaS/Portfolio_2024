@@ -50,6 +50,14 @@ function FitCheck() {
           <p className="FitCheck-header">FitCheck</p>
           <p>UI/UX Designer</p>
           <p>December 2024 - Present</p>
+          <a
+            className="view-website-link"
+            href="https://www.figma.com/proto/4gFR16TN2lUHlKE5omRg8g/FitCheck?node-id=180-873&t=dJanL4EfQMCZg5QC-8&scaling=scale-down&content-scaling=fixed&page-id=180%3A111&starting-point-node-id=180%3A462&show-proto-sidebar=1&hide-ui=1"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <p>View Figma Prototype</p>
+          </a>
         </div>
         <div className="swipper-container">
           <Swiper

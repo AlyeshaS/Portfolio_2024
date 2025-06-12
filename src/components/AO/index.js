@@ -1,6 +1,6 @@
 // IDEA, add the "View More" button and will show the, new event (ex) page with a description of that design
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./styles.css";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -45,14 +45,41 @@ function AO() {
     }));
   };
 
+  const FigmaEmbed = () => {
+    return (
+      <div style={{ width: "100%", height: "600px" }}>
+        <iframe
+          src="https://embed.figma.com/proto/NDmHmuDdKUn9NNedGhpV3u/AO-Figma---USE?node-id=3314-2&scaling=scale-down&hide-ui=1&embed-host=share"
+          style={{
+            width: "100%",
+            height: "100%",
+            border: "none",
+          }}
+          allowFullScreen
+          title="Academic Oasis Prototype"
+        />
+      </div>
+    );
+  };
+
   return (
     <div className="ao-page">
       <div className="ao-container">
         <div className="title">
           <p className="ao-header">Academic Oasis</p>
+
           <p>Chief Design and Marketing Officer</p>
           <p>March 2024 - January 2025</p>
+          <a
+            className="view-website-link"
+            href="https://www.figma.com/proto/NDmHmuDdKUn9NNedGhpV3u/AO-Figma---USE?node-id=3590-278&t=X0wTSK2eQk3scLSo-8&scaling=scale-down&content-scaling=fixed&page-id=3590%3A25&starting-point-node-id=3590%3A1160&hide-ui=1"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <p>View Figma Prototype</p>
+          </a>
         </div>
+
         <div className="swipper-container">
           <Swiper
             className="ao-swiper"
@@ -73,7 +100,7 @@ function AO() {
                 </div>
                 <div className="text-scroll">
                   <p>
-                    During the orignial vision of Academic Oasis, this was my
+                    During the original vision of Academic Oasis, this was my
                     design for the dashboard. Their visison was to make an
                     application for students to engage with school activities
                     while being able to have access to other features like a
