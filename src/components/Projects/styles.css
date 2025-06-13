@@ -137,6 +137,35 @@
   text-decoration: underline;
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.content .links {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding-right: 10px;
+}
+.middle-dot {
+  font-size: 50px;
+  line-height: 1;
+  color: var(--accent);
+  display: inline-block; /* CHANGED: use inline-block to avoid flex issues */
+  vertical-align: middle; /* Helps with baseline alignment */
+  transform: translateY(5px);
+}
+
+.cheffery-link {
+  display: flex;
+  padding-right: 10px;
+}
+
 @media (max-width: 800px) {
   .projects .container {
     flex-direction: column;
@@ -161,5 +190,16 @@
   .projects .container .swiper .slide .text {
     padding: 0px 15px;
     gap: 30px;
+  }
+
+  .content .links {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px; /* less spacing vertically */
+  }
+
+  .middle-dot {
+    display: none; /* hide the dot when stacked */
   }
 }

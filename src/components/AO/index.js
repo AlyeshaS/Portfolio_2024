@@ -70,14 +70,25 @@ function AO() {
 
           <p>Chief Design and Marketing Officer</p>
           <p>March 2024 - January 2025</p>
-          <a
-            className="view-website-link"
-            href="https://www.figma.com/proto/NDmHmuDdKUn9NNedGhpV3u/AO-Figma---USE?node-id=3590-278&t=X0wTSK2eQk3scLSo-8&scaling=scale-down&content-scaling=fixed&page-id=3590%3A25&starting-point-node-id=3590%3A1160&hide-ui=1"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <p>View Figma Prototype</p>
-          </a>
+          <div className="links">
+            <a
+              className="view-website-link"
+              href="https://www.figma.com/proto/NDmHmuDdKUn9NNedGhpV3u/AO-Figma---USE?node-id=3590-278&t=X0wTSK2eQk3scLSo-8&scaling=scale-down&content-scaling=fixed&page-id=3590%3A25&starting-point-node-id=3590%3A1160&hide-ui=1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p>Laptop Figma Prototype</p>
+            </a>
+            <span className="middle-dot">·</span>
+            <a
+              className="view-website-link"
+              href="https://www.figma.com/proto/NDmHmuDdKUn9NNedGhpV3u/AO-Figma---USE?node-id=3619-237&p=f&t=QKuTx3YMLRMxoa7n-8&scaling=scale-down&content-scaling=fixed&page-id=3619%3A13&starting-point-node-id=3619%3A237&hide-ui=1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p>Mobile Figma Prototype</p>
+            </a>
+          </div>
         </div>
 
         <div className="swipper-container">
