@@ -7,7 +7,10 @@ import "swiper/css";
 import "swiper/css/effect-flip";
 import "swiper/css/pagination";
 
-import ChefferyFigma from "../../assets/ChefferyFigma.png";
+import ChefferyFigma from "../../assets/ChefferyFigma_1.png";
+import ChefferyContact from "../../assets/ChefferyContact.png";
+import ChefferyContact_1 from "../../assets/ChefferyContact_1.png";
+import ChefferyFooter from "../../assets/ChefferyFooter.png";
 
 // Fix the mobile image and then also check the side align for the second image
 function Cheffery() {
@@ -31,6 +34,14 @@ function Cheffery() {
           <p className="Cheffery-header">Cheffery</p>
           <p>UI/UX Designer</p>
           <p>June 2024 - Present</p>
+          <a
+            href="https://www.figma.com/proto/2dbZHtyAm4RFi9gaTjsZ3O/Cheffery?node-id=1018-2548&t=ukvQ7DLPsS8R52Dg-8&scaling=scale-down&content-scaling=fixed&page-id=1018%3A2419&hide-ui=1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="view-website-link"
+          >
+            <p className="cheffery-link">View Figma Prototype</p>
+          </a>
         </div>
         <div className="swipper-container">
           <Swiper
@@ -48,7 +59,7 @@ function Cheffery() {
             <SwiperSlide className="slide">
               <div className="text">
                 <div>
-                  <h1 className="Cheffery-page-titles">Dashboard (Old) </h1>
+                  <h1 className="Cheffery-page-titles">Landing</h1>
                 </div>
                 <div className="text-scroll">
                   <p>
@@ -69,22 +80,76 @@ function Cheffery() {
             <SwiperSlide className="slide">
               <div className="text">
                 <div>
-                  <h1 className="Cheffery-page-titles">Dashboard (Old) </h1>
+                  <h1 className="Cheffery-page-titles">Contact (Reserve)</h1>
                 </div>
                 <div className="text-scroll">
                   <p>
-                    Cheffery is a growing platform designed to support aspiring
-                    chefs and build a vibrant culinary community. Currently
-                    under development, the website allows users to sign up as
-                    chefs or hire chefs for various events. As the brand
-                    continues to expand, Cheffery has already hosted numerous
-                    successful events, fostering connections and opportunities
-                    within the local food scene.
+                    To help us connect with potential clientele, we offer
+                    multiple ways for clients to reach out based on their
+                    preference. They can send us an email with their inquiry,
+                    call the designated cell number for direct communication, or
+                    simply fill out the contact form available on our page. Once
+                    we receive their message, a member of our team will follow
+                    up as soon as possible to discuss their needs, answer any
+                    questions, and begin the onboarding process. We aim to make
+                    this first step easy and accessible, ensuring every
+                    potential client feels welcomed and supported right from the
+                    start.
                   </p>
                 </div>
               </div>
               <div className="Cheffery-image">
-                <img src={ChefferyFigma} alt="" />
+                <img src={ChefferyContact} alt="" />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className="slide">
+              <div className="text">
+                <div>
+                  <h1 className="Cheffery-page-titles">Contact (Community)</h1>
+                </div>
+                <div className="text-scroll">
+                  <p>
+                    To help us connect with potential clientele, we offer
+                    multiple ways for clients to reach out based on their
+                    preference. They can send us an email with their inquiry,
+                    call the designated cell number for direct communication, or
+                    simply fill out the contact form available on our page. Once
+                    we receive their message, a member of our team will follow
+                    up as soon as possible to discuss their needs, answer any
+                    questions, and begin the onboarding process. We aim to make
+                    this first step easy and accessible, ensuring every
+                    potential client feels welcomed and supported right from the
+                    start.
+                  </p>
+                </div>
+              </div>
+              <div className="Cheffery-image">
+                <img src={ChefferyContact_1} alt="" />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className="slide">
+              <div className="text">
+                <div>
+                  <h1 className="Cheffery-page-titles">Footer</h1>
+                </div>
+                <div className="text-scroll">
+                  <p>
+                    The footer of the Cheffery website serves as a convenient
+                    navigation hub, providing quick access to all the key pages
+                    we offer—such as our services, community initiatives,
+                    contact page, and more. It also features direct links to our
+                    social media platforms, making it easy for visitors to stay
+                    connected, follow our latest updates, and engage with our
+                    growing community across multiple channels. Designed with
+                    accessibility and user experience in mind, the footer
+                    ensures that no matter where users are on the site, they can
+                    effortlessly find the information or connections they’re
+                    looking for.
+                  </p>
+                </div>
+              </div>
+              <div className="Cheffery-image">
+                <img src={ChefferyFooter} alt="" />
               </div>
             </SwiperSlide>
           </Swiper>
