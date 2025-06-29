@@ -6,7 +6,7 @@ import { useState } from "react";
 
 import AOFigma from "../../assets/AOFigma.png";
 import CJSFigma from "../../assets/CJSFigma.png";
-import ChefferyFigma from "../../assets/ChefferyFigma.png";
+import ChefferyFigma from "../../assets/ChefferyFigma_1.png";
 import FitCheckFigma from "../../assets/FitCheckFigma.png";
 import "swiper/css/effect-flip";
 import "swiper/css/pagination";
