@@ -43,7 +43,7 @@ function Cheffery() {
             <p className="cheffery-link">View Figma Prototype</p>
           </a>
         </div>
-        <div className="swipper-container">
+        {/* <div className="swipper-container">
           <Swiper
             className="Cheffery-swiper"
             grabCursor={true}
@@ -153,28 +153,62 @@ function Cheffery() {
               </div>
             </SwiperSlide>
           </Swiper>
-        </div>
+        </div> */}
+
         <div className="Cheffery-analysis">
           <div className="analysis-div">
-            <p className="analysis-header">Problem & Analysis</p>
-            <p className="analysis-text">
-              Cheffery's existing website lacked professionalism and failed to
-              attract clients, leading to lost opportunities and diminished
-              credibility. The website’s uninviting design caused low client
-              engagement, highlighting the need for a redesign to reestablish
-              trust, improve client retention, and enhance brand credibility. A
-              more thoughtful design could also provide a visually appealing
-              platform to promote events effectively. However, the
-              implementation of the new design is currently on hold, and the
-              company continues to use their outdated website.
+            <p className="analysis-header">Project Overview</p>
+            <p style={{ paddingBottom: "15px" }}>
+              <span className="analysis-text-header">Project Name: </span>
+              <span className="analysis-text">Cheffery</span>
             </p>
-            <p className="analysis-header">Goal & Objective</p>
+            <p style={{ paddingBottom: "15px" }}>
+              <span className="analysis-text-header">Role: </span>
+              <span className="analysis-text">UI/UX Designer</span>
+            </p>
+            <p style={{ paddingBottom: "15px" }}>
+              <span className="analysis-text-header">Tools Used: </span>
+              <span className="analysis-text">Figma</span>
+            </p>
+            <p>
+              <span className="analysis-text" style={{ fontStyle: "italic" }}>
+                Cheffery is a modern culinary platform designed to connect
+                talented chefs with clients seeking high-quality, personalized
+                dining experiences. The project serves as both a portfolio
+                showcase and a service portal, enabling chefs to highlight their
+                culinary skills, achievements, and specialties while making it
+                easy for clients to discover, connect, and book their services.
+              </span>
+            </p>
+          </div>
+          <div className="Cheffery-image">
+            <img src={ChefferyFigma} alt="" />
+          </div>
+        </div>
+
+        <div className="Cheffery-analysis">
+          <div className="analysis-div">
+            <p className="analysis-header">Problem Statement</p>
+            <p className="analysis-text-header">Who has the problem? </p>
             <p className="analysis-text">
-              The goal was to create a fully functional application that would
-              initially serve students at the university and later expand to
-              other institutions. The design an all-in-one resource platform for
-              students, integrating event listings, calendars, and useful
-              resources.
+              Independent chefs, culinary freelancers, and small catering
+              businesses.
+            </p>
+            <p className="analysis-text-header">Why is it a problem? </p>
+            <p className="analysis-text">
+              These users often struggle with limited visibility, a lack of a
+              professional online presence, and inefficient methods of
+              connecting with potential clients. Relying solely on
+              word-of-mouth, oversaturated social media, or general freelance
+              platforms makes it difficult to showcase their work, build trust,
+              and manage bookings effectively.
+            </p>
+            <p className="analysis-text-header">What is the goal? </p>
+            <p className="analysis-text">
+              To provide chefs with a centralized, professional platform that
+              enhances their digital presence, simplifies client interactions,
+              and increases bookings, ultimately improving engagement and
+              helping them grow their culinary brand.
             </p>
           </div>
           <div className="Cheffery-image">

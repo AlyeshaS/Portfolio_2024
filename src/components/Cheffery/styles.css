@@ -28,16 +28,23 @@
   font-style: italic;
 }
 
-.Cheffery-analysis .analysis-text {
-  font-size: 18px;
-  padding-bottom: 20px;
-}
-
 .Cheffery-analysis {
   display: flex;
   flex-direction: row;
   padding-bottom: 100px;
   margin-top: 50px;
+}
+
+/* .Cheffery-analysis p {
+  padding-bottom: 15px;
+} */
+.Cheffery-analysis .analysis-text-header {
+  font-size: 18px;
+  font-weight: 700;
+}
+.Cheffery-analysis .analysis-text {
+  font-size: 18px;
+  padding-bottom: 20px;
 }
 
 .analysis-div {
