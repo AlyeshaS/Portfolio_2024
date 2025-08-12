@@ -35,9 +35,41 @@
   margin-top: 50px;
 }
 
-/* .Cheffery-analysis p {
-  padding-bottom: 15px;
+.analysis-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2em 0;
+}
+
+.analysis-table th,
+.analysis-table td {
+  border: 1px solid #ccc;
+  padding: 0.75em;
+  text-align: left;
+}
+
+.analysis-table td {
+  vertical-align: top;
+}
+
+.analysis-table th {
+  background-color: var(--accent);
+  color: #e6e8ed;
+}
+
+/* .analysis-table td ul {
+  margin: 0;
+  padding-left: 0;
+  list-style-position: inside;
 } */
+
+ul {
+  padding-left: 1.5em;
+}
+ul li {
+  padding-left: 0.5em;
+}
+
 .Cheffery-analysis .analysis-text-header {
   font-size: 18px;
   font-weight: 700;
@@ -179,6 +211,7 @@
   opacity: 1;
 }
 
+/* Add bullet for phone */
 @media (max-width: 800px) {
   .Cheffery-swiper .slide {
     grid-template-columns: 1fr;

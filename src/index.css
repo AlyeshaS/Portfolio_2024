@@ -27,7 +27,12 @@ body {
 }
 
 .section {
-  height: 100dvh;
+  height: 700px;
+  margin-bottom: 5vh;
+  width: 80vw; /* 80% of the viewport width */
+  max-width: 1200px; /* Optional: limit max width for large screens */
+  margin-left: auto;
+  margin-right: auto; /* Center the section horizontally */
 }
 
 .section .section-header {

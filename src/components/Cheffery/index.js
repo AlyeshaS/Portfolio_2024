@@ -30,7 +30,7 @@ function Cheffery() {
   return (
     <div className="Cheffery-page">
       <div className="Cheffery-container">
-        <div className="title">
+        <div className="title" style={{ marginBottom: "15dvh" }}>
           <p className="Cheffery-header">Cheffery</p>
           <p>UI/UX Designer</p>
           <p>June 2024 - Present</p>
@@ -217,42 +217,113 @@ function Cheffery() {
         </div>
 
         <div className="Cheffery-analysis">
-          <img src={ChefferyFigma} alt="" />
           <div className="analysis-div">
-            <p className="analysis-header">Design Process</p>
+            <p className="analysis-header">Reseach</p>
+            <p className="analysis-text-header">Objective of the Research </p>
             <p className="analysis-text">
-              The design process began with creating early sketches and clean,
-              professional layouts, incorporating playful typography and visuals
-              to align with the brand’s tone. These initial wireframes
-              established the foundation for an engaging and functional
-              interface.
+              Analyzing other fine dining restaurant websites was essential to
+              understanding industry standards, design patterns, and user
+              expectations. This process helped identify both best practices to
+              emulate and common pitfalls to avoid, ensuring Cheffery’s website
+              would stand out while remaining user-friendly.
             </p>
-            <br />
+            <p className="analysis-text-header">Competitor Analysis Table</p>
+            <table className="analysis-table">
+              <thead>
+                <tr>
+                  <th>Competitor</th>
+                  <th>Strengths</th>
+                  <th>Weaknesses</th>
+                  <th>Takeaways for Cheffery</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Alo</td>
+                  <td>
+                    <ul>
+                      <li>Elegant French design</li>
+                      <li>High-end photography & typography</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Too much scrolling</li>
+                      <li>
+                        Needs more color, too harsh on the eyes (the white
+                        background)
+                      </li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>
+                        Use sleek visuals and minimalistic navigation for
+                        clarity and impact
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Savor Toronto</td>
+                  <td>
+                    <ul>
+                      <li>Sectioned off in clean sections</li>
+                      <li>Not too much scrolling</li>
+                      <li>Not too many words</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Side bar is too large</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>
+                        How many scrolls it took to complete the home page
+                      </li>
+                      <li>How it is sectioned</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Enigma Yorkville</td>
+                  <td>
+                    <ul>
+                      <li>Artistic presentation, immersive tasting menu UX</li>
+                      <li>Good use of typography</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>
+                        Some components are too large, causes the content to not
+                        fit all on one page at one time
+                      </li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Choice of images as a background to words</li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <p className="analysis-text-header">What is the goal? </p>
             <p className="analysis-text">
-              Interactive prototypes were developed using Figma, showcasing
-              distinct pages for key sections such as the Home and Menu pages.
-              The homepage was designed to immediately engage visitors by
-              highlighting essential content, while scrolling was intentionally
-              limited to three screens to ensure user focus and retention.
-            </p>
-            <br />
-            <p className="analysis-text">
-              The visual design struck a balance between playfulness and
-              professionalism, with carefully chosen color schemes, typography,
-              and layouts. Outline-style imagery added a creative touch while
-              maintaining a polished and professional appearance, enhancing the
-              user experience without overwhelming it.
-            </p>
-            <br />
-            <p className="analysis-text">
-              The design underwent multiple rounds of feedback and refinement.
-              Suggestions from team members informed improvements, resulting in
-              a polished final product that seamlessly combined playful elements
-              with clean, professional aesthetics to meet user needs and
-              business goals.
+              To provide chefs with a centralized, professional platform that
+              enhances their digital presence, simplifies client interactions,
+              and increases bookings, ultimately improving engagement and
+              helping them grow their culinary brand.
             </p>
           </div>
+          {/* <div className="Cheffery-image">
+            <img src={ChefferyFigma} alt="" />
+          </div> */}
         </div>
+
         <div className="Cheffery-analysis">
           <div className="analysis-div">
             <p className="analysis-header">Reflection</p>
