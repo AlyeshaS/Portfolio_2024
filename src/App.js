@@ -57,7 +57,7 @@ function App() {
           }
         />
         <Route path="/case-studies/ao" element={<AO />} />
-        <Route path="/case-studies/cheffery" element={<Cheffery />} />
+        {/* <Route path="/case-studies/cheffery" element={<Cheffery />} /> */}
         <Route path="/case-studies/cjs" element={<CJS />} />
         <Route path="/case-studies/fitcheck" element={<FitCheck />} />
       </Routes>

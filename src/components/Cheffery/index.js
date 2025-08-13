@@ -11,6 +11,7 @@ import ChefferyFigma from "../../assets/ChefferyFigma_1.png";
 import ChefferyContact from "../../assets/ChefferyContact.png";
 import ChefferyContact_1 from "../../assets/ChefferyContact_1.png";
 import ChefferyFooter from "../../assets/ChefferyFooter.png";
+import ChefferyFlowchart from "../../assets/ChefferyFlowchart.png";
 
 // Fix the mobile image and then also check the side align for the second image
 function Cheffery() {
@@ -217,7 +218,7 @@ function Cheffery() {
         </div>
 
         <div className="Cheffery-analysis">
-          <div className="analysis-div">
+          <div className="analysis-div.no-scroll">
             <p className="analysis-header">Reseach</p>
             <p className="analysis-text-header">Objective of the Research </p>
             <p className="analysis-text">
@@ -311,17 +312,19 @@ function Cheffery() {
                 </tr>
               </tbody>
             </table>
-            <p className="analysis-text-header">What is the goal? </p>
-            <p className="analysis-text">
-              To provide chefs with a centralized, professional platform that
-              enhances their digital presence, simplifies client interactions,
-              and increases bookings, ultimately improving engagement and
-              helping them grow their culinary brand.
-            </p>
           </div>
-          {/* <div className="Cheffery-image">
-            <img src={ChefferyFigma} alt="" />
-          </div> */}
+        </div>
+
+        <div className="Cheffery-analysis-column">
+          <p className="analysis-header">User Journey</p>
+
+          <div className="Cheffery-image">
+            <img
+              src={ChefferyFlowchart}
+              alt=""
+              className="centered-contact-img"
+            />
+          </div>
         </div>
 
         <div className="Cheffery-analysis">
@@ -342,7 +345,11 @@ function Cheffery() {
           </div>
           {/* Fix the size of the mobile version */}
           <div className="Cheffery-image">
-            <img src={ChefferyFigma} alt="" />
+            <img
+              src={ChefferyContact}
+              alt=""
+              className="centered-contact-img"
+            />
           </div>
         </div>
       </div>
