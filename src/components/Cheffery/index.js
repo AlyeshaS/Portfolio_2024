@@ -12,6 +12,7 @@ import ChefferyContact from "../../assets/ChefferyContact.png";
 import ChefferyContact_1 from "../../assets/ChefferyContact_1.png";
 import ChefferyFooter from "../../assets/ChefferyFooter.png";
 import ChefferyFlowchart from "../../assets/ChefferyFlowchart.png";
+import ChefferyLogo from "../../assets/ChefferyLogo.png";
 
 // Fix the mobile image and then also check the side align for the second image
 function Cheffery() {
@@ -157,7 +158,7 @@ function Cheffery() {
         </div> */}
 
         <div className="Cheffery-analysis">
-          <div className="analysis-div">
+          <div className="analysis-div.no-scroll">
             <p className="analysis-header">Project Overview</p>
             <p style={{ paddingBottom: "15px" }}>
               <span className="analysis-text-header">Project Name: </span>
@@ -183,7 +184,11 @@ function Cheffery() {
             </p>
           </div>
           <div className="Cheffery-image">
-            <img src={ChefferyFigma} alt="" />
+            <img
+              src={ChefferyLogo}
+              alt="ChefferyLogo"
+              className="cheffery-logo-img"
+            />
           </div>
         </div>
 
@@ -212,9 +217,9 @@ function Cheffery() {
               helping them grow their culinary brand.
             </p>
           </div>
-          <div className="Cheffery-image">
+          {/* <div className="Cheffery-image">
             <img src={ChefferyFigma} alt="" />
-          </div>
+          </div> */}
         </div>
 
         <div className="Cheffery-analysis">
@@ -317,40 +322,113 @@ function Cheffery() {
 
         <div className="Cheffery-analysis-column">
           <p className="analysis-header">User Journey</p>
-
+          <p className="analysis-text-header">Flowchart</p>
           <div className="Cheffery-image">
             <img
               src={ChefferyFlowchart}
               alt=""
               className="centered-contact-img"
+              style={{ paddingBottom: 10 }}
             />
           </div>
+          <p className="analysis-text-header">Wireframes</p>
+          <p className="analysis-text">
+            I began by creating low-fidelity wireframes to outline the core
+            structure of each page, focusing on hierarchy and flow rather than
+            visual styling. This step ensured the layout supported the key user
+            journey—moving from service discovery to booking—with minimal
+            friction. Key decisions included placing a prominent “Book Now”
+            button in the header and maintaining consistent spacing for visual
+            clarity.
+          </p>
+          <p className="analysis-text-header">UI Design</p>
+          <p className="analysis-text">
+            Once the wireframes were approved, I transitioned to high-fidelity
+            mockups incorporating Cheffery’s brand elements. The design featured
+            a deep green and soft cream palette accented with gold, paired with
+            elegant serif headings and clean sans-serif body text.
+            High-resolution food photography was used strategically to create
+            visual impact, while maintaining fast load times. The UI balanced
+            luxury aesthetics with functional simplicity to appeal to a high-end
+            clientele.
+          </p>
+          <p className="analysis-text-header">Usability Testing</p>
+          <p className="analysis-text">
+            I conducted informal usability tests with 5 participants
+            representing Cheffery’s target audience. They were asked to complete
+            tasks such as finding the menu, booking a service, and viewing event
+            photos. Feedback revealed that users valued having the booking
+            button visible at all times and preferred a condensed services
+            overview before detailed descriptions. Adjustments included refining
+            mobile navigation, shortening form fields, and adding a “Quick View”
+            option for the gallery.
+          </p>
         </div>
 
         <div className="Cheffery-analysis">
           <div className="analysis-div">
-            <p className="analysis-header">Reflection</p>
-
+            <p className="analysis-header">Website Pages Overview</p>
             <p className="analysis-text">
-              Early in the project, clarifying client requirements proved
-              challenging, and incorporating bright orange into a professional
-              design required careful balancing with calmer complementary
-              colors. This experience enhanced my skills in structuring web
-              pages for better content display and taught me how to effectively
-              merge playful and professional design elements. For future
-              improvements, I recommend conducting user testing to validate the
-              design’s effectiveness and exploring opportunities to enhance
-              branding through interactive elements.
+              ADD THE DIFFERENT PAGES AND THE TITLE OR A SMALL DESCRIPTION
+              UNDERNEATH
             </p>
           </div>
           {/* Fix the size of the mobile version */}
-          <div className="Cheffery-image">
+          {/* <div className="Cheffery-image">
             <img
               src={ChefferyContact}
               alt=""
               className="centered-contact-img"
             />
+          </div> */}
+        </div>
+
+        <div className="Cheffery-analysis">
+          <div className="analysis-div">
+            <p className="analysis-header">Final Outcome</p>
+            <p className="analysis-text">
+              The final website presents Cheffery as a refined yet approachable
+              fine dining experience. Users can easily explore services, view
+              curated image galleries, and submit booking requests within two
+              clicks. The site is fully responsive, optimized for both
+              performance and accessibility, and integrates seamlessly with
+              Cheffery’s Instagram feed to keep content fresh and engaging.
+            </p>
           </div>
+          {/* Fix the size of the mobile version */}
+          {/* <div className="Cheffery-image">
+            <img
+              src={ChefferyContact}
+              alt=""
+              className="centered-contact-img"
+            />
+          </div> */}
+        </div>
+
+        <div className="Cheffery-analysis">
+          <div className="analysis-div">
+            <p className="analysis-header">Reflection</p>
+            <p className="analysis-text">
+              This project reinforced the importance of balancing brand
+              storytelling with usability. While aesthetics played a significant
+              role in conveying Cheffery’s luxury positioning, ensuring a
+              frictionless booking process was equally critical. If I were to
+              iterate further, I would explore integrating a live availability
+              calendar and expanding the blog/recipe section to boost SEO and
+              customer engagement over time. Overall, the project achieved its
+              goals of elevating Cheffery’s online presence and creating a clear
+              path from curiosity to conversion. Cheffery’s Instagram feed to
+              keep content fresh and engaging.
+            </p>
+          </div>
+          {/* Fix the size of the mobile version */}
+          {/* <div className="Cheffery-image">
+            <img
+              src={ChefferyContact}
+              alt=""
+              className="centered-contact-img"
+            />
+          </div> */}
         </div>
       </div>
     </div>

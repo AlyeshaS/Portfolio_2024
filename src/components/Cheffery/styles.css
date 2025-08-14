@@ -54,7 +54,7 @@
   width: 100%;
   border-collapse: collapse;
   margin: 2em 0;
-  box-shadow: 0 4px 12px rgba(61, 90, 128, 0.1);
+  /* box-shadow: 0 4px 12px rgba(61, 90, 128, 0.1); */
 }
 
 .analysis-table th,
@@ -62,7 +62,7 @@
   border: 1px solid var(--text-color);
   padding: 0.75em;
   text-align: left;
-  text-shadow: 2px 2px 3px rgba(61, 90, 128, 0.15);
+  /* text-shadow: 2px 2px 3px rgba(61, 90, 128, 0.15); */
 }
 
 .analysis-table td {
@@ -91,6 +91,17 @@ ul li {
   font-size: 18px;
   font-weight: 700;
 }
+
+.Cheffery-analysis-column .analysis-text-header {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.Cheffery-analysis-column .analysis-text {
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+
 .Cheffery-analysis .analysis-text {
   font-size: 18px;
   padding-bottom: 20px;
@@ -98,19 +109,19 @@ ul li {
 
 .analysis-div {
   width: 100%;
-  height: 400px;
+  height: 100%;
   overflow-y: auto;
   overflow-x: hidden;
   padding-right: 20px;
   box-sizing: content-box;
 }
 
-.Cheffery-header,
+/* .Cheffery-header,
 .Cheffery-analysis .analysis-header,
 .Cheffery-analysis .analysis-text-header,
 .Cheffery-analysis .analysis-text {
   text-shadow: 2px 2px 3px rgba(61, 90, 128, 0.15);
-}
+} */
 
 .analysis-div.no-scroll {
   height: auto;
