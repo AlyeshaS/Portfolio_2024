@@ -239,6 +239,22 @@ ul li {
   object-fit: cover; /* or 'contain' if you want the whole image visible */
 }
 
+.Cheffery-image-column {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center; /* optional: centers the images horizontally */
+  align-items: center; /* optional: aligns images vertically */
+}
+.Cheffery-image-column img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover; /* or 'contain' if you want the whole image visible */
+}
+
 .centered-contact-img {
   display: block;
   margin-left: auto;

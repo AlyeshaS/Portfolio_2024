@@ -7,12 +7,14 @@ import "swiper/css";
 import "swiper/css/effect-flip";
 import "swiper/css/pagination";
 
-import ChefferyFigma from "../../assets/ChefferyFigma_1.png";
-import ChefferyContact from "../../assets/ChefferyContact.png";
-import ChefferyContact_1 from "../../assets/ChefferyContact_1.png";
-import ChefferyFooter from "../../assets/ChefferyFooter.png";
 import ChefferyFlowchart from "../../assets/ChefferyFlowchart.png";
 import ChefferyLogo from "../../assets/ChefferyLogo.png";
+import ChefferyClients from "../../assets/ChefferyClients.png";
+import ChefferyCommunity from "../../assets/ChefferyCommunity.png";
+import ChefferyDefinition from "../../assets/ChefferyDefinition.png";
+import ChefferyExperience from "../../assets/ChefferyExperience.png";
+import ChefferyLanding from "../../assets/ChefferyLanding.png";
+import ChefferyReserve from "../../assets/ChefferyReserve.png";
 
 // Fix the mobile image and then also check the side align for the second image
 function Cheffery() {
@@ -365,22 +367,14 @@ function Cheffery() {
           </p>
         </div>
 
-        <div className="Cheffery-analysis">
+        <div className="Cheffery-analysis-column">
           <div className="Cheffery-analysis-div">
             <p className="analysis-header">Website Pages Overview</p>
-            <p className="analysis-text">
-              ADD THE DIFFERENT PAGES AND THE TITLE OR A SMALL DESCRIPTION
-              UNDERNEATH
-            </p>
           </div>
-          {/* Fix the size of the mobile version */}
-          {/* <div className="Cheffery-image">
-            <img
-              src={ChefferyContact}
-              alt=""
-              className="centered-contact-img"
-            />
-          </div> */}
+          <div className="Cheffery-image-column">
+            <img src={ChefferyLanding} alt="" />
+            <img src={ChefferyLanding} alt="" />
+          </div>
         </div>
 
         <div className="Cheffery-analysis">
