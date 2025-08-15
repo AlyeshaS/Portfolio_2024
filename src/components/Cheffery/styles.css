@@ -249,7 +249,7 @@ ul li {
   align-items: center; /* optional: aligns images vertically */
 }
 .Cheffery-image-column img {
-  width: 100%;
+  width: 50%;
   height: auto;
   display: block;
   object-fit: cover; /* or 'contain' if you want the whole image visible */
