@@ -193,7 +193,7 @@ function Cheffery() {
         </div>
 
         <div className="Cheffery-analysis">
-          <div className="analysis-div">
+          <div className="Cheffery-analysis-div">
             <p className="analysis-header">Problem Statement</p>
             <p className="analysis-text-header">Who has the problem? </p>
             <p className="analysis-text">
@@ -366,7 +366,7 @@ function Cheffery() {
         </div>
 
         <div className="Cheffery-analysis">
-          <div className="analysis-div">
+          <div className="Cheffery-analysis-div">
             <p className="analysis-header">Website Pages Overview</p>
             <p className="analysis-text">
               ADD THE DIFFERENT PAGES AND THE TITLE OR A SMALL DESCRIPTION
@@ -384,7 +384,7 @@ function Cheffery() {
         </div>
 
         <div className="Cheffery-analysis">
-          <div className="analysis-div">
+          <div className="Cheffery-analysis-div">
             <p className="analysis-header">Final Outcome</p>
             <p className="analysis-text">
               The final website presents Cheffery as a refined yet approachable
@@ -406,7 +406,7 @@ function Cheffery() {
         </div>
 
         <div className="Cheffery-analysis">
-          <div className="analysis-div">
+          <div className="Cheffery-analysis-div">
             <p className="analysis-header">Reflection</p>
             <p className="analysis-text">
               This project reinforced the importance of balancing brand

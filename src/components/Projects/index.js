@@ -168,7 +168,7 @@ function Projects() {
             <div className="content">
               <img src={ChefferyFigma} alt="Cheffery Design" />
               <a
-                href="https://www.figma.com/proto/2dbZHtyAm4RFi9gaTjsZ3O/Cheffery?node-id=1018-2548&t=ukvQ7DLPsS8R52Dg-8&scaling=scale-down&content-scaling=fixed&page-id=1018%3A2419&hide-ui=1"
+                href="https://www.figma.com/proto/2dbZHtyAm4RFi9gaTjsZ3O/Cheffery?node-id=1188-684&t=Ec0Wnzffpp4zppkY-0&scaling=scale-down&content-scaling=fixed&page-id=1188%3A555&hide-ui=1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="view-website-link"
