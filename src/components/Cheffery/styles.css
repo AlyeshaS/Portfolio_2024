@@ -232,35 +232,51 @@ ul li {
   border-radius: 10px;
 }
 
-.Cheffery-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover; /* or 'contain' if you want the whole image visible */
-}
-
-.Cheffery-image-column {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-
-  justify-content: center; /* optional: centers the images horizontally */
-  align-items: center; /* optional: aligns images vertically */
-}
-.Cheffery-image-column img {
-  width: 50%;
-  height: auto;
-  display: block;
-  object-fit: cover; /* or 'contain' if you want the whole image visible */
-}
-
 .centered-contact-img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   max-width: 40vw;
   height: auto;
+}
+
+.Cheffery-image-column {
+  background-color: var(--text-color);
+}
+.slick-slide > div {
+  margin: 0 10px;
+}
+
+.Cheffery-image-column-item img {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+.Cheffery-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover; /* or 'contain' if you want the whole image visible */
+}
+.Cheffery-image-column-text {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centers horizontally */
+  justify-content: center; /* centers vertically */
+  text-align: center; /* centers text inside block elements */
+  margin-bottom: 10px;
+}
+
+.Cheffery-image-column-text h4 {
+  margin-bottom: 10px;
+  color: var(--background);
+}
+
+.Cheffery-image-column-text p {
+  color: var(--background);
+  font-size: 13px;
 }
 
 .Cheffery-swiper-pagination-bullet {

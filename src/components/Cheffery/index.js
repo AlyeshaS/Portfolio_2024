@@ -6,6 +6,9 @@ import { EffectFlip, Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-flip";
 import "swiper/css/pagination";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 import ChefferyFlowchart from "../../assets/ChefferyFlowchart.png";
 import ChefferyLogo from "../../assets/ChefferyLogo.png";
@@ -15,6 +18,7 @@ import ChefferyDefinition from "../../assets/ChefferyDefinition.png";
 import ChefferyExperience from "../../assets/ChefferyExperience.png";
 import ChefferyLanding from "../../assets/ChefferyLanding.png";
 import ChefferyReserve from "../../assets/ChefferyReserve.png";
+import ChefferyFooter from "../../assets/ChefferyFooter.png";
 
 // Fix the mobile image and then also check the side align for the second image
 function Cheffery() {
@@ -30,6 +34,14 @@ function Cheffery() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
+  const settings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+  };
 
   return (
     <div className="Cheffery-page">
@@ -47,117 +59,6 @@ function Cheffery() {
             <p className="cheffery-link">View Figma Prototype</p>
           </a>
         </div>
-        {/* <div className="swipper-container">
-          <Swiper
-            className="Cheffery-swiper"
-            grabCursor={true}
-            direction={isVertical ? "vertical" : "horizontal"}
-            effect="flip"
-            pagination={{ clickable: true }}
-            autoplay={{
-              delay: 2500,
-              disableOnInteraction: true,
-            }}
-            modules={[EffectFlip, Autoplay, Pagination]}
-          >
-            <SwiperSlide className="slide">
-              <div className="text">
-                <div>
-                  <h1 className="Cheffery-page-titles">Landing</h1>
-                </div>
-                <div className="text-scroll">
-                  <p>
-                    Cheffery is a growing platform designed to support aspiring
-                    chefs and build a vibrant culinary community. Currently
-                    under development, the website allows users to sign up as
-                    chefs or hire chefs for various events. As the brand
-                    continues to expand, Cheffery has already hosted numerous
-                    successful events, fostering connections and opportunities
-                    within the local food scene.
-                  </p>
-                </div>
-              </div>
-              <div className="content">
-                <img src={ChefferyFigma} alt="" />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide className="slide">
-              <div className="text">
-                <div>
-                  <h1 className="Cheffery-page-titles">Contact (Reserve)</h1>
-                </div>
-                <div className="text-scroll">
-                  <p>
-                    To help us connect with potential clientele, we offer
-                    multiple ways for clients to reach out based on their
-                    preference. They can send us an email with their inquiry,
-                    call the designated cell number for direct communication, or
-                    simply fill out the contact form available on our page. Once
-                    we receive their message, a member of our team will follow
-                    up as soon as possible to discuss their needs, answer any
-                    questions, and begin the onboarding process. We aim to make
-                    this first step easy and accessible, ensuring every
-                    potential client feels welcomed and supported right from the
-                    start.
-                  </p>
-                </div>
-              </div>
-              <div className="Cheffery-image">
-                <img src={ChefferyContact} alt="" />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide className="slide">
-              <div className="text">
-                <div>
-                  <h1 className="Cheffery-page-titles">Contact (Community)</h1>
-                </div>
-                <div className="text-scroll">
-                  <p>
-                    To help us connect with potential clientele, we offer
-                    multiple ways for clients to reach out based on their
-                    preference. They can send us an email with their inquiry,
-                    call the designated cell number for direct communication, or
-                    simply fill out the contact form available on our page. Once
-                    we receive their message, a member of our team will follow
-                    up as soon as possible to discuss their needs, answer any
-                    questions, and begin the onboarding process. We aim to make
-                    this first step easy and accessible, ensuring every
-                    potential client feels welcomed and supported right from the
-                    start.
-                  </p>
-                </div>
-              </div>
-              <div className="Cheffery-image">
-                <img src={ChefferyContact_1} alt="" />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide className="slide">
-              <div className="text">
-                <div>
-                  <h1 className="Cheffery-page-titles">Footer</h1>
-                </div>
-                <div className="text-scroll">
-                  <p>
-                    The footer of the Cheffery website serves as a convenient
-                    navigation hub, providing quick access to all the key pages
-                    we offer—such as our services, community initiatives,
-                    contact page, and more. It also features direct links to our
-                    social media platforms, making it easy for visitors to stay
-                    connected, follow our latest updates, and engage with our
-                    growing community across multiple channels. Designed with
-                    accessibility and user experience in mind, the footer
-                    ensures that no matter where users are on the site, they can
-                    effortlessly find the information or connections they’re
-                    looking for.
-                  </p>
-                </div>
-              </div>
-              <div className="Cheffery-image">
-                <img src={ChefferyFooter} alt="" />
-              </div>
-            </SwiperSlide>
-          </Swiper>
-        </div> */}
 
         <div className="Cheffery-analysis">
           <div className="analysis-div.no-scroll">
@@ -372,8 +273,17 @@ function Cheffery() {
             <p className="analysis-header">Website Pages Overview</p>
           </div>
           <div className="Cheffery-image-column">
-            <img src={ChefferyLanding} alt="" />
-            <img src={ChefferyLanding} alt="" />
+            <Slider {...settings}>
+              {data.map((item, index) => (
+                <div key={index} className="Cheffery-image-column-item">
+                  <img src={item.image} alt={item.title} />
+                  <div className="Cheffery-image-column-text">
+                    <h4>{item.title}</h4>
+                    <p>{item.description}</p>
+                  </div>
+                </div>
+              ))}
+            </Slider>
           </div>
         </div>
 
@@ -428,5 +338,50 @@ function Cheffery() {
     </div>
   );
 }
+
+const data = [
+  {
+    title: "Landing Page",
+    description:
+      "Cheffery is a modern culinary platform designed to connect talented chefs with clients seeking high-quality, personalized dining experiences. The project serves as both a portfolio showcase and a service portal, enabling chefs to highlight their culinary skills, achievements, and specialties while making it easy for clients to discover, connect, and book their services.",
+    image: ChefferyLanding,
+  },
+  {
+    title: "Definition",
+    description:
+      "The definition page serves as a comprehensive introduction to Cheffery, outlining the platform's mission, values, and unique offerings. It provides visitors with a clear understanding of what Cheffery stands for and how it differentiates itself in the culinary landscape. This page is designed to engage users by highlighting the benefits of using Cheffery, whether they are chefs looking to showcase their talents or clients seeking exceptional dining experiences.",
+    image: ChefferyDefinition,
+  },
+  {
+    title: "The Cheffery Experience",
+    description:
+      "The Cheffery Experience page is designed to immerse visitors in the unique culinary journey that Cheffery offers. It showcases the platform's commitment to quality, creativity, and personalized service, highlighting how Cheffery connects chefs with clients to create memorable dining experiences. This page features testimonials, success stories, and a glimpse into the diverse range of events hosted by Cheffery, emphasizing the platform's role in fostering a vibrant culinary community.",
+    image: ChefferyExperience,
+  },
+  {
+    title: "Contact (Reserve)",
+    description:
+      "To help us connect with potential clientele, we offer multiple ways for clients to reach out based on their preference. They can send us an email with their inquiry, call the designated cell number for direct communication, or simply fill out the contact form available on our page. Once we receive their message, a member of our team will follow up as soon as possible to discuss their needs, answer any questions, and begin the onboarding process.",
+    image: ChefferyReserve,
+  },
+  {
+    title: "Contact (Community)",
+    description:
+      "To help us connect with potential clientele, we offer multiple ways for clients to reach out based on their preference. They can send us an email with their inquiry, call the designated cell number for direct communication, or simply fill out the contact form available on our page. Once we receive their message, a member of our team will follow up as soon as possible to discuss their needs, answer any questions, and begin the onboarding process.",
+    image: ChefferyCommunity,
+  },
+  {
+    title: "Clients",
+    description:
+      "Showcasing the clients of Cheffery is a key aspect of building trust and credibility. By featuring a diverse range of clients, from private individuals to corporate entities, we highlight the platform's versatility and appeal. Each client profile includes testimonials and images from past events, demonstrating the quality and satisfaction that Cheffery delivers. This not only showcases our successful partnerships but also serves as a powerful marketing tool, attracting new clients who can envision their own events being hosted by our talented chefs.",
+    image: ChefferyClients,
+  },
+  {
+    title: "Footer",
+    description:
+      "The footer of the Cheffery website serves as a convenient navigation hub, providing quick access to all the key pages we offer—such as our services, community initiatives, contact page, and more. It also features direct links to our social media platforms, making it easy for visitors to stay connected, follow our latest updates, and engage with our growing community across multiple channels.",
+    image: ChefferyFooter,
+  },
+];
 
 export default Cheffery;
