@@ -269,6 +269,19 @@ ul li {
   margin-bottom: 10px;
 }
 
+/* .slick-prev:before,
+.slick-next:before {
+  content: none !important;
+}
+}
+.arrow.prev svg {
+  transform: rotate(180deg);
+} */
+
+.slick-prev:before,
+.slick-next:before {
+  color: var(--accent) !important; /* Use your desired color */
+}
 .Cheffery-image-column-text h4 {
   margin-bottom: 10px;
   color: var(--background);

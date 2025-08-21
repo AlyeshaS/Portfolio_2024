@@ -35,12 +35,72 @@ function Cheffery() {
     };
   }, []);
 
+  // Custom Next Arrow
+  const NextArrow = ({ className, style, onClick }) => {
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: "block", right: "10px", zIndex: 2 }}
+        onClick={onClick}
+      >
+        <span className="arrow">
+          <svg
+            width="50"
+            height="15"
+            viewBox="0 0 14 8"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1 1L7 7L13 1"
+              stroke="#FFFFFF"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </span>
+      </div>
+    );
+  };
+
+  // Custom Prev Arrow (just flip it horizontally with CSS)
+  const PrevArrow = ({ className, style, onClick }) => {
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: "block", left: "10px", zIndex: 2 }}
+        onClick={onClick}
+      >
+        <span className="arrow prev">
+          <svg
+            width="50"
+            height="15"
+            viewBox="0 0 14 8"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1 1L7 7L13 1"
+              stroke="#FFFFFF"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </span>
+      </div>
+    );
+  };
+
   const settings = {
     dots: true,
     infinite: false,
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 2,
+    // nextArrow: <NextArrow />,
+    // prevArrow: <PrevArrow />,
   };
 
   return (
