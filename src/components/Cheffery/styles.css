@@ -260,12 +260,31 @@ ul li {
   margin-top: 10px;
 }
 
-.Cheffery-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover; /* or 'contain' if you want the whole image visible */
+.Cheffery-image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.Cheffery-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .Cheffery-image-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.Cheffery-image-logo img {
+  width: 80%;
+  border-radius: 10%;
+}
+
 .Cheffery-image-column-text {
   padding: 20px;
   display: flex;

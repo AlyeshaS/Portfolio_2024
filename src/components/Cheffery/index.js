@@ -118,7 +118,7 @@ function Cheffery() {
           <p>UI/UX Designer</p>
           <p>June 2024 - Present</p>
           <a
-            href="https://www.figma.com/proto/2dbZHtyAm4RFi9gaTjsZ3O/Cheffery?node-id=1018-2548&t=ukvQ7DLPsS8R52Dg-8&scaling=scale-down&content-scaling=fixed&page-id=1018%3A2419&hide-ui=1"
+            href="https://www.figma.com/proto/2dbZHtyAm4RFi9gaTjsZ3O/Cheffery?node-id=1188-684&hide-ui=1"
             target="_blank"
             rel="noopener noreferrer"
             className="view-website-link"
@@ -127,7 +127,14 @@ function Cheffery() {
           </a>
         </div>
 
-        <div className="Cheffery-analysis">
+        <div className="Cheffery-analysis" style={{ gap: "20px" }}>
+          <div className="Cheffery-image-logo">
+            <img
+              src={ChefferyLogo}
+              alt="ChefferyLogo"
+              className="cheffery-logo-img"
+            />
+          </div>
           <div className="analysis-div.no-scroll">
             <p className="analysis-header">Project Overview</p>
             <p style={{ paddingBottom: "15px" }}>
@@ -152,13 +159,6 @@ function Cheffery() {
                 easy for clients to discover, connect, and book their services.
               </span>
             </p>
-          </div>
-          <div className="Cheffery-image">
-            <img
-              src={ChefferyLogo}
-              alt="ChefferyLogo"
-              className="cheffery-logo-img"
-            />
           </div>
         </div>
 
@@ -306,21 +306,24 @@ function Cheffery() {
             I began by creating low-fidelity wireframes to outline the core
             structure of each page, focusing on hierarchy and flow rather than
             visual styling. This step ensured the layout supported the key user
-            journey—moving from service discovery to booking—with minimal
-            friction. Key decisions included placing a prominent “Book Now”
+            journey, moving from service discovery to booking, with minimal
+            friction. Key decisions included placing a prominent Reserve Here
             button in the header and maintaining consistent spacing for visual
             clarity.
           </p>
           <p className="analysis-text-header">UI Design</p>
           <p className="analysis-text">
-            Once the wireframes were approved, I transitioned to high-fidelity
-            mockups incorporating Cheffery’s brand elements. The design featured
-            a deep green and soft cream palette accented with gold, paired with
-            elegant serif headings and clean sans-serif body text.
-            High-resolution food photography was used strategically to create
-            visual impact, while maintaining fast load times. The UI balanced
-            luxury aesthetics with functional simplicity to appeal to a high-end
-            clientele.
+            Once the wireframes were approved, I moved on to developing
+            high-fidelity mockups that incorporated Cheffery’s brand identity.
+            The color palette featured a vibrant orange paired with clean white
+            and a deep grey to create a modern yet welcoming feel. Typography
+            choices were made to complement the logo, using the same font in
+            headers for consistency and emphasis, while maintaining a clean,
+            easy-to-read style throughout the design. High-resolution food
+            photography was placed strategically to maximize visual impact
+            without compromising performance or load times. Overall, the UI
+            blended a sense of luxury with functional simplicity, tailored to
+            resonate with a high-end clientele.
           </p>
           <p className="analysis-text-header">Usability Testing</p>
           <p className="analysis-text">
@@ -329,9 +332,7 @@ function Cheffery() {
             tasks such as finding the menu, booking a service, and viewing event
             photos. Feedback revealed that users valued having the booking
             button visible at all times and preferred a condensed services
-            overview before detailed descriptions. Adjustments included refining
-            mobile navigation, shortening form fields, and adding a “Quick View”
-            option for the gallery.
+            overview before detailed descriptions.
           </p>
         </div>
 
@@ -362,8 +363,8 @@ function Cheffery() {
               fine dining experience. Users can easily explore services, view
               curated image galleries, and submit booking requests within two
               clicks. The site is fully responsive, optimized for both
-              performance and accessibility, and integrates seamlessly with
-              Cheffery’s Instagram feed to keep content fresh and engaging.
+              performance and accessibility. It is a blend of playful yet
+              exclusive.
             </p>
           </div>
           {/* Fix the size of the mobile version */}
@@ -388,8 +389,7 @@ function Cheffery() {
               calendar and expanding the blog/recipe section to boost SEO and
               customer engagement over time. Overall, the project achieved its
               goals of elevating Cheffery’s online presence and creating a clear
-              path from curiosity to conversion. Cheffery’s Instagram feed to
-              keep content fresh and engaging.
+              path from curiosity to conversion.
             </p>
           </div>
           {/* Fix the size of the mobile version */}
