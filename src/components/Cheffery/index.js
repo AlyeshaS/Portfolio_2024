@@ -40,7 +40,7 @@ function Cheffery() {
     return (
       <div
         className={className}
-        style={{ ...style, display: "block", right: "10px", zIndex: 2 }}
+        style={{ ...style, display: "block", right: "30px", zIndex: 2 }}
         onClick={onClick}
       >
         <span className="arrow">
@@ -69,7 +69,7 @@ function Cheffery() {
     return (
       <div
         className={className}
-        style={{ ...style, display: "block", left: "10px", zIndex: 2 }}
+        style={{ ...style, display: "block", zIndex: 2 }}
         onClick={onClick}
       >
         <span className="arrow prev">
@@ -99,8 +99,8 @@ function Cheffery() {
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 2,
-    // nextArrow: <NextArrow />,
-    // prevArrow: <PrevArrow />,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
   };
 
   return (
@@ -415,7 +415,7 @@ const data = [
   {
     title: "The Cheffery Experience",
     description:
-      "The Cheffery Experience page is designed to immerse visitors in the unique culinary journey that Cheffery offers. It showcases the platform's commitment to quality, creativity, and personalized service, highlighting how Cheffery connects chefs with clients to create memorable dining experiences. This page features testimonials, success stories, and a glimpse into the diverse range of events hosted by Cheffery, emphasizing the platform's role in fostering a vibrant culinary community.",
+      "The Cheffery Experience page is designed to immerse visitors in the unique culinary journey that Cheffery offers. It showcases the platform's commitment to quality, creativity, and personalized service, highlighting how Cheffery connects chefs with clients to create memorable dining experiences. ",
     image: ChefferyExperience,
   },
   {
