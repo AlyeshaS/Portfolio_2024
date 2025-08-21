@@ -39,8 +39,13 @@ function Cheffery() {
   const NextArrow = ({ className, style, onClick }) => {
     return (
       <div
-        className={className}
-        style={{ ...style, display: "block", right: "30px", zIndex: 2 }}
+        className={`${className} custom-arrow`}
+        style={{
+          ...style,
+          display: "block",
+          right: "30px",
+          zIndex: 2,
+        }}
         onClick={onClick}
       >
         <span className="arrow">
@@ -50,10 +55,11 @@ function Cheffery() {
             viewBox="0 0 14 8"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            style={{ transform: "rotate(-90deg)" }}
           >
             <path
               d="M1 1L7 7L13 1"
-              stroke="#FFFFFF"
+              stroke="var(--background)"
               strokeWidth="1.5"
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -68,7 +74,7 @@ function Cheffery() {
   const PrevArrow = ({ className, style, onClick }) => {
     return (
       <div
-        className={className}
+        className={`${className} custom-arrow`}
         style={{ ...style, display: "block", zIndex: 2 }}
         onClick={onClick}
       >
@@ -79,10 +85,11 @@ function Cheffery() {
             viewBox="0 0 14 8"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            style={{ transform: "rotate(90deg)" }}
           >
             <path
               d="M1 1L7 7L13 1"
-              stroke="#FFFFFF"
+              stroke="var(--background)"
               strokeWidth="1.5"
               strokeLinecap="round"
               strokeLinejoin="round"

@@ -277,9 +277,12 @@ ul li {
 }
 
 .slick-dots {
-  display: none !important;
+  /* display: none !important; */
 }
 
+.custom-arrow:hover .arrow svg path {
+  stroke: var(--accent); /* or any color you want for the arrow on hover */
+}
 .slick-prev:before,
 .slick-next:before {
   content: none !important;
