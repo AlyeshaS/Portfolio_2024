@@ -22,7 +22,9 @@ import ChefferyFooter from "../../assets/ChefferyFooter.png";
 
 // Fix the mobile image and then also check the side align for the second image
 function Cheffery() {
-  const [isVertical, setIsVertical] = useState(window.innerWidth > 800);
+  const [isVertical, setIsVertical] = useState(() =>
+    typeof window !== "undefined" ? window.innerWidth > 800 : true
+  );
 
   // Handle screen resizing
   useEffect(() => {
@@ -35,18 +37,33 @@ function Cheffery() {
     };
   }, []);
 
-  // Custom Next Arrow
-  const NextArrow = ({ className, style, onClick }) => {
+  // --- Arrows ---
+  const NextArrow = (props) => {
+    const {
+      className = "",
+      style,
+      onClick,
+      currentSlide = 0,
+      slideCount = 0,
+    } = props;
+    const isDisabled = slideCount > 0 ? currentSlide >= slideCount - 2 : false; // adjust -2 if slidesToShow changes
+    const mergedStyle = {
+      ...(style || {}), // <-- guard null/undefined
+      display: "block",
+      right: "30px",
+      zIndex: 2,
+      pointerEvents: isDisabled ? "none" : "auto",
+      opacity: isDisabled ? 0.4 : 1,
+    };
+
     return (
       <div
-        className={`${className} custom-arrow`}
-        style={{
-          ...style,
-          display: "block",
-          right: "30px",
-          zIndex: 2,
-        }}
-        onClick={onClick}
+        className={`${className} custom-arrow${isDisabled ? " disabled" : ""}`}
+        style={mergedStyle}
+        onClick={isDisabled ? undefined : onClick}
+        aria-disabled={isDisabled}
+        role="button"
+        tabIndex={0}
       >
         <span className="arrow">
           <svg
@@ -70,13 +87,25 @@ function Cheffery() {
     );
   };
 
-  // Custom Prev Arrow (just flip it horizontally with CSS)
-  const PrevArrow = ({ className, style, onClick }) => {
+  const PrevArrow = (props) => {
+    const { className = "", style, onClick, currentSlide = 0 } = props;
+    const isDisabled = currentSlide === 0;
+    const mergedStyle = {
+      ...(style || {}), // <-- guard
+      display: "block",
+      zIndex: 2,
+      pointerEvents: isDisabled ? "none" : "auto",
+      opacity: isDisabled ? 0.4 : 1,
+    };
+
     return (
       <div
-        className={`${className} custom-arrow`}
-        style={{ ...style, display: "block", zIndex: 2 }}
-        onClick={onClick}
+        className={`${className} custom-arrow${isDisabled ? " disabled" : ""}`}
+        style={mergedStyle}
+        onClick={isDisabled ? undefined : onClick}
+        aria-disabled={isDisabled}
+        role="button"
+        tabIndex={0}
       >
         <span className="arrow prev">
           <svg
@@ -100,6 +129,7 @@ function Cheffery() {
     );
   };
 
+  // --- Slick settings: pass ELEMENTS, not functions ---
   const settings = {
     dots: true,
     infinite: false,
