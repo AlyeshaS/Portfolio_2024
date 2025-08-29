@@ -54,6 +54,7 @@
   background-color: white;
   color: var(--text-color);
   transition: all 100ms ease-in;
+  width: 30%;
 }
 
 .contact .container .form-container button:hover {
@@ -62,24 +63,86 @@
   scale: 1.05;
 }
 
+.form-status-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px; /* Adjust as needed */
+  text-align: center;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+  padding: 2rem 1.5rem;
+  max-width: 400px;
+}
+
+.close-popup {
+  margin-top: 1.5rem;
+  padding: 0.5rem 1.5rem;
+  background: var(--accent, #3d5a80);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.close-popup:hover {
+  background: #222;
+}
+
 @media (max-width: 600px) {
-  .contact .container {
-    flex-direction: column;
+  .contact {
     align-items: flex-start;
-    padding: 0px 10px;
-    gap: 20px;
+    padding: 0 0 40px 0;
   }
 
-  .contact .container .section-header {
-    margin-left: 0;
+  .contact .container {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0 5px;
+    gap: 20px;
+    max-width: 100vw;
   }
 
   .contact .container .form-container {
-    padding: 30px 10px;
+    padding: 20px 15px;
+    border-radius: 8px;
+    min-width: 0;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .contact .container .form-container .form-grid {
     display: flex;
     flex-direction: column;
+    gap: 12px;
+  }
+
+  .contact .container .form-container .form-grid input,
+  .contact .container .form-container .form-grid textarea {
+    font-size: 18px;
+    padding: 8px;
+  }
+
+  .contact .container .form-container button {
+    font-size: 20px;
+    padding: 10px 0;
+    width: 50%;
+    margin: 16px auto 0 auto; /* Center horizontally on mobile */
+    display: block; /* Ensure block on mobile too */
+    justify-content: center; /* Not needed for block, but harmless */
+    align-items: center;
+    text-align: center;
+  }
+
+  .form-status-message {
+    max-width: 95vw;
+    padding: 1.5rem 0.5rem;
+    font-size: 1rem;
+    margin: 1.5rem auto;
   }
 }
