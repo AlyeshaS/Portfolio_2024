@@ -390,36 +390,87 @@ function Cheffery() {
             <p className="analysis-header">Final Outcome</p>
             <p className="analysis-text">
               The final website presents Cheffery as a refined yet approachable
-              fine dining experience. Users can easily explore services, view
-              curated image galleries, and submit booking requests within two
-              clicks. The site is fully responsive, optimized for both
-              performance and accessibility. It is a blend of playful yet
-              exclusive.
+              fine-dining experience that balances sophistication with warmth.
+              The design emphasizes clarity and ease of navigation, allowing
+              users to effortlessly explore services, browse curated image
+              galleries that highlight the artistry of the cuisine, and submit
+              booking requests within just two clicks. Beyond aesthetics, the
+              site was built with performance and accessibility at its core,
+              ensuring a fully responsive experience that adapts seamlessly
+              across devices. The overall tone is playful yet exclusive,
+              positioning Cheffery as a brand that is both aspirational and
+              welcoming.
+              <br></br>
+              <br></br>
+              This outcome was the result of months of iteration and
+              collaboration. Throughout the process, I went back and forth with
+              multiple design drafts, each time refining elements based on
+              feedback and evolving brand direction. Once the Cheffery team
+              finalized their vision and clarified what they wanted their
+              identity to represent, I translated those insights into a
+              cohesive, polished digital experience. Particular attention was
+              given to the flow of the site, the integration of their main brand
+              color, the balance of typography, and the careful curation of
+              imagery to reflect both the artistry of fine dining and the
+              intimacy of personal service.
+              <br></br>
+              <br></br>
+              The client expressed strong satisfaction with the final result,
+              noting how well the flow, layout, and visual hierarchy aligned
+              with their expectations. They were especially pleased with the way
+              the site communicates exclusivity without alienating users, making
+              it inviting for first-time visitors while still carrying a sense
+              of luxury. At present, I am continuing to refine the project by
+              working on the mobile version and ensuring that every aspect of
+              the design translates smoothly to smaller screens. This phase
+              involves optimizing touch interactions, re-scaling imagery, and
+              maintaining consistent accessibility features across all
+              platforms.
+              <br></br>
+              <br></br>
+              Overall, this project allowed me to not only deliver a functional,
+              high-impact website but also gain valuable experience in iterative
+              client collaboration, balancing creative direction with
+              user-centered design, and executing a brand identity through
+              digital form. The final product is more than just a website, it is
+              a digital extension of Cheffery’s brand personality, designed to
+              grow with their vision and serve as a platform for meaningful
+              customer engagement.
             </p>
           </div>
-          {/* Fix the size of the mobile version */}
-          {/* <div className="Cheffery-image">
-            <img
-              src={ChefferyContact}
-              alt=""
-              className="centered-contact-img"
-            />
-          </div> */}
         </div>
 
         <div className="Cheffery-analysis">
           <div className="Cheffery-analysis-div">
             <p className="analysis-header">Reflection</p>
             <p className="analysis-text">
-              This project reinforced the importance of balancing brand
-              storytelling with usability. While aesthetics played a significant
-              role in conveying Cheffery’s luxury positioning, ensuring a
-              frictionless booking process was equally critical. If I were to
-              iterate further, I would explore integrating a live availability
-              calendar and expanding the blog/recipe section to boost SEO and
-              customer engagement over time. Overall, the project achieved its
-              goals of elevating Cheffery’s online presence and creating a clear
-              path from curiosity to conversion.
+              Working on Cheffery’s website was a valuable learning experience
+              that pushed me to grow both as a designer and a collaborator. One
+              of the biggest takeaways was the importance of patience and
+              adaptability when navigating client feedback. The project required
+              multiple rounds of iteration before the brand’s vision felt fully
+              aligned, and that process taught me how to balance my design
+              instincts with the client’s evolving needs. I also gained a deeper
+              understanding of how small details, such as the choice of
+              typography, the spacing of elements, or the placement of images
+              can significantly affect how users perceive a brand’s tone.
+              <br></br>
+              <br></br>
+              Additionally, this project strengthened my ability to think about
+              user-centered design beyond aesthetics. Ensuring accessibility,
+              quick navigation, and seamless responsiveness required me to step
+              into the shoes of diverse users, from first-time visitors to
+              returning customers. This perspective reminded me that while
+              visuals create the first impression, functionality and inclusivity
+              sustain long-term engagement.
+              <br></br>
+              <br></br>
+              Finally, I learned the value of scalability. Designing with both
+              desktop and mobile in mind reinforced how essential it is to
+              anticipate growth and ensure the site can evolve alongside the
+              business. Overall, this project reaffirmed my passion for creating
+              designs that are not just visually engaging but also strategic,
+              user-friendly, and reflective of a brand’s identity.
             </p>
           </div>
           {/* Fix the size of the mobile version */}
