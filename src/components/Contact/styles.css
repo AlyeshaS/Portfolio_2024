@@ -91,7 +91,7 @@
 }
 
 .close-popup:hover {
-  background: #222;
+  background: var(--text-color);
 }
 
 @media (max-width: 600px) {
