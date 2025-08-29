@@ -7,7 +7,7 @@ import portraitPNG from "../../assets/portrait.png";
 function About() {
   return (
     <Element name="about" className="section about">
-      <div className="container" style={{ marginTop: "15vh" }}>
+      <div className="container" style={{ marginTop: "15vh", gap: "3rem" }}>
         <div className="image">
           <img src={portraitPNG} alt="" />
         </div>
