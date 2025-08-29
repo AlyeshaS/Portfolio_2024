@@ -248,24 +248,29 @@ function Cheffery() {
                   <td>Alo</td>
                   <td>
                     <ul>
-                      <li>Elegant French design</li>
-                      <li>High-end photography & typography</li>
+                      <li>Sophisticated French-inspired aesthetic</li>
+                      <li>
+                        High-quality photography paired with elegant typography
+                      </li>
                     </ul>
                   </td>
                   <td>
                     <ul>
-                      <li>Too much scrolling</li>
+                      <li>Excessive scrolling disrupts user flow</li>
                       <li>
-                        Needs more color, too harsh on the eyes (the white
-                        background)
+                        Minimal color variation; stark white background feels
+                        harsh on the eyes)
                       </li>
                     </ul>
                   </td>
                   <td>
                     <ul>
                       <li>
-                        Use sleek visuals and minimalistic navigation for
-                        clarity and impact
+                        Prioritize sleek visuals with balanced color contrast
+                      </li>
+                      <li>
+                        Employ minimal, intuitive navigation for clarity and
+                        impact
                       </li>
                     </ul>
                   </td>
@@ -274,22 +279,26 @@ function Cheffery() {
                   <td>Savor Toronto</td>
                   <td>
                     <ul>
-                      <li>Sectioned off in clean sections</li>
-                      <li>Not too much scrolling</li>
-                      <li>Not too many words</li>
-                    </ul>
-                  </td>
-                  <td>
-                    <ul>
-                      <li>Side bar is too large</li>
+                      <li>Clean, well-structured sections</li>
+                      <li>Concise layout with minimal scrolling</li>
+                      <li>Content is streamlined with limited text</li>
                     </ul>
                   </td>
                   <td>
                     <ul>
                       <li>
-                        How many scrolls it took to complete the home page
+                        Sidebar occupies too much space, distracting from main
+                        content
                       </li>
-                      <li>How it is sectioned</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Structure homepage in clear, digestible sections</li>
+                      <li>
+                        Optimize scrolling length to keep users engaged without
+                        overwhelming
+                      </li>
                     </ul>
                   </td>
                 </tr>
@@ -297,21 +306,34 @@ function Cheffery() {
                   <td>Enigma Yorkville</td>
                   <td>
                     <ul>
-                      <li>Artistic presentation, immersive tasting menu UX</li>
-                      <li>Good use of typography</li>
-                    </ul>
-                  </td>
-                  <td>
-                    <ul>
                       <li>
-                        Some components are too large, causes the content to not
-                        fit all on one page at one time
+                        Artistic, immersive presentation that reflects
+                        fine-dining experience
+                      </li>
+                      <li>
+                        Strong use of typography to reinforce brand personality
                       </li>
                     </ul>
                   </td>
                   <td>
                     <ul>
-                      <li>Choice of images as a background to words</li>
+                      <li>
+                        Oversized components limit content visibility on a
+                        single page
+                      </li>
+                      <li>Layout feels heavy and less user-friendly</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>
+                        Use impactful imagery strategically (e.g., as subtle
+                        backgrounds for text)
+                      </li>
+                      <li>
+                        Ensure components are sized to balance aesthetics with
+                        readability
+                      </li>
                     </ul>
                   </td>
                 </tr>
