@@ -9,14 +9,20 @@ function Contact() {
     const form = e.target;
     const data = new FormData(form);
 
+    // --- Build a unique subject so email clients won't thread them ---
+    const first = (data.get("firstName") || "Someone").toString().trim();
+    const last = (data.get("surname") || "").toString().trim();
+    const stamp = new Date().toISOString().replace("T", " ").slice(0, 16); // YYYY-MM-DD HH:MM
+    const subject = `New portfolio message • ${first} ${last} • ${stamp}`;
+    data.set("subject", subject); // <-- Formspree reads this as the email subject
+    data.set("_replyto", data.get("email")); // <-- makes your Reply go to the sender
+
     setStatus("Sending...");
 
     const response = await fetch("https://formspree.io/f/movnjkdw", {
       method: "POST",
       body: data,
-      headers: {
-        Accept: "application/json",
-      },
+      headers: { Accept: "application/json" },
     });
 
     if (response.ok) {
@@ -33,6 +39,7 @@ function Contact() {
     <div className="section contact">
       <div className="container">
         <h1 className="section-header">Contact Me</h1>
+
         {status ? (
           <div className="form-status-message">
             <p>{status}</p>
@@ -43,6 +50,12 @@ function Contact() {
         ) : (
           <form className="form-container" onSubmit={handleSubmit}>
             <div className="form-grid">
+              <input
+                type="hidden"
+                name="subject"
+                value="New portfolio message"
+              />
+
               <input
                 type="text"
                 name="firstName"
@@ -67,7 +80,7 @@ function Contact() {
                 placeholder="Message"
                 rows={5}
                 required
-              ></textarea>
+              />
             </div>
             <button type="submit">Submit</button>
           </form>
