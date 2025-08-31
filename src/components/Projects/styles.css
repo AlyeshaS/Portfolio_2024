@@ -24,7 +24,7 @@
 .projects .container .swiper .slide .text {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 15%;
 }
 
 .projects .container .swiper .slide .text-scroll {
