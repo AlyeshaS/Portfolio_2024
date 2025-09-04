@@ -1,7 +1,7 @@
 import React from "react";
 import { Element } from "react-scroll";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectFlip, Autoplay, Pagination } from "swiper/modules";
+import { EffectFlip, Pagination } from "swiper/modules";
 import { useState } from "react";
 
 import AOFigma from "../../assets/AOFigma.png";
@@ -32,16 +32,12 @@ function Projects() {
           direction={window.innerWidth > 800 ? "vertical" : "horizontal"}
           effect="flip"
           pagination
-          autoplay={{
-            delay: 3500,
-            disableOnInteraction: true,
-          }}
-          modules={[EffectFlip, Autoplay, Pagination]}
+          modules={[EffectFlip, Pagination]}
         >
           {/* Academic Oasis */}
           <SwiperSlide className="slide">
             <div className="text">
-              <div>
+              <div className="header">
                 <h1 className="name">Academic Oasis</h1>
                 <span className="position">
                   Chief Marketing & Design Officer

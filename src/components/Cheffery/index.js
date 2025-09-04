@@ -494,14 +494,6 @@ function Cheffery() {
               user-friendly, and reflective of a brand’s identity.
             </p>
           </div>
-          {/* Fix the size of the mobile version */}
-          {/* <div className="Cheffery-image">
-            <img
-              src={ChefferyContact}
-              alt=""
-              className="centered-contact-img"
-            />
-          </div> */}
         </div>
       </div>
     </div>

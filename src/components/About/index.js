@@ -23,7 +23,7 @@ function About() {
           <div className="buttons">
             <a
               href="/UI_UX_Alyesha_Singh_Resume.pdf"
-              download="Alyeshas_Resume.pdf"
+              download="UI_UX_Alyesha_Singh_Resume.pdf"
               className="button"
             >
               Resume

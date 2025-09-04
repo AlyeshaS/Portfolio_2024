@@ -19,12 +19,16 @@
 .projects .container .swiper .slide {
   display: grid;
   grid-template-columns: 5fr 4fr;
+  align-content: center;
+  justify-content: center;
 }
 
 .projects .container .swiper .slide .text {
   display: flex;
   flex-direction: column;
   gap: 15%;
+  align-content: center;
+  justify-content: center;
 }
 
 .projects .container .swiper .slide .text-scroll {
@@ -190,6 +194,9 @@
   .projects .container .swiper .slide .text {
     padding: 0px 15px;
     gap: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .content .links {
