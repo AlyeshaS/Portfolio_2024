@@ -352,7 +352,7 @@ function AO() {
 
         <div className="ao-analysis-column">
           <p className="analysis-header">User Journey</p>
-          <p className="analysis-text-header">Flowchart</p>
+          {/* <p className="analysis-text-header">Flowchart</p> */}
           <div className="ao-image">
             <img
               // src={ChefferyFlowchart}
