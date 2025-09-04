@@ -350,71 +350,145 @@ function AO() {
           </div>
         </div>
 
+        <div className="ao-analysis-column">
+          <p className="analysis-header">User Journey</p>
+          <p className="analysis-text-header">Flowchart</p>
+          <div className="ao-image">
+            <img
+              // src={ChefferyFlowchart}
+              alt=""
+              className="centered-contact-img"
+              style={{ paddingBottom: 10 }}
+            />
+          </div>
+          <p className="analysis-text-header">Wireframes</p>
+          <p className="analysis-text">
+            I created low-fidelity wireframes in Figma to establish the overall
+            structure and navigation of Academic Oasis, focusing on
+            functionality over visual design. While the student and club
+            executive versions shared core features, the final design centered
+            on the executive dashboard. For executives, the dashboard included
+            analytical insights, a record of planned events, and a budget sheet
+            to manage funding. Additional tabs allowed access to a personalized
+            student calendar, a campus-wide feed of clubs, events, workshops,
+            and job postings, as well as a personal profile that connected
+            directly with Google Calendar. By wireframing these pages early, I
+            was able to test navigation flows, refine feature placement, and
+            ensure the platform served both students and executives with minimal
+            friction, laying a strong foundation for prototyping.
+          </p>
+          <p className="analysis-text-header">UI Design</p>
+          <p className="analysis-text">
+            Building on the wireframes and prototypes, the UI design stage
+            focused on creating a clean, intuitive interface that balanced
+            simplicity with functionality. The design emphasized clarity in
+            navigation, ensuring that both students and club executives could
+            easily move between key pages such as the dashboard, calendar, and
+            events. Consistent spacing, clear hierarchy, and recognizable icons
+            were used to make the interface approachable, while color and
+            typography choices highlighted important actions like posting an
+            event or syncing a calendar. For executives, the dashboard was
+            designed to present analytics, budget sheets, and event management
+            tools in a streamlined layout, while students benefited from a
+            visually clear calendar view, campus events, and profile integration
+            with Google Calendar. The UI design ensured that Academic Oasis felt
+            cohesive across all pages, enhancing usability and maintaining a
+            professional yet student-friendly aesthetic.
+          </p>
+          <p className="analysis-text-header">Usability Testing</p>
+          <p className="analysis-text">
+            To validate the design of Academic Oasis, I conducted usability
+            testing with peers and other students using my interactive Figma
+            prototype. Participants were asked to complete key tasks such as
+            navigating the dashboard, adding events to their calendar, and
+            exploring club pages. Their feedback highlighted areas of strength,
+            such as the clarity of the navigation flow, while also pointing out
+            opportunities for improvement in feature placement and labeling.
+            This testing stage was essential in confirming that the interface
+            was intuitive, student-friendly, and aligned with real user needs,
+            while also providing actionable insights to refine the final design.
+          </p>
+        </div>
+
         <div className="ao-analysis">
-          <img src={DashboardStats} alt="" />
-          <div className="analysis-div">
-            <p className="analysis-header">Design Process</p>
+          <div className="ao-analysis-div">
+            <p className="analysis-header">Final Outcome</p>
             <p className="analysis-text">
-              The design process began with initial sketches inspired by clean
-              and modern aesthetics, incorporating a “glassy” design to convey a
-              technological feel. Each page was carefully designed individually
-              to ensure clarity and purpose. The application design was brought
-              to life using Figma, where separate sections were developed for
-              widgets representing key features, such as the user’s profile and
-              events.
-            </p>
-            <br />
-            <p className="analysis-text">
-              To align with the Academic Oasis brand, the visual design employed
-              slightly altered shades of blue from the company’s logo to
-              symbolize water. The layout prioritized displaying important
-              information at the top, such as the user’s name, while utilizing
-              widgets for intuitive navigation. Over time, the design’s focus
-              shifted to prioritize the needs of club executives rather than
-              general students, resulting in adjustments to the content.
-            </p>
-            <br />
-            <p className="analysis-text">
-              Throughout the process, team feedback highlighted additional
-              features to incorporate, which were seamlessly integrated into the
-              design. Despite these changes, the overall content placement and
-              structure received positive responses, ensuring a cohesive and
-              effective user experience.
+              The final outcome of Academic Oasis was a high-fidelity,
+              interactive prototype created in Figma. While the startup team
+              initially began developing the product, changes in the team led
+              the founder to shut down the project before full implementation.
+              Despite this, the design phase successfully demonstrated the
+              potential of an all-in-one platform that could centralize academic
+              tools, student life, and club management at Ontario Tech
+              University.
+              <br></br>
+              <br></br>
+              Throughout the process, the prototype evolved based on user
+              feedback and direct input from club presidents and students. Key
+              improvements included restructuring the executive dashboard with
+              clearer tabs for analytics, event planning, and budgets, as well
+              as ensuring that students could easily track what they had signed
+              up for across clubs, events, and workshops. These refinements
+              ensured that both students and executives had access to relevant,
+              easy-to-find information tailored to their needs.
+              <br></br>
+              <br></br>
+              On a personal level, this project strengthened my understanding of
+              the full product design cycle from research and wireframing to
+              prototyping and usability testing. I learned how to incorporate
+              stakeholder feedback into practical design changes, balance
+              multiple user perspectives, and design a platform that was both
+              functional and student-friendly. While Academic Oasis was
+              ultimately not launched, the project demonstrated how thoughtful,
+              user-centered design can address real gaps in campus systems and
+              provided me with valuable experience in creating solutions from
+              concept to prototype.
             </p>
           </div>
         </div>
+
         <div className="ao-analysis">
-          <div className="analysis-div">
+          <div className="ao-analysis-div">
             <p className="analysis-header">Reflection</p>
             <p className="analysis-text">
-              The design process presented several challenges, primarily due to
-              multiple iterations caused by shifts in the company’s focus.
-              Adapting to these changes while maintaining a cohesive vision was
-              particularly demanding. Additionally, incorporating advanced Figma
-              features such as constraints required a steep learning curve and
-              adaptability.
-            </p>
-            <br />
-            <p className="analysis-text">
-              This project significantly enhanced my knowledge of Figma’s
-              advanced functionalities, including connecting elements across
-              frames and creating functional prototypes. These skills proved
-              invaluable in refining the design and ensuring a seamless user
-              experience.
-            </p>
-            <br />
-            <p className="analysis-text">
-              Looking ahead, a key recommendation is to develop an admin panel
-              for Academic Oasis members. This addition would enable them to
-              effectively manage all platform elements, streamline operations,
-              and further enhance the platform's usability.
+              Academic Oasis was my first design project, and I am proud of the
+              outcome despite the fact that it never launched. Working on it
+              gave me the opportunity to explore the entire design process, from
+              research to prototyping, and to see how user-centered design can
+              directly impact the student experience. While it was unfortunate
+              that the project was eventually shut down, the experience opened
+              doors to other opportunities and laid a strong foundation for my
+              growth as a designer.
+              <br></br>
+              <br></br>
+              One of the most valuable lessons I learned was what makes a design
+              not only visually appealing but also practical and helpful for its
+              intended audience. By gathering feedback from students and club
+              executives, I realized the importance of simplicity, clarity, and
+              accessibility in ensuring that users can achieve their goals
+              without friction. This reinforced my belief that good design
+              should always prioritize the user.
+              <br></br>
+              <br></br>
+              The project also pushed me to dive into mobile design for the
+              first time, which introduced new challenges. Translating layouts
+              from desktop to mobile required me to think carefully about
+              spacing, hierarchy, and how to present the same information in a
+              more compact format. I learned how to prevent overcrowding,
+              maintain clarity, and design in a way that made navigation feel
+              effortless. These challenges sharpened my problem-solving skills
+              and gave me confidence in adapting designs across different
+              platforms.
+              <br></br>
+              <br></br>
+              Although Academic Oasis never reached full implementation, the
+              project taught me the value of adaptability, iteration, and
+              persistence. More importantly, it gave me hands-on experience in
+              creating solutions that directly respond to user needs, experience
+              that continues to shape how I approach design today.
             </p>
           </div>
-          {/* Fix the size of the mobile version */}
-          {/* <div className="ao-image">
-            <img src={Mobile_Events} alt="" />
-          </div> */}
-          <img src={Mobile_Events} alt="" />
         </div>
       </div>
     </div>

@@ -256,7 +256,7 @@ function Cheffery() {
                       <li>Excessive scrolling disrupts user flow</li>
                       <li>
                         Minimal color variation; stark white background feels
-                        harsh on the eyes)
+                        harsh on the eyes
                       </li>
                     </ul>
                   </td>
@@ -352,13 +352,15 @@ function Cheffery() {
           </div>
           <p className="analysis-text-header">Wireframes</p>
           <p className="analysis-text">
-            I began by creating low-fidelity wireframes to outline the core
-            structure of each page, focusing on hierarchy and flow rather than
-            visual styling. This step ensured the layout supported the key user
-            journey, moving from service discovery to booking, with minimal
+            I began by creating low-fidelity wireframes in Figma to outline the
+            core structure of each page, focusing on hierarchy and flow rather
+            than visual styling. This step ensured the layout supported the key
+            user journey, moving from service discovery to booking with minimal
             friction. Key decisions included placing a prominent Reserve Here
             button in the header and maintaining consistent spacing for visual
-            clarity.
+            clarity. By iterating on these layouts early, I was able to validate
+            navigation flow, reduce potential usability issues, and prepare a
+            strong foundation for prototyping.
           </p>
           <p className="analysis-text-header">UI Design</p>
           <p className="analysis-text">

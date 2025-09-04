@@ -225,25 +225,31 @@
   transform: translateY(5px);
 }
 
-/* @media (max-width: 800px) {
-  .ao-swiper .slide {
-    grid-template-columns: 1fr;
-    gap: 20px;
-    flex-direction: column-reverse;
-  }
+.ao-analysis-column {
+  display: flex;
+  flex-direction: column;
 
-  .ao-swiper .slide .text {
-    padding: 15px;
-  }
+  padding-bottom: 100px;
+  margin-top: 50px;
+}
 
-  .ao-swiper .slide .text-scroll {
-    max-height: 150px;
-  }
+.ao-analysis-column .analysis-header {
+  font-size: 25px;
+  font-weight: 700;
+  padding-bottom: 30px;
+  color: var(--accent);
+  font-style: italic;
+}
 
-  .ao-swiper {
-    height: 100vh;
-  }
-} */
+.ao-analysis-column .analysis-text-header {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.ao-analysis-column .analysis-text {
+  font-size: 18px;
+  padding-bottom: 20px;
+}
 
 .ao-image-logo img {
   width: 80%;
