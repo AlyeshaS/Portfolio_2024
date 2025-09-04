@@ -87,16 +87,17 @@ function Projects() {
                 <h1 className="name">Cheffery</h1>
                 <span className="position">UI/UX Designer</span>
               </div>
-
-              <p>
-                Cheffery is a growing platform designed to support aspiring
-                chefs and build a vibrant culinary community. Currently under
-                development, the website allows users to sign up as chefs or
-                hire chefs for various events. As the brand continues to expand,
-                Cheffery has already hosted numerous successful events,
-                fostering connections and opportunities within the local food
-                scene.
-              </p>
+              <div className="text-scroll">
+                <p>
+                  Cheffery is a growing platform designed to support aspiring
+                  chefs and build a vibrant culinary community. Currently under
+                  development, the website allows users to sign up as chefs or
+                  hire chefs for various events. As the brand continues to
+                  expand, Cheffery has already hosted numerous successful
+                  events, fostering connections and opportunities within the
+                  local food scene.
+                </p>
+              </div>
             </div>
             <div className="content">
               <img src={ChefferyFigma} alt="Cheffery Design" />
@@ -118,15 +119,17 @@ function Projects() {
                 <h1 className="name">CJS Performance</h1>
                 <span className="position">Freelance UI/UX Designer</span>
               </div>
-
-              <p>
-                CJS is a professional website created for a soccer coach aiming
-                to connect with players of all ages who are eager to elevate
-                their game. The platform not only highlights personalized
-                training programs but also serves as a lead-generation tool,
-                helping attract new students and guide them toward skill
-                development through tailored coaching sessions.
-              </p>
+              <div className="text-scroll">
+                <p>
+                  CJS is a professional website created for a soccer coach
+                  aiming to connect with players of all ages who are eager to
+                  elevate their game. The platform not only highlights
+                  personalized training programs but also serves as a
+                  lead-generation tool, helping attract new students and guide
+                  them toward skill development through tailored coaching
+                  sessions.
+                </p>
+              </div>
             </div>
             <div className="content">
               <a
@@ -148,14 +151,16 @@ function Projects() {
                 <h1 className="name">FitCheck</h1>
                 <span className="position">UI/UX Designer</span>
               </div>
-              <p>
-                FitCheck is a fashion app designed for style enthusiasts to
-                showcase their outfits, gain feedback through ratings, and
-                engage with a vibrant community by liking and sharing looks. The
-                platform creates an interactive space to express personal style,
-                discover emerging trends, and draw inspiration by exploring the
-                stories and origins behind others’ outfits.
-              </p>
+              <div className="text-scroll">
+                <p>
+                  FitCheck is a fashion app designed for style enthusiasts to
+                  showcase their outfits, gain feedback through ratings, and
+                  engage with a vibrant community by liking and sharing looks.
+                  The platform creates an interactive space to express personal
+                  style, discover emerging trends, and draw inspiration by
+                  exploring the stories and origins behind others’ outfits.
+                </p>
+              </div>
             </div>
             <div className="content">
               <img src={FitCheckFigma} alt="FitCheck Design" />
