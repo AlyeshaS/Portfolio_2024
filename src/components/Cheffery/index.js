@@ -143,7 +143,7 @@ function Cheffery() {
   return (
     <div className="Cheffery-page">
       <div className="Cheffery-container">
-        <div className="title" style={{ marginBottom: "15dvh" }}>
+        <div className="title">
           <p className="Cheffery-header">Cheffery</p>
           <p>UI/UX Designer</p>
           <p>June 2024 - Present</p>
@@ -198,7 +198,7 @@ function Cheffery() {
             <p className="analysis-text-header">Who has the problem? </p>
             <p className="analysis-text">
               Independent chefs, culinary freelancers, and small catering
-              businesses.
+              businesses
             </p>
             <p className="analysis-text-header">Why is it a problem? </p>
             <p className="analysis-text">
@@ -217,9 +217,6 @@ function Cheffery() {
               helping them grow their culinary brand.
             </p>
           </div>
-          {/* <div className="Cheffery-image">
-            <img src={ChefferyFigma} alt="" />
-          </div> */}
         </div>
 
         <div className="Cheffery-analysis">
