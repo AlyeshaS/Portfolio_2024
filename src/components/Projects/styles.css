@@ -199,14 +199,21 @@
     justify-content: center;
   }
 
-  .content .links {
-    flex-direction: column;
-    align-items: center;
+  .position {
+    display: flex;
     justify-content: center;
-    gap: 6px; /* less spacing vertically */
   }
 
-  .middle-dot {
-    display: none; /* hide the dot when stacked */
+  .name {
+    text-align: center;
+  }
+
+  .content .links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 6px; /* less spacing vertically */
   }
 }

@@ -324,8 +324,4 @@
     justify-content: center;
     gap: 6px; /* less spacing vertically */
   }
-
-  .middle-dot {
-    display: none; /* hide the dot when stacked */
-  }
 }
