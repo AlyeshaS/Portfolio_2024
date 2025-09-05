@@ -5,8 +5,26 @@ import "swiper/css";
 import "swiper/css/effect-flip";
 import "swiper/css/pagination";
 
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 import AOLogo from "../../assets/AOLogo.png";
 import AOFlowchart from "../../assets/AOFlowchart.png";
+
+import AOBudget from "../../assets/AOBudget.png";
+import AOBudgetAdd from "../../assets/AOBudgetAdd.png";
+import AOCalendar from "../../assets/AOCalendar.png";
+import AOCalendarAdd from "../../assets/AOCalendarAdd.png";
+import AOClubs from "../../assets/AOClubs.png";
+import AOEvents from "../../assets/AOEvents.png";
+import AOEventsAdd from "../../assets/AOEventsAdd.png";
+import AOEventsExec from "../../assets/AOEventsExec.png";
+import AOSetting from "../../assets/AOSetting.png";
+import AOSettingEdit from "../../assets/AOSettingEdit.png";
+import AOStats from "../../assets/AOStats.png";
+import AOWorkshop from "../../assets/AOWorkshop.png";
+
 // Fix the mobile image and then also check the side align for the second image
 function AO() {
   const [isVertical, setIsVertical] = useState(window.innerWidth > 800);
@@ -21,30 +39,115 @@ function AO() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-  const [expandedIndexes, setExpandedIndexes] = useState({});
+  // const [expandedIndexes, setExpandedIndexes] = useState({});
 
-  const toggleCard = (index) => {
-    setExpandedIndexes((prevState) => ({
-      ...prevState,
-      [index]: !prevState[index],
-    }));
-  };
+  // const toggleCard = (index) => {
+  //   setExpandedIndexes((prevState) => ({
+  //     ...prevState,
+  //     [index]: !prevState[index],
+  //   }));
+  // };
+  // --- Arrows ---
+  const NextArrow = (props) => {
+    const {
+      className = "",
+      style,
+      onClick,
+      currentSlide = 0,
+      slideCount = 0,
+    } = props;
+    const isDisabled = slideCount > 0 ? currentSlide >= slideCount - 2 : false; // adjust -2 if slidesToShow changes
+    const mergedStyle = {
+      ...(style || {}), // <-- guard null/undefined
+      display: "block",
+      right: "30px",
+      zIndex: 2,
+      pointerEvents: isDisabled ? "none" : "auto",
+      opacity: isDisabled ? 0.4 : 1,
+    };
 
-  const FigmaEmbed = () => {
     return (
-      <div style={{ width: "100%", height: "600px" }}>
-        <iframe
-          src="https://embed.figma.com/proto/NDmHmuDdKUn9NNedGhpV3u/AO-Figma---USE?node-id=3314-2&scaling=scale-down&hide-ui=1&embed-host=share"
-          style={{
-            width: "100%",
-            height: "100%",
-            border: "none",
-          }}
-          allowFullScreen
-          title="Academic Oasis Prototype"
-        />
+      <div
+        className={`${className} custom-arrow${isDisabled ? " disabled" : ""}`}
+        style={mergedStyle}
+        onClick={isDisabled ? undefined : onClick}
+        aria-disabled={isDisabled}
+        role="button"
+        tabIndex={0}
+      >
+        <span className="arrow">
+          <svg
+            width="50"
+            height="15"
+            viewBox="0 0 14 8"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            style={{ transform: "rotate(-90deg)" }}
+          >
+            <path
+              d="M1 1L7 7L13 1"
+              stroke="var(--background)"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </span>
       </div>
     );
+  };
+
+  const PrevArrow = (props) => {
+    const { className = "", style, onClick, currentSlide = 0 } = props;
+    const isDisabled = currentSlide === 0;
+    const mergedStyle = {
+      ...(style || {}), // <-- guard
+      display: "block",
+      zIndex: 2,
+      pointerEvents: isDisabled ? "none" : "auto",
+      opacity: isDisabled ? 0.4 : 1,
+    };
+
+    return (
+      <div
+        className={`${className} custom-arrow${isDisabled ? " disabled" : ""}`}
+        style={mergedStyle}
+        onClick={isDisabled ? undefined : onClick}
+        aria-disabled={isDisabled}
+        role="button"
+        tabIndex={0}
+      >
+        <span className="arrow prev">
+          <svg
+            width="50"
+            height="15"
+            viewBox="0 0 14 8"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            style={{ transform: "rotate(90deg)" }}
+          >
+            <path
+              d="M1 1L7 7L13 1"
+              stroke="var(--background)"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </span>
+      </div>
+    );
+  };
+
+  // --- Slick settings: pass ELEMENTS, not functions ---
+  const settings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
   };
 
   return (
@@ -435,6 +538,25 @@ function AO() {
           </div>
         </div>
 
+        <div className="Cheffery-analysis-column">
+          <div className="Cheffery-analysis-div">
+            <p className="analysis-header">Website Pages Overview</p>
+          </div>
+          <div className="Cheffery-image-column">
+            <Slider {...settings}>
+              {data.map((item, index) => (
+                <div key={index} className="Cheffery-image-column-item">
+                  <img src={item.image} alt={item.title} />
+                  <div className="Cheffery-image-column-text">
+                    <h4>{item.title}</h4>
+                    <p>{item.description}</p>
+                  </div>
+                </div>
+              ))}
+            </Slider>
+          </div>
+        </div>
+
         <div className="ao-analysis">
           <div className="ao-analysis-div">
             <p className="analysis-header">Reflection</p>
@@ -481,5 +603,86 @@ function AO() {
     </div>
   );
 }
+
+const data = [
+  // {
+  //   title: "Student Dashboard Page",
+  //   // description:
+  //   //   "Cheffery is a modern culinary platform designed to connect talented chefs with clients seeking high-quality, personalized dining experiences. The project serves as both a portfolio showcase and a service portal, enabling chefs to highlight their culinary skills, achievements, and specialties while making it easy for clients to discover, connect, and book their services.",
+  //   image: AODashboard,
+  // },
+  {
+    title: "Executive Events Page",
+    // description:
+    //   "Cheffery is a modern culinary platform designed to connect talented chefs with clients seeking high-quality, personalized dining experiences. The project serves as both a portfolio showcase and a service portal, enabling chefs to highlight their culinary skills, achievements, and specialties while making it easy for clients to discover, connect, and book their services.",
+    image: AOEventsExec,
+  },
+  {
+    title: "Events Page (Add)",
+    // description:
+    //   "Cheffery is a modern culinary platform designed to connect talented chefs with clients seeking high-quality, personalized dining experiences. The project serves as both a portfolio showcase and a service portal, enabling chefs to highlight their culinary skills, achievements, and specialties while making it easy for clients to discover, connect, and book their services.",
+    image: AOEventsAdd,
+  },
+  {
+    title: "Budget Page",
+    // description:
+    //   "Cheffery is a modern culinary platform designed to connect talented chefs with clients seeking high-quality, personalized dining experiences. The project serves as both a portfolio showcase and a service portal, enabling chefs to highlight their culinary skills, achievements, and specialties while making it easy for clients to discover, connect, and book their services.",
+    image: AOBudget,
+  },
+  {
+    title: "Budget Page (Add)",
+    // description:
+    //   "Cheffery is a modern culinary platform designed to connect talented chefs with clients seeking high-quality, personalized dining experiences. The project serves as both a portfolio showcase and a service portal, enabling chefs to highlight their culinary skills, achievements, and specialties while making it easy for clients to discover, connect, and book their services.",
+    image: AOBudgetAdd,
+  },
+  {
+    title: "Statistics Page",
+    // description:
+    //   "Cheffery is a modern culinary platform designed to connect talented chefs with clients seeking high-quality, personalized dining experiences. The project serves as both a portfolio showcase and a service portal, enabling chefs to highlight their culinary skills, achievements, and specialties while making it easy for clients to discover, connect, and book their services.",
+    image: AOStats,
+  },
+  {
+    title: "Clubs Page",
+    // description:
+    //   "The Cheffery Experience page is designed to immerse visitors in the unique culinary journey that Cheffery offers. It showcases the platform's commitment to quality, creativity, and personalized service, highlighting how Cheffery connects chefs with clients to create memorable dining experiences. ",
+    image: AOClubs,
+  },
+  {
+    title: "School Events Page",
+    // description:
+    //   "The Cheffery Experience page is designed to immerse visitors in the unique culinary journey that Cheffery offers. It showcases the platform's commitment to quality, creativity, and personalized service, highlighting how Cheffery connects chefs with clients to create memorable dining experiences. ",
+    image: AOEvents,
+  },
+  {
+    title: "Workshop Page",
+    // description:
+    //   "The Cheffery Experience page is designed to immerse visitors in the unique culinary journey that Cheffery offers. It showcases the platform's commitment to quality, creativity, and personalized service, highlighting how Cheffery connects chefs with clients to create memorable dining experiences. ",
+    image: AOWorkshop,
+  },
+  {
+    title: "Calendar Page",
+    // description:
+    //   "The definition page serves as a comprehensive introduction to Cheffery, outlining the platform's mission, values, and unique offerings. It provides visitors with a clear understanding of what Cheffery stands for and how it differentiates itself in the culinary landscape. This page is designed to engage users by highlighting the benefits of using Cheffery, whether they are chefs looking to showcase their talents or clients seeking exceptional dining experiences.",
+    image: AOCalendar,
+  },
+  {
+    title: "Calendar Page (Add)",
+    // description:
+    //   "The definition page serves as a comprehensive introduction to Cheffery, outlining the platform's mission, values, and unique offerings. It provides visitors with a clear understanding of what Cheffery stands for and how it differentiates itself in the culinary landscape. This page is designed to engage users by highlighting the benefits of using Cheffery, whether they are chefs looking to showcase their talents or clients seeking exceptional dining experiences.",
+    image: AOCalendarAdd,
+  },
+  {
+    title: "Settings Page",
+    // description:
+    //   "Showcasing the clients of Cheffery is a key aspect of building trust and credibility. By featuring a diverse range of clients, from private individuals to corporate entities, we highlight the platform's versatility and appeal. Each client profile includes testimonials and images from past events, demonstrating the quality and satisfaction that Cheffery delivers. This not only showcases our successful partnerships but also serves as a powerful marketing tool, attracting new clients who can envision their own events being hosted by our talented chefs.",
+    image: AOSetting,
+  },
+  {
+    title: "Settings Page (Edit)",
+    // description:
+    //   "The footer of the Cheffery website serves as a convenient navigation hub, providing quick access to all the key pages we offer—such as our services, community initiatives, contact page, and more. It also features direct links to our social media platforms, making it easy for visitors to stay connected, follow our latest updates, and engage with our growing community across multiple channels.",
+    image: AOSettingEdit,
+  },
+];
 
 export default AO;
