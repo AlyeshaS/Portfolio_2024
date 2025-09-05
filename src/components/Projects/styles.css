@@ -165,11 +165,6 @@
   transform: translateY(5px);
 }
 
-.cheffery-link {
-  display: flex;
-  padding-right: 10px;
-}
-
 @media (max-width: 800px) {
   .projects .container {
     flex-direction: column;
@@ -178,7 +173,7 @@
   }
 
   .projects .container .swiper {
-    height: 100dvh;
+    height: 90dvh;
   }
 
   .projects .container .swiper .slide {
@@ -205,6 +200,13 @@
   }
 
   .name {
+    text-align: center;
+  }
+
+  .view-website-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
   }
 
