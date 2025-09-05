@@ -173,8 +173,7 @@
   }
 
   .projects .container .swiper {
-    height: auto;
-    overflow-y: visible;
+    height: 100dvh;
   }
 
   .projects .container .swiper .slide {
