@@ -1,25 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./styles.css";
 
-import { EffectFlip, Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-flip";
 import "swiper/css/pagination";
 
-import AOFigma from "../../assets/AOFigma.png";
-import DashboardStats from "../../assets/DashboardStats.png";
-import Mobile_Events from "../../assets/MobileEvents.png";
-import DashboardEvent from "../../assets/DashboardEvent.png";
-import NewEvent from "../../assets/NewEvent.png";
-import DashboardBudget from "../../assets/DashboardBudget.png";
-import EditBudgetSheet from "../../assets/EditBudgetSheet.png";
-import Calendar from "../../assets/Calendar.png";
-import EditCalendar from "../../assets/EditCalendar.png";
-import Clubs from "../../assets/Clubs.png";
-import Profile from "../../assets/Profile.png";
-import EditProfile from "../../assets/EditProfile.png";
 import AOLogo from "../../assets/AOLogo.png";
-
+import AOFlowchart from "../../assets/AOFlowchart.png";
 // Fix the mobile image and then also check the side align for the second image
 function AO() {
   const [isVertical, setIsVertical] = useState(window.innerWidth > 800);
@@ -355,7 +342,7 @@ function AO() {
           {/* <p className="analysis-text-header">Flowchart</p> */}
           <div className="ao-image">
             <img
-              // src={ChefferyFlowchart}
+              src={AOFlowchart}
               alt=""
               className="centered-contact-img"
               style={{ paddingBottom: 10 }}

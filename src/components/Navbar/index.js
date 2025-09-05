@@ -268,7 +268,7 @@ function Navbar() {
               Contact
             </Link>
             {/* Fix this dropdown */}
-            <Link>
+            {/* <Link>
               <div className="dropdown">
                 <button
                   className="dropdown-toggle"
@@ -334,7 +334,7 @@ function Navbar() {
                   </div>
                 )}
               </div>
-            </Link>
+            </Link> */}
 
             <div className="socials">
               <a
