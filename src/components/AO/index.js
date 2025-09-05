@@ -499,6 +499,24 @@ function AO() {
             while also providing actionable insights to refine the final design.
           </p>
         </div>
+        <div className="Cheffery-analysis-column">
+          <div className="Cheffery-analysis-div">
+            <p className="analysis-header">Website Pages Overview</p>
+          </div>
+          <div className="Cheffery-image-column">
+            <Slider {...settings}>
+              {data.map((item, index) => (
+                <div key={index} className="Cheffery-image-column-item">
+                  <img src={item.image} alt={item.title} />
+                  <div className="Cheffery-image-column-text">
+                    <h4>{item.title}</h4>
+                    <p>{item.description}</p>
+                  </div>
+                </div>
+              ))}
+            </Slider>
+          </div>
+        </div>
 
         <div className="ao-analysis">
           <div className="ao-analysis-div">
@@ -535,25 +553,6 @@ function AO() {
               provided me with valuable experience in creating solutions from
               concept to prototype.
             </p>
-          </div>
-        </div>
-
-        <div className="Cheffery-analysis-column">
-          <div className="Cheffery-analysis-div">
-            <p className="analysis-header">Website Pages Overview</p>
-          </div>
-          <div className="Cheffery-image-column">
-            <Slider {...settings}>
-              {data.map((item, index) => (
-                <div key={index} className="Cheffery-image-column-item">
-                  <img src={item.image} alt={item.title} />
-                  <div className="Cheffery-image-column-text">
-                    <h4>{item.title}</h4>
-                    <p>{item.description}</p>
-                  </div>
-                </div>
-              ))}
-            </Slider>
           </div>
         </div>
 
@@ -613,74 +612,74 @@ const data = [
   // },
   {
     title: "Executive Events Page",
-    // description:
-    //   "Cheffery is a modern culinary platform designed to connect talented chefs with clients seeking high-quality, personalized dining experiences. The project serves as both a portfolio showcase and a service portal, enabling chefs to highlight their culinary skills, achievements, and specialties while making it easy for clients to discover, connect, and book their services.",
+    description:
+      "This page allows club executives to create and manage upcoming events for their organizations. Executives can post event details, including the event name, description, planned budget, location, time and projected attendance. The information is displayed in event cards, making it easy to view at a glance. Attendance numbers are automatically updated based on student sign-ups. While executives manage the posting here, students can explore and register for these events under the Events tab, ensuring smooth communication between clubs and the student body.",
     image: AOEventsExec,
   },
   {
     title: "Events Page (Add)",
-    // description:
-    //   "Cheffery is a modern culinary platform designed to connect talented chefs with clients seeking high-quality, personalized dining experiences. The project serves as both a portfolio showcase and a service portal, enabling chefs to highlight their culinary skills, achievements, and specialties while making it easy for clients to discover, connect, and book their services.",
+    description:
+      "On the Executives Events page, club leaders can easily add a new event using the New Event button. Selecting this option opens a pop-up form with text areas for key event details. Required fields ensure that all essential information is captured, while optional fields allow executives to add extra context if needed. This streamlined process helps executives create complete, well-organized event posts that are immediately visible to students once published.",
     image: AOEventsAdd,
   },
   {
     title: "Budget Page",
-    // description:
-    //   "Cheffery is a modern culinary platform designed to connect talented chefs with clients seeking high-quality, personalized dining experiences. The project serves as both a portfolio showcase and a service portal, enabling chefs to highlight their culinary skills, achievements, and specialties while making it easy for clients to discover, connect, and book their services.",
+    description:
+      "The Budget tab in the Executives Dashboard helps clubs track funds received and expenses made throughout the year. The sheet is split into two pages to meet Ontario Tech University’s requirements, recording the date, submitter, amount, and related event. Each entry must be signed off by two other executives, and a status column shows whether reimbursements have been processed by the school. This ensures transparency, accountability, and easy budget management for the academic year. They will also have the ability to download the information in a sheet format if needed.",
     image: AOBudget,
   },
   {
     title: "Budget Page (Add)",
-    // description:
-    //   "Cheffery is a modern culinary platform designed to connect talented chefs with clients seeking high-quality, personalized dining experiences. The project serves as both a portfolio showcase and a service portal, enabling chefs to highlight their culinary skills, achievements, and specialties while making it easy for clients to discover, connect, and book their services.",
+    description:
+      "Executives can add new entries to the Budget Sheet using a pop-up form similar to the event creation process. The form includes all required fields—such as date, submitter, amount, and event details—which must be completed before submission. Once the Add button is pressed, the new line is recorded in the sheet, keeping financial records accurate and up to date.",
     image: AOBudgetAdd,
   },
   {
     title: "Statistics Page",
-    // description:
-    //   "Cheffery is a modern culinary platform designed to connect talented chefs with clients seeking high-quality, personalized dining experiences. The project serves as both a portfolio showcase and a service portal, enabling chefs to highlight their culinary skills, achievements, and specialties while making it easy for clients to discover, connect, and book their services.",
+    description:
+      "The Statistics page gives executives key insights to help guide decision-making. Clubs can see where their budget is being spent, track event attendance, and identify the best days to host events. The recommended event days are based on gaps in student schedules gathered from the Calendar tab. A sidebar on the right also provides a quick overview of the club, including the number of executives, general members, remaining budget, and overall attendance percentage.",
     image: AOStats,
   },
   {
     title: "Clubs Page",
-    // description:
-    //   "The Cheffery Experience page is designed to immerse visitors in the unique culinary journey that Cheffery offers. It showcases the platform's commitment to quality, creativity, and personalized service, highlighting how Cheffery connects chefs with clients to create memorable dining experiences. ",
+    description:
+      "Within the Community tab, students can browse all active clubs at the school. Each club card displays the name, description, and up to three tags that highlight the club’s focus. Students can join clubs directly, receive notifications, and manage their memberships. A filter bar on the right allows them to search clubs by keywords, while a personal list shows the clubs they have joined—with the option to leave at any time.",
     image: AOClubs,
   },
   {
     title: "School Events Page",
-    // description:
-    //   "The Cheffery Experience page is designed to immerse visitors in the unique culinary journey that Cheffery offers. It showcases the platform's commitment to quality, creativity, and personalized service, highlighting how Cheffery connects chefs with clients to create memorable dining experiences. ",
+    description:
+      "Under the Community tab, students can explore upcoming events through the Events section. Unlike executives, students cannot edit or add events, but they can view event details such as the location, time, and description. Each event card includes up to three tags added by executives to make searching easier. A search bar on the right allows students to quickly filter events by keywords. Students can also see which events they have registered for, with the option to unregister if needed.",
     image: AOEvents,
   },
   {
     title: "Workshop Page",
-    // description:
-    //   "The Cheffery Experience page is designed to immerse visitors in the unique culinary journey that Cheffery offers. It showcases the platform's commitment to quality, creativity, and personalized service, highlighting how Cheffery connects chefs with clients to create memorable dining experiences. ",
+    description:
+      "The Workshop tab in the Community section makes it easy for students to find Ontario Tech–hosted workshops without searching across multiple websites. Each workshop card displays the name, description, and keywords, along with a button to join. A search bar on the right allows students to filter workshops by topic, and a personal list shows the workshops they have already joined.",
     image: AOWorkshop,
   },
   {
     title: "Calendar Page",
-    // description:
-    //   "The definition page serves as a comprehensive introduction to Cheffery, outlining the platform's mission, values, and unique offerings. It provides visitors with a clear understanding of what Cheffery stands for and how it differentiates itself in the culinary landscape. This page is designed to engage users by highlighting the benefits of using Cheffery, whether they are chefs looking to showcase their talents or clients seeking exceptional dining experiences.",
+    description:
+      "The Calendar tab allows all students—executives and non-executives alike—to keep track of their schedules in one place. Students can add their class timetable and view events or workshops they have registered for, creating a single, unified calendar. The tab also supports linking a Google Calendar (managed in Settings) for easier integration. New entries can be added using the plus sign, and navigation is simple with arrow controls to switch between views. Importantly, the gaps in student calendars are analyzed to help clubs determine the best times to host events, ensuring higher attendance and better planning.",
     image: AOCalendar,
   },
   {
     title: "Calendar Page (Add)",
-    // description:
-    //   "The definition page serves as a comprehensive introduction to Cheffery, outlining the platform's mission, values, and unique offerings. It provides visitors with a clear understanding of what Cheffery stands for and how it differentiates itself in the culinary landscape. This page is designed to engage users by highlighting the benefits of using Cheffery, whether they are chefs looking to showcase their talents or clients seeking exceptional dining experiences.",
+    description:
+      "Students can use the Add button to create new entries directly in their Academic Oasis calendar. When adding, they can specify whether the entry is a course or an activity, making it easy to organize different types of commitments. To further personalize their schedules, students have the option to assign custom colors to each entry, helping them visually distinguish between classes, events, and personal activities at a glance.",
     image: AOCalendarAdd,
   },
   {
     title: "Settings Page",
-    // description:
-    //   "Showcasing the clients of Cheffery is a key aspect of building trust and credibility. By featuring a diverse range of clients, from private individuals to corporate entities, we highlight the platform's versatility and appeal. Each client profile includes testimonials and images from past events, demonstrating the quality and satisfaction that Cheffery delivers. This not only showcases our successful partnerships but also serves as a powerful marketing tool, attracting new clients who can envision their own events being hosted by our talented chefs.",
+    description:
+      "The Settings tab provides customization options for both executives and students. Club executives can manage their club by selecting up to three descriptive tags, while regular students do not have access to this feature. All users can link their Google Calendar for easier schedule management and choose a theme to personalize their experience (theme options were not finalized, as the project was closed before completion). Students and executives also have the option to log out from this tab if needed.",
     image: AOSetting,
   },
   {
     title: "Settings Page (Edit)",
-    // description:
-    //   "The footer of the Cheffery website serves as a convenient navigation hub, providing quick access to all the key pages we offer—such as our services, community initiatives, contact page, and more. It also features direct links to our social media platforms, making it easy for visitors to stay connected, follow our latest updates, and engage with our growing community across multiple channels.",
+    description:
+      "Students and executives can edit limited aspects of their profile. Available options include updating pronouns and selecting a preferred language to tailor their experience on the platform.",
     image: AOSettingEdit,
   },
 ];
