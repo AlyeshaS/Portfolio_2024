@@ -199,7 +199,16 @@
     font-size: 22px;
   }
 
+  .experience .container .timeline .experience-card .name {
+    font-size: 16px;
+    text-align: center;
+  }
+  .experience .container .timeline .experience-card .position {
+    font-size: 12px;
+    text-align: center;
+  }
   .experience .container .timeline .experience-card .time {
     font-size: 14px;
+    text-align: center;
   }
 }

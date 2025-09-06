@@ -13,7 +13,7 @@ function About() {
         </div>
         <div className="text">
           <h1>
-            I am <span>Alyesha Singh</span>,
+            I am <span className="first_name">Alyesha Singh</span>
           </h1>
           <p>
             a university student blending creativity with computer science to

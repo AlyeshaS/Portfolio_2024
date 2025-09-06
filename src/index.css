@@ -47,6 +47,8 @@ body {
   .section {
     height: unset;
     margin-bottom: 100px;
+    width: 100%;
+    padding: 0 15px;
   }
 
   .section .section-header {

@@ -103,7 +103,7 @@
   .contact .container {
     flex-direction: column;
     align-items: stretch;
-    padding: 0 5px;
+    padding: 0 15px;
     gap: 20px;
     max-width: 100vw;
   }
