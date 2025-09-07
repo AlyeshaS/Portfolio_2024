@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./styles.css";
+import { Element } from "react-scroll";
 
 function Contact() {
   const [status, setStatus] = useState("");
@@ -36,7 +37,7 @@ function Contact() {
   const handleClose = () => setStatus("");
 
   return (
-    <div className="section contact">
+    <Element name="contact" className="section contact">
       <div className="container">
         <h1 className="section-header">Contact Me</h1>
 
@@ -86,7 +87,7 @@ function Contact() {
           </form>
         )}
       </div>
-    </div>
+    </Element>
   );
 }
 

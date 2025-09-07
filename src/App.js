@@ -1,6 +1,11 @@
 import { useEffect, useState } from "react";
 import BIRDS from "vanta/dist/vanta.birds.min";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  useLocation,
+} from "react-router-dom";
 
 import About from "./components/About";
 import Experience from "./components/Experience";
@@ -44,23 +49,25 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <About />
-              <Projects />
-              <Experience />
-              <Contact />
-            </>
-          }
-        />
-        <Route path="/case-studies/ao" element={<AO />} />
-        <Route path="/case-studies/cheffery" element={<Cheffery />} />
-        <Route path="/case-studies/cjs" element={<CJS />} />
-        <Route path="/case-studies/fitcheck" element={<FitCheck />} />
-      </Routes>
+      <div id="blur-wrapper">
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <About />
+                <Projects />
+                <Experience />
+                <Contact />
+              </>
+            }
+          />
+          <Route path="/case-studies/ao" element={<AO />} />
+          <Route path="/case-studies/cheffery" element={<Cheffery />} />
+          <Route path="/case-studies/cjs" element={<CJS />} />
+          <Route path="/case-studies/fitcheck" element={<FitCheck />} />
+        </Routes>
+      </div>
     </Router>
   );
 }
