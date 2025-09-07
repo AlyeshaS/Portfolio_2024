@@ -28,6 +28,7 @@ import AOWorkshop from "../../assets/AOWorkshop.png";
 // Fix the mobile image and then also check the side align for the second image
 function AO() {
   const [isVertical, setIsVertical] = useState(window.innerWidth > 800);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 800);
 
   // Handle screen resizing
   useEffect(() => {
@@ -47,6 +48,9 @@ function AO() {
   //     [index]: !prevState[index],
   //   }));
   // };
+
+  const visibleSlides = isMobile ? 1 : 2;
+
   // --- Arrows ---
   const NextArrow = (props) => {
     const {
@@ -56,7 +60,8 @@ function AO() {
       currentSlide = 0,
       slideCount = 0,
     } = props;
-    const isDisabled = slideCount > 0 ? currentSlide >= slideCount - 2 : false; // adjust -2 if slidesToShow changes
+    const isDisabled =
+      slideCount > 0 ? currentSlide >= slideCount - visibleSlides : false;
     const mergedStyle = {
       ...(style || {}), // <-- guard null/undefined
       display: "block",
@@ -139,21 +144,33 @@ function AO() {
     );
   };
 
-  // --- Slick settings: pass ELEMENTS, not functions ---
-  const settings = {
-    dots: true,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 2,
-    slidesToScroll: 2,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
-  };
+  const settings = isMobile
+    ? {
+        dots: false,
+        infinite: false,
+        speed: 500,
+        slidesToShow: 1, // mobile
+        slidesToScroll: 1,
+        nextArrow: <NextArrow />,
+        prevArrow: <PrevArrow />,
+      }
+    : {
+        dots: true,
+        infinite: false,
+        speed: 500,
+        slidesToShow: 2, // desktop
+        slidesToScroll: 2,
+        nextArrow: <NextArrow />,
+        prevArrow: <PrevArrow />,
+      };
 
   return (
     <div className="ao-page">
       <div className="ao-container">
         <div className="title">
+          <div className="ao-image-logo-mobile">
+            <img src={AOLogo} alt="AOLogo" className="ao-logo-mobile" />
+          </div>
           <p className="ao-header">Academic Oasis</p>
 
           <p>Chief Design and Marketing Officer</p>
@@ -442,12 +459,12 @@ function AO() {
 
         <div className="ao-analysis-column">
           <p className="analysis-header">User Journey</p>
-          {/* <p className="analysis-text-header">Flowchart</p> */}
+          <p className="analysis-text-header">Flowchart</p>
           <div className="ao-image">
             <img
               src={AOFlowchart}
               alt=""
-              className="centered-contact-img"
+              className="ao-flowchart"
               style={{ paddingBottom: 10 }}
             />
           </div>
@@ -499,16 +516,16 @@ function AO() {
             while also providing actionable insights to refine the final design.
           </p>
         </div>
-        <div className="Cheffery-analysis-column">
-          <div className="Cheffery-analysis-div">
+        <div className="ao-analysis-column">
+          <div className="ao-analysis-div">
             <p className="analysis-header">Website Pages Overview</p>
           </div>
-          <div className="Cheffery-image-column">
+          <div className="ao-image-column">
             <Slider {...settings}>
               {data.map((item, index) => (
-                <div key={index} className="Cheffery-image-column-item">
+                <div key={index} className="ao-image-column-item">
                   <img src={item.image} alt={item.title} />
-                  <div className="Cheffery-image-column-text">
+                  <div className="ao-image-column-text">
                     <h4>{item.title}</h4>
                     <p>{item.description}</p>
                   </div>

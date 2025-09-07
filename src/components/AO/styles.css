@@ -205,7 +205,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+}
+.ao-flowchart {
+  height: 50%;
+  width: 50%;
 }
 
 .links {
@@ -273,6 +276,47 @@
   font-size: 18px;
   font-weight: 700;
 }
+.ao-logo-mobile {
+  display: none;
+}
+
+.ao-image-column {
+  background-color: var(--text-color);
+  padding: 15px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.ao-image-column-text {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centers horizontally */
+  justify-content: center; /* centers vertically */
+  text-align: center; /* centers text inside block elements */
+  margin-bottom: 10px;
+}
+
+.ao-image-column-item img {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+.ao-image-column-text h4 {
+  margin-bottom: 10px;
+  color: var(--background);
+}
+
+.ao-image-column-text p {
+  color: var(--background);
+  font-size: 13px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
 
 @media (max-width: 800px) {
   .ao-container {
@@ -287,7 +331,9 @@
   .ao-header {
     font-size: 32px;
   }
-
+  .centered-contact-img {
+    min-width: 40vw !important;
+  }
   .ao-analysis {
     padding-bottom: 30px;
     display: flex;
@@ -319,9 +365,78 @@
     height: auto;
   }
   .links {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 6px; /* less spacing vertically */
+  }
+  .ao-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ao-flowchart {
+    height: 80%;
+    width: 80%;
+  }
+
+  .ao-image-logo {
+    display: none;
+  }
+
+  .ao-image-logo-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+  }
+  .ao-logo-mobile {
+    display: flex;
+    width: 40%;
+    height: 40%;
+    border-radius: 10%;
+  }
+
+  .analysis-table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* smooth swipe on iOS */
+    white-space: nowrap; /* prevent columns from wrapping */
+  }
+  /* Give each column some width so only a few fit */
+  .analysis-table th,
+  .analysis-table td {
+    min-width: 300px; /* adjust so 1–2 columns fit in viewport */
+    white-space: normal; /* allow wrapping inside cells */
+  }
+
+  .ao-image-column {
+    height: auto; /* remove fixed 550px */
+    padding: 10px;
+  }
+
+  .ao-image-column-item img {
+    width: 100%;
+    height: auto;
+    margin-top: 8px;
+    border-radius: 8px; /* optional: softer look on small screens */
+  }
+
+  .ao-image-column-text {
+    padding: 12px;
+    margin-bottom: 16px;
+  }
+
+  .ao-image-column-text h4 {
+    font-size: 16px; /* smaller heading */
+    margin-bottom: 6px;
+  }
+
+  .ao-image-column-text p {
+    font-size: 12px; /* smaller body text */
+    padding: 0 6px; /* tighter padding */
+    line-height: 1.4;
   }
 }
