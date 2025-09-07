@@ -290,64 +290,7 @@ function Navbar() {
               >
                 Contact
               </Link>
-              {/* Fix this dropdown */}
-              {/* <Link>
-              activeClass="active"
-              containerId="root"
-              to="about"
-              spy={true}
-              smooth={true}
-              duration={500}
-              offset={-25}
-            >
-              About
-            </Link>
-            <Link
-              onClick={() => {
-                setMenu(false);
-                navigate("/");
-              }}
-              activeClass="active"
-              containerId="root"
-              to="projects"
-              spy={true}
-              smooth={true}
-              duration={500}
-              offset={-25}
-            >
-              Projects
-            </Link>
-            <Link
-              onClick={() => {
-                setMenu(false);
-                navigate("/");
-              }}
-              activeClass="active"
-              containerId="root"
-              to="experience"
-              spy={true}
-              smooth={true}
-              duration={500}
-              offset={-25}
-            >
-              Experience
-            </Link>
-            <Link
-              onClick={() => {
-                setMenu(false);
-                navigate("/");
-              }}
-              activeClass="active"
-              containerId="root"
-              to="contact"
-              spy={true}
-              smooth={true}
-              duration={500}
-              offset={-25}
-            >
-              Contact
-            </Link>
-            {/* Fix this dropdown */}
+
               <Link>
                 <div className="dropdown">
                   <button
@@ -389,6 +332,19 @@ function Navbar() {
                       >
                         Academic Oasis
                       </Link>
+                      {/* <Link
+                        onClick={() => {
+                          setMenu(false);
+                          navigate("/case-studies/cheffery");
+                        }}
+                        spy={true}
+                        smooth={true}
+                        duration={500}
+                        offset={-25}
+                      >
+                        Cheffery
+                      </Link> */}
+
                       {/* <Link
                       onClick={() => {
                         setMenu(false);
