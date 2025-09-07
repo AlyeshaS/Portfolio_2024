@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Element, Link } from "react-scroll";
 import "./styles.css";
-import { Element } from "react-scroll";
 
 function Contact() {
   const [status, setStatus] = useState("");
