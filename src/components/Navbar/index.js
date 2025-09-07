@@ -20,7 +20,6 @@ function Navbar() {
     setDropdownOpenMobile(!dropdownOpenMobile);
   };
 
-  // See if there is a way to have it automatically scroll
   const mainPage = () => {
     navigate("/");
   };
@@ -218,7 +217,7 @@ function Navbar() {
               spy={true}
               smooth={true}
               duration={500}
-              offset={-100}
+              offset={-25}
             >
               About
             </Link>
@@ -248,7 +247,7 @@ function Navbar() {
               spy={true}
               smooth={true}
               duration={500}
-              offset={-80}
+              offset={-25}
             >
               Experience
             </Link>
@@ -268,7 +267,7 @@ function Navbar() {
               Contact
             </Link>
             {/* Fix this dropdown */}
-            {/* <Link>
+            <Link>
               <div className="dropdown">
                 <button
                   className="dropdown-toggle"
@@ -307,7 +306,7 @@ function Navbar() {
                     >
                       Academic Oasis
                     </Link>
-                    <Link
+                    {/* <Link
                       onClick={() => {
                         setMenu(false);
                         navigate("/case-studies/cjs");
@@ -318,8 +317,8 @@ function Navbar() {
                       offset={-25}
                     >
                       CJS
-                    </Link>
-                    <Link
+                    </Link> */}
+                    {/* <Link
                       onClick={() => {
                         setMenu(false);
                         navigate("/case-studies/FitCheck");
@@ -330,11 +329,11 @@ function Navbar() {
                       offset={-25}
                     >
                       FitCheck
-                    </Link>
+                    </Link> */}
                   </div>
                 )}
               </div>
-            </Link> */}
+            </Link>
 
             <div className="socials">
               <a

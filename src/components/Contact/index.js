@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Element, Link } from "react-scroll";
 import "./styles.css";
 
 function Contact() {
