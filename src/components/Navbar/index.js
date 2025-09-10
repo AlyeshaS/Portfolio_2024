@@ -117,7 +117,7 @@ function Navbar() {
               spy={true}
               smooth={true}
               duration={500}
-              offset={-80}
+              offset={-60}
               onClick={() => {
                 mainPage("experience");
               }}
@@ -125,16 +125,16 @@ function Navbar() {
               Experience
             </Link>
             <Link
-              onClick={() => {
-                mainPage("contact");
-              }}
               activeClass="active"
               containerId="root"
               to="contact"
               spy={true}
               smooth={true}
               duration={500}
-              offset={-25}
+              offset={0}
+              onClick={() => {
+                mainPage("contact");
+              }}
             >
               Contact
             </Link>
