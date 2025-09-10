@@ -256,7 +256,7 @@ function Navbar() {
                 spy={true}
                 smooth={true}
                 duration={500}
-                offset={0}
+                offset={-85}
               >
                 Projects
               </Link>
@@ -271,7 +271,7 @@ function Navbar() {
                 spy={true}
                 smooth={true}
                 duration={500}
-                offset={0}
+                offset={-85}
               >
                 Experience
               </Link>
@@ -286,7 +286,7 @@ function Navbar() {
                 spy={true}
                 smooth={true}
                 duration={500}
-                offset={0}
+                offset={-287}
               >
                 Contact
               </Link>
