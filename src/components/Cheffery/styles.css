@@ -237,12 +237,9 @@ ul li {
   border-radius: 10px;
 }
 
-.centered-contact-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 40vw;
-  height: auto;
+.cheffery-flowchart {
+  height: 50%;
+  width: 50%;
 }
 
 .Cheffery-image-column {
@@ -338,12 +335,19 @@ ul li {
   background-color: #2c4a6d;
   opacity: 1;
 }
-
-/* Add bullet for phone */
+.Cheffery-image-logo-mobile {
+  display: none;
+}
 @media (max-width: 800px) {
   .Cheffery-container {
     padding: 0 20px;
     padding-bottom: 100px;
+  }
+  .Cheffery-analysis {
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
 
   .title {
@@ -373,5 +377,66 @@ ul li {
     display: flex;
     flex-direction: column;
     height: 100%;
+  }
+
+  .Cheffery-image-logo {
+    display: none;
+  }
+  .Cheffery-image-logo-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+  }
+
+  .Cheffery-logo-mobile-img {
+    display: flex;
+    width: 40%;
+    height: 40%;
+    border-radius: 10%;
+  }
+
+  .Cheffery-flowchart {
+    height: 80%;
+    width: 80%;
+  }
+  .Cheffery-image-column {
+    height: auto; /* remove fixed 550px */
+    padding: 10px;
+  }
+
+  .Cheffery-image-column-item img {
+    width: 100%;
+    height: auto;
+    margin-top: 8px;
+    border-radius: 8px; /* optional: softer look on small screens */
+  }
+
+  .Cheffery-image-column-text {
+    padding: 12px;
+    margin-bottom: 16px;
+  }
+
+  .Cheffery-image-column-text h4 {
+    font-size: 16px; /* smaller heading */
+    margin-bottom: 6px;
+  }
+
+  .Cheffery-image-column-text p {
+    font-size: 12px; /* smaller body text */
+    padding: 0 6px; /* tighter padding */
+    line-height: 1.4;
+  }
+  .analysis-table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* smooth swipe on iOS */
+    white-space: nowrap; /* prevent columns from wrapping */
+  }
+  /* Give each column some width so only a few fit */
+  .analysis-table th,
+  .analysis-table td {
+    min-width: 300px; /* adjust so 1–2 columns fit in viewport */
+    white-space: normal; /* allow wrapping inside cells */
   }
 }

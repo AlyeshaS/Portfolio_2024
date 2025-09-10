@@ -37,6 +37,9 @@ function Cheffery() {
     };
   }, []);
 
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 800);
+  const visibleSlides = isMobile ? 1 : 2;
+
   // --- Arrows ---
   const NextArrow = (props) => {
     const {
@@ -129,21 +132,37 @@ function Cheffery() {
     );
   };
 
-  // --- Slick settings: pass ELEMENTS, not functions ---
-  const settings = {
-    dots: true,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 2,
-    slidesToScroll: 2,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
-  };
+  const settings = isMobile
+    ? {
+        dots: false,
+        infinite: false,
+        speed: 500,
+        slidesToShow: 1, // mobile
+        slidesToScroll: 1,
+        nextArrow: <NextArrow />,
+        prevArrow: <PrevArrow />,
+      }
+    : {
+        dots: true,
+        infinite: false,
+        speed: 500,
+        slidesToShow: 2, // desktop
+        slidesToScroll: 2,
+        nextArrow: <NextArrow />,
+        prevArrow: <PrevArrow />,
+      };
 
   return (
     <div className="Cheffery-page">
       <div className="Cheffery-container">
         <div className="title">
+          <div className="Cheffery-image-logo-mobile">
+            <img
+              src={ChefferyLogo}
+              alt="ChefferyLogo"
+              className="Cheffery-logo-mobile-img"
+            />
+          </div>
           <p className="Cheffery-header">Cheffery</p>
           <p>UI/UX Designer</p>
           <p>June 2024 - Present</p>
@@ -346,7 +365,7 @@ function Cheffery() {
             <img
               src={ChefferyFlowchart}
               alt=""
-              className="centered-contact-img"
+              className="Cheffery-flowchart"
               style={{ paddingBottom: 10 }}
             />
           </div>

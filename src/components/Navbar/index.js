@@ -332,7 +332,7 @@ function Navbar() {
                       >
                         Academic Oasis
                       </Link>
-                      {/* <Link
+                      <Link
                         onClick={() => {
                           setMenu(false);
                           navigate("/case-studies/cheffery");
@@ -343,7 +343,7 @@ function Navbar() {
                         offset={-25}
                       >
                         Cheffery
-                      </Link> */}
+                      </Link>
 
                       {/* <Link
                       onClick={() => {
