@@ -22,8 +22,8 @@ function About() {
           </p>
           <div className="buttons">
             <a
-              href="/UI_UX_Alyesha_Singh_Resume.pdf"
-              download="UI_UX_Alyesha_Singh_Resume.pdf"
+              href="/Alyesha_Singh-Resume.pdf"
+              download="Alyesha_Singh-Resume.pdf"
               className="button"
             >
               Resume
