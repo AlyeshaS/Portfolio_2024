@@ -181,7 +181,7 @@ function Projects() {
             <div className="text">
               <div className="header">
                 <h1 className="name">AI StudyHub</h1>
-                <span className="position">UI/UX Designer</span>
+                <span className="position">Academic Project</span>
               </div>
               <div className="text-scroll">
                 <p>
