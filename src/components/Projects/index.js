@@ -8,6 +8,8 @@ import AOFigma from "../../assets/AOFigma.png";
 import CJSFigma from "../../assets/CJSFigma.png";
 import ChefferyFigma from "../../assets/ChefferyFigma_1.png";
 import FitCheckFigma from "../../assets/FitCheckFigma.png";
+import AIStudyHubFigma from "../../assets/AIStudyHubFigma.png";
+
 import "swiper/css/effect-flip";
 import "swiper/css/pagination";
 import "./styles.css";
@@ -166,6 +168,37 @@ function Projects() {
               <img src={FitCheckFigma} alt="FitCheck Design" />
               <a
                 href="https://www.figma.com/proto/4gFR16TN2lUHlKE5omRg8g/FitCheck?node-id=180-259&t=2FjAgn6vmO9HdBKh-8&scaling=scale-down&content-scaling=fixed&page-id=180%3A111&starting-point-node-id=180%3A462&show-proto-sidebar=1&hide-ui=1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="view-website-link"
+              >
+                <p>View Figma Prototype</p>
+              </a>
+            </div>
+          </SwiperSlide>
+          {/* AI StudyHub */}
+          <SwiperSlide className="slide">
+            <div className="text">
+              <div className="header">
+                <h1 className="name">AI StudyHub</h1>
+                <span className="position">UI/UX Designer</span>
+              </div>
+              <div className="text-scroll">
+                <p>
+                  AI StudyHub is a learning tool that turns course materials
+                  (PDFs, slides, URLs) into personalized quizzes, flashcards,
+                  and summaries. It uses AI to adapt difficulty, support recall,
+                  and simplify studying. Designed with a clean, student-friendly
+                  interface and rooted in HCI research, the platform helps
+                  students stay organized, learn efficiently, and feel more
+                  confident while studying.
+                </p>
+              </div>
+            </div>
+            <div className="content">
+              <img src={AIStudyHubFigma} alt="AI StudyHub Design" />
+              <a
+                href="https://www.figma.com/proto/CYpxLBRvl8gP67t3Sbhz1S/AI-StudyHub---Portfolio?node-id=100-785&t=NZVp1yILdv6beRjY-8&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2%3A3&hide-ui=1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="view-website-link"

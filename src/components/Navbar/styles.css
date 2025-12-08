@@ -179,12 +179,12 @@
     backdrop-filter: blur(5px);
     display: flex;
     flex-direction: column;
-    padding-top: 20%;
+    padding-top: 50%;
     align-items: center;
     /* justify-content: center; */
     /* margin-top: 10%; */
     gap: 30px;
-    z-index: 20;
+    z-index: 50;
   }
 
   .navbar__menu > a {
