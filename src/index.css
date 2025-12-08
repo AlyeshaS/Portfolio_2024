@@ -62,3 +62,30 @@ body {
     margin-left: 10px;
   }
 }
+
+/* For Webkit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 20px; /* Increase from 12px to 20px for thicker scrollbar */
+  height: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background, #1a1a1a);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent, #3d5a80);
+  border-radius: 10px;
+  border: 3px solid var(--background, #1a1a1a);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: auto; /* Change from "thin" to "auto" */
+  scrollbar-color: var(--accent, #3d5a80) var(--background, #1a1a1a);
+}
